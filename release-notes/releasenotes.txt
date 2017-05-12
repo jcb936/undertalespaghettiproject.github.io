@@ -1,0 +1,12 @@
+@0.01
+[Prima versione, preview dello streaming di Ellino
+@0.02
+[Questa versione include solo le ROVINE (e qualcosinina in più). Compatibile solo con la versione 1.00 del gioco.
+-Accenti e apostrofi: Per ora Undertale ci riconosce 3 accenti: à, è, ì. Quindi tutte le altre lettere accentate saranno segnate con l'apostrofo. Ci prendiamo una piccola licenza poetica scrivendo "perchè" invece che "perché".
+-Quando il gioco chiede di selezionare Sì o No l'iconcina del cuore va sopra il "No". Ci stiamo lavorando.
+-I dialoghi di una delle Craccrane non sono stati tradotti.
+-Errore di formattazione nella descrizione del cactus nella stanza di Toriel.
+*Per segnalazioni riguardo la traduzione utilizzare il form "Segnala un Errore" sul sito.
+*Per segnalazioni quali bug e altro, scrivere direttamente a segnalazioni@undertaleita.net
+@0.1
+[Prima versione compatibile con la versione 1.1 del gioco che include l'intera area delle ROVINE. Sono stati corretti accenti ed errori vari.
