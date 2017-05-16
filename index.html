@@ -10,7 +10,7 @@
 </header>
 <div class="slide slide1">
     <div class="container container1">
-        <a class="title title1 moved-title1">Traduzione italiana ufficiale</a><br>
+        <a class="title title1">Traduzione italiana ufficiale</a><br>
         <a class="description description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu iaculis libero. Donec placerat in lacus id convallis. Aenean congue semper nunc quis pharetra. Duis vulputate tortor arcu, quis aliquam nulla sollicitudin non. Nunc ut nunc placerat, pellentesque augue vel, luctus ligula. Nam sit amet molestie nunc, ac molestie felis. Vivamus varius, eros eget euismod tincidunt, dui mi dignissim magna, sit amet hendrerit dolor ipsum a purus.</a>
     </div>
 </div>
@@ -34,30 +34,38 @@
         </ul>
     </div>
 </div>
-<div class="slide slide3"></div>
+<div class="slide slide3">
+    <a class="title title3">Scarica la traduzione!</a>
+    <div class="download-button">
+        <div class="download-icon"></div>
+        <a class="download-text">
+            <span class="download-title">INSTALLER (35MB)</span>
+            <span class="download-description">Compatibile per dispositivi Windows</span>
+        </a>
+    </div>
+</div>
     
 <script>
-var viewportHeight = $(window).height();
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    var viewportHeight = $(window).height();
 
-    function callback () {
-        if ($(window).scrollTop() > viewportHeight) {
-            $(".title1").addClass("moved-title1")
-        ;
+    if (scroll >= viewportHeight*0.5) {
+        $(".title1").addClass("moved-title1");
+        $(".description1").addClass("moved-description1");
     }
-    function throttle (callback, limit) {
-    var wait = false;
-        return function () {
-            if (!wait) {
-                callback.call();
-                wait = true;
-                setTimeout(function () {
-                    wait = false;
-                }, limit);
-         }
-      }
-    ;}
-    window.addEventListener("scroll", throttle(callback, 200));
-} 
+    
+    if (scroll >= viewportHeight*1.7) {
+        $(".title2").addClass("moved-title2");
+        $(".slider-immagini").addClass("moved-slider-immagini");
+    }
+    
+    if (scroll >= viewportHeight*2.7) {
+        $(".title3").addClass("moved-title3");
+        $(".download-icon").addClass("animated-download-icon");
+        $(".download-button").addClass("animated-download-button");
+    }
+});
 </script>
 
 </body>
