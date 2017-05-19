@@ -2,11 +2,11 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
-<link href='/stylesheet.css' rel='stylesheet' type='text/css'>
+<link href='stylesheet.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
-<img src="/images/logo.svg" id="logo">
+<img src="images/logo.svg" id="logo">
 </header>
 <div class="slide slide1">
     <div class="container container1">
@@ -22,15 +22,15 @@
     <div class="slider-immagini">
         <ul class="pictures">
             <input type="radio" name="radio-btn" id="img-1"  checked />
-            <li class="picture"><img src="/images/screenshot1.png"></li>
+            <li class="picture"><img src="images/screenshot1.png"></li>
             <input type="radio" name="radio-btn" id="img-2" />
-            <li class="picture"><img src="/images/screenshot2.png"></li>
+            <li class="picture"><img src="images/screenshot2.png"></li>
             <input type="radio" name="radio-btn" id="img-3" />
-            <li class="picture"><img src="/images/screenshot3.png"></li>
+            <li class="picture"><img src="images/screenshot3.png"></li>
             <input type="radio" name="radio-btn" id="img-4" />
-            <li class="picture"><img src="/images/screenshot4.png"></li>
+            <li class="picture"><img src="images/screenshot4.png"></li>
             <input type="radio" name="radio-btn" id="img-5" />
-            <li class="picture"><img src="/images/screenshot5.png"></li>
+            <li class="picture"><img src="images/screenshot5.png"></li>
         </ul>
     </div>
 </div>
@@ -42,6 +42,39 @@
             <span class="download-title">INSTALLER (35MB)</span>
             <span class="download-description">Compatibile per dispositivi Windows</span>
         </a>
+    </div>
+    <div class="previous-versions"> Versioni precedenti
+        <ul>
+            <li>
+                Versione 1.5
+                <div class="previous-version-download">
+                SCARICA
+                </div>
+            </li>
+            <li>
+                Versione 1.4
+                <div class="previous-version-download">
+                SCARICA
+                </div>
+            </li>
+            <li>
+                Versione 1.3
+                <div class="previous-version-download">
+                SCARICA
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="slide slide4">
+    <div class="container4">
+        <div class="title title4">Contatti</div>
+        <ul class="social-list">
+            <li class="social-fb"><a href="">Facebook</a></li>
+            <li class="social-twitter"><a href="">Twitter</a></li>
+            <li class="social-tumblr"><a href="">Tumblr</a></li>
+            <li class="social-email"><a href="mailto:undertalespaghettiproject@gmail.com">undertalespaghettiproject@gmail.com</a></li>
+        </ul>
     </div>
 </div>
     
@@ -65,6 +98,14 @@ $(window).scroll(function() {
         $(".download-icon").addClass("animated-download-icon");
         $(".download-button").addClass("animated-download-button");
     }
+    
+    if (scroll >= viewportHeight*3.7) {
+        $(".title4").addClass("moved-title4");
+        $(".social-fb").addClass("moved-social-fb");
+        $(".social-twitter").addClass("moved-social-twitter");
+        $(".social-tumblr").addClass("moved-social-tumblr");
+        $(".social-email").addClass("moved-social-email");
+    }    
 });
 </script>
 
