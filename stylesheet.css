@@ -12,6 +12,17 @@ header {
     background-repeat: no-repeat;
 }
 
+header:before {
+    content: "";
+    background-color: rgba(0,0,0,.3);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #logo {
     display: block;
     margin-left: auto;
@@ -45,12 +56,16 @@ header {
 }
 
 .slide3 {
-    background-color: #FAFAFA;
+    background-color: #EEEEEE;
 }
 
 .slide4 {
     background-image: url(images/sfondo-slide3.png);
     overflow: hidden;
+}
+
+.slide5 {
+    background-color: black;
 }
 
 .container1 {
@@ -152,6 +167,14 @@ header {
 .moved-title4 {
     margin-right: 0;
     opacity: 1;
+}
+
+.title5 {
+    font-size: 60px;
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .description {
@@ -344,12 +367,24 @@ input:checked + .picture {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 150px;
-    overflow: hidden;
     transition: .5s ease;
 }
 
-.previous-versions:hover {
-    overflow: visible
+.previous-versions:before {
+    content: "";
+    border-left: 13px solid rgba(0,0,0,0.2);
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    transition: .4s ease;
+}
+
+.previous-versions:hover:before {
+    transform: rotate(90deg);
+    transform-origin: center center;
 }
 
 .previous-versions ul {
@@ -367,26 +402,21 @@ input:checked + .picture {
     margin-top: -0;
     display: inline-block;
     transition: .8s ease;
+    visibility: hidden;
+    z-index: -9;
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
-.previous-versions ul:after {
-    content: "";
-    border-top: 8px transparent solid;
-    border-bottom: 8px transparent solid;
-    border-left: 13px rgba(0,0,0,.2) solid;
-    position: absolute;
-    right: 15px;
-    top: 0px;
-    transition: .5s ease;
-    margin-top: -23px;
-}
-
-.previous-versions:hover ul:after {
-    transform: rotate(90deg)
+.previous-versions:hover ul {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .previous-versions ul li:nth-child(even) {
-    background-color: #eee;
+    background-color: rgba(0,0,0,.05);
 }
 
 .previous-version-download {
@@ -416,7 +446,8 @@ input:checked + .picture {
     display: block;
     float: left;
     background-image: url(http://www.secure-iss.com/wp-content/uploads/intense-cache/icons/plugin/elusive/download.svg);
-    margin-right: 10px;   
+    margin-right: 10px;
+    color: white;
 }
 
 /* Lista social */
@@ -532,3 +563,53 @@ input:checked + .picture {
     right: 0;
     opacity: 1;
 }
+
+/* Lista staff */
+
+.staff-list {
+    color: #FAFAFA;
+    padding-top: 50px;
+    width: 90vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+.staff-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.staff-list li {
+    display: inline-block;
+    width: 26vw;
+    max-height: 70px;
+    margin: 20px 1.9vw;
+}
+
+.staff-avatar {
+    height: 70px;
+    width: 70px;
+    background-color: yellow;
+    float: left;
+    margin-right: 20px;
+}
+
+.staff-text {
+    font-family: Raleway;
+    height: 70px;
+}
+
+.staff-nick {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.staff-role {
+    margin-top: 5px;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 90px;
+    max-width: calc(26vw - 90px);
+}
+
