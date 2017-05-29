@@ -163,6 +163,7 @@ $(window).scroll(function() {
     }
     
     if (scroll >= viewportHeight*2.7) {
+        $(".slide3").addClass("moved-slide3");        
         $(".title3").addClass("moved-title3");
         $(".download-icon").addClass("animated-download-icon");
         $(".download-button").addClass("animated-download-button");
@@ -174,6 +175,12 @@ $(window).scroll(function() {
         $(".social-twitter").addClass("moved-social-twitter");
         $(".social-tumblr").addClass("moved-social-tumblr");
         $(".social-email").addClass("moved-social-email");
+    }
+    
+    if (scroll >= viewportHeight*4.7) {
+        $(".title5").addClass("moved-title5");
+        $(".staff-list").addClass("animated-staff-list");
+        $(".staff-avatar").addClass("animated-staff-avatar");
     }    
 });
 </script>

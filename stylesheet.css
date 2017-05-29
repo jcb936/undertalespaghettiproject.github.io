@@ -57,11 +57,20 @@ header:before {
 
 .slide3 {
     background-color: #EEEEEE;
+    background-image: url(images/sans-sprite.png), url(images/papyrus-sprite.png);
+    background-size: auto 50%, auto 50%;
+    background-position: bottom -105px left, bottom -50px right 30px;
+    transition: 1.5s;
+}
+
+.moved-slide3 {
+    background-position: bottom -35px left, bottom right 30px;    
 }
 
 .slide4 {
     background-image: url(images/sfondo-slide3.png);
     overflow: hidden;
+    box-shadow: inset 0px 20px 13px rgba(0,0,0,0.23), inset 0px -20px 13px rgba(0,0,0,0.23);
 }
 
 .slide5 {
@@ -171,10 +180,16 @@ header:before {
 
 .title5 {
     font-size: 60px;
-    margin-top: 30px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
+    margin-top: 130px;
+}
+
+.moved-title5 {
+    opacity: 1;
+    margin-top: 30px;
 }
 
 .description {
@@ -572,6 +587,12 @@ input:checked + .picture {
     width: 90vw;
     position: relative;
     margin: 0 auto;
+    opacity: 0;
+    transition: .8s ease;
+}
+
+.animated-staff-list {
+    opacity: 1;
 }
 
 .staff-list ul {
@@ -590,9 +611,17 @@ input:checked + .picture {
 .staff-avatar {
     height: 70px;
     width: 70px;
-    background-color: yellow;
+    background-color: #222;
     float: left;
     margin-right: 20px;
+    border: 2px solid white;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: .8s ease;
+}
+
+.animated-staff-avatar {
+    transform: scale(1);
 }
 
 .staff-text {
@@ -602,14 +631,15 @@ input:checked + .picture {
 
 .staff-nick {
     font-weight: bold;
-    font-size: larger;
+    font-size: 19px;
+    margin-top: 5px;
 }
 
 .staff-role {
     margin-top: 5px;
     font-size: 14px;
     position: absolute;
-    margin-left: 90px;
+    margin-left: 95px;
     max-width: calc(26vw - 90px);
 }
 
