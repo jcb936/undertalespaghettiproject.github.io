@@ -128,7 +128,7 @@ header:before {
     margin-top: 8vh;
     opacity: 0;
     margin-left: 50px;
-    font-size: 6vh
+    font-size: 6v
 }
 
 .moved-title1 {
@@ -723,11 +723,12 @@ input:checked + .picture {
         height: 90vh;
         width: 100%;
         background-color: #222;
+        padding: 0;
     }
     
     .title1 {
         margin-top: 5vh;
-        font-size: 5vh;
+        font-size: 7vw;
     }
     
     .moved-title1 {
@@ -750,14 +751,18 @@ input:checked + .picture {
         width: 90%;
         margin: 0 auto;
         padding-top: 5vh;
-        font-size: 2.7vh;
+        font-size: 2.6vw;
+    }
+    
+    .title2 {
+        font-size: 7vw;
     }
 }
 
 @media screen and (max-width: 640px){
     
     .title2 {
-        font-size: 4em;
+        font-size: 14vw;
     }
     
     .picture img {
@@ -778,10 +783,6 @@ input:checked + .picture {
     .pictures input:first-of-type {
         margin-left: calc(20vw - 40px);
     }
-}
-
-@media screen and (max-width: 640px){
-    
     .staff-avatar {
         width: 50px;
         height: 50px;
@@ -790,4 +791,44 @@ input:checked + .picture {
     .staff-role {
         margin-left: 75px;
     }
+}
+
+@media screen and (max-width: 600px){
+    
+    .description1 {
+        font-size: 2.7vw;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    
+    .description1 {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    
+    .description1 {
+        font-size: 3.2vw;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .description1 {
+        font-size: 3.6vw;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+    
+    .description1 {
+        font-size: 3.75vw;
+    }
+
 }
