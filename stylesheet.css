@@ -101,7 +101,7 @@ header:before {
 
 .container4 {
     height: 100vh;
-    width: 40vw;
+    width: 50vw;
     background-color: #222;
     float: right;
     text-align: center;
@@ -478,7 +478,7 @@ input:checked + .picture {
 .social-list {
     color: white;
     font-family: Raleway;
-    font-size: 23px;
+    font-size: 1.3em;
     list-style: none;
     padding-left: 0;
     margin-left: 50px;
@@ -639,19 +639,34 @@ input:checked + .picture {
 
 .staff-nick {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.2em;
     margin-top: 5px;
 }
 
 .staff-role {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 1em;
     position: absolute;
     margin-left: 95px;
     max-width: calc(26vw - 90px);
 }
 
 /* Mobile fixes */
+
+@media screen and (max-width: 900px){
+    .staff-list li {
+        width: 40vw;
+    }
+    
+    .staff-nick {
+        font-size: 2.4vw;
+    }
+    
+    .staff-role {
+        max-width: calc(40vw - 90px);
+        font-size: 2.1vw
+    }
+}
 
 @media screen and (max-width: 800px){
     
@@ -704,6 +719,22 @@ input:checked + .picture {
         margin: 0 auto;
         padding-top: 5vh;
         font-size: 3vh;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .picture img {
+        width: 80vw;
+        height: auto;
+    }
+    
+    input:before, .pictures input {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .pictures input {
+        margin-top: 60vw;
     }
 }
 
