@@ -655,7 +655,7 @@ input:checked + .picture {
 
 @media screen and (max-width: 900px){
     .staff-list li {
-        width: 40vw;
+        width: 39vw;
     }
     
     .staff-nick {
@@ -740,7 +740,7 @@ input:checked + .picture {
     }
     
     .pictures input {
-        margin-top: 60vw;
+        margin-top: 65vw;
     }
     
     .pictures input:first-of-type {
