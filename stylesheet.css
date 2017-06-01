@@ -723,18 +723,28 @@ input:checked + .picture {
 }
 
 @media screen and (max-width: 640px){
+    
+    .title2 {
+        font-size: 4em;
+    }
+    
     .picture img {
         width: 80vw;
         height: auto;
+        margin-left: 9vw;
     }
     
     input:before, .pictures input {
-        width: 60px;
-        height: 45px;
+        width: 12vw;
+        height: 8vw;
     }
     
     .pictures input {
         margin-top: 60vw;
+    }
+    
+    .pictures input:first-of-type {
+        margin-left: calc(20vw - 40px);
     }
 }
 
