@@ -752,6 +752,42 @@ input:checked + .picture {
 
 /* Mobile fixes */
 
+@media screen and (max-width: 1024px) {
+
+	.download-button {
+		width: 45vw;
+		height: 18vw;
+	    top: 13vh;
+	}
+	
+	.download-icon {
+		width: 20vw;
+		height: 20vw;
+		top: -1vw;
+		left: -10vw;
+	}
+	
+	.download-text {
+		width: 35vw;
+	}
+	
+	.download-title {
+		font-size: 3vw;
+	}
+
+	.download-description {
+		font-size: 1.9vw;
+	}
+	
+	.previous-versions  {
+		margin-top: 10vw
+	}
+	
+	.previous-versions ul {
+		max-height: 15vh;
+	}
+}
+
 @media screen and (max-width: 1010px){
     .title1 {
         font-size: 5vh;
@@ -858,7 +894,7 @@ input:checked + .picture {
 
 @media screen and (max-width: 640px){
     
-    .title2, .title5 {
+    .title2, .title3, .title4, .title5 {
         font-size: 14vw;
     }
     
@@ -940,7 +976,11 @@ input:checked + .picture {
     
     .staff-list li:nth-child(16) .staff-nick, .staff-list li:nth-child(20) .staff-nick {
         font-size: 3.2vw;
-    } 
+    }
+    
+    .slider-immagini {
+        padding-top: 10vh;
+    }
 
 }
 
