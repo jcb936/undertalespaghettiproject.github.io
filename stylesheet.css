@@ -390,7 +390,7 @@ input:checked + .picture {
     padding: 0 100px;
     line-height: 30px;
     font-family: Raleway;
-    background-color: #BDBDBD;
+    background-color: rgb(222, 60, 60);
     color: white;
     text-align: center;
     letter-spacing: 1px;
@@ -459,7 +459,7 @@ input:checked + .picture {
     margin-top: 7px;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    background-color: #0288D1;
+    background-color: rgb(216, 88, 88);
     color: white;
     font-weight: bold;
     padding-right: 5px;
@@ -468,7 +468,7 @@ input:checked + .picture {
 }
 
 .previous-version-download:hover {
-    background-color: #039BE5
+    background-color: rgb(222, 60, 60)
 }
 
 .previous-version-download:before {
@@ -629,13 +629,14 @@ input:checked + .picture {
 .staff-avatar {
     height: 70px;
     width: 70px;
-    background-color: #222;
     float: left;
     margin-right: 20px;
     border: 2px solid white;
     border-radius: 100%;
     transform: scale(0);
     transition: .8s ease;
+    background-size: cover;
+    image-rendering: auto;
 }
 
 .animated-staff-avatar {
@@ -661,6 +662,94 @@ input:checked + .picture {
     max-width: calc(26vw - 90px);
 }
 
+.staff-list li:nth-child(1) .staff-avatar {
+    background-image: url("images/avatar/renard.jpg")
+}
+
+.staff-list li:nth-child(2) .staff-avatar {
+    background-image: url("images/avatar/auster.jpg")
+}
+
+.staff-list li:nth-child(3) .staff-avatar {
+    background-image: url("images/avatar/crefice.jpg")
+}
+
+.staff-list li:nth-child(4) .staff-avatar {
+    background-image: url("images/avatar/jacklemon.jpg")
+}
+
+.staff-list li:nth-child(5) .staff-avatar {
+    background-image: url("images/avatar/spizor.jpg")
+}
+
+.staff-list li:nth-child(6) .staff-avatar {
+    background-image: url("images/avatar/drake.jpg")
+}
+
+.staff-list li:nth-child(7) .staff-avatar {
+    background-image: url("images/avatar/napsta.jpg")
+}
+
+.staff-list li:nth-child(8) .staff-avatar {
+    background-image: url("images/avatar/mens.jpg")
+}
+
+.staff-list li:nth-child(9) .staff-avatar {
+    background-image: url("images/avatar/ximenos.jpg")
+}
+
+.staff-list li:nth-child(10) .staff-avatar {
+    background-image: url("images/avatar/chri.jpg")
+}
+
+.staff-list li:nth-child(11) .staff-avatar {
+    background-image: url("images/avatar/fim.jpg")
+}
+
+.staff-list li:nth-child(12) .staff-avatar {
+    background-image: url("images/avatar/daizo.jpg")
+}
+
+.staff-list li:nth-child(13) .staff-avatar {
+    background-image: url("images/avatar/lafaiette.jpg")
+}
+
+.staff-list li:nth-child(14) .staff-avatar {
+    background-image: url("images/avatar/apino.jpg")
+}
+
+.staff-list li:nth-child(15) .staff-avatar {
+    background-image: url("images/avatar/confo.jpg")
+}
+
+.staff-list li:nth-child(16) .staff-avatar {
+    background-image: url("images/avatar/dmc4everucci.jpg")
+}
+
+.staff-list li:nth-child(17) .staff-avatar {
+    background-image: url("images/avatar/dummyn45.jpg")
+}
+
+.staff-list li:nth-child(18) .staff-avatar {
+    background-image: url("images/avatar/explo.jpg")
+}
+
+.staff-list li:nth-child(19) .staff-avatar {
+    background-image: url("images/avatar/pis.jpg")
+}
+
+.staff-list li:nth-child(20) .staff-avatar {
+    background-image: url("images/avatar/pandabaffuto.jpg")
+}
+
+.staff-list li:nth-child(21) .staff-avatar {
+    background-image: url("images/avatar/wi-fu.jpg")
+}
+
+.staff-list li:nth-child(22) .staff-avatar {
+    background-image: url("images/avatar/mrvhh.jpg")
+}
+
 /* Mobile fixes */
 
 @media screen and (max-width: 1010px){
@@ -684,7 +773,7 @@ input:checked + .picture {
     
     .staff-role {
         max-width: calc(40vw - 90px);
-        font-size: 2.1vw
+        font-size: 2.4vw
     }
     
     .slide1 {
@@ -708,6 +797,10 @@ input:checked + .picture {
     
     #logo {
         max-width: 70vw;
+    }
+    
+    .staff-role {
+        font-size: 2.6vw
     }
 }
 
@@ -757,6 +850,10 @@ input:checked + .picture {
     .title2 {
         font-size: 7vw;
     }
+    
+    .staff-role {
+        font-size: 2.7vw
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -783,6 +880,7 @@ input:checked + .picture {
     .pictures input:first-of-type {
         margin-left: calc(20vw - 40px);
     }
+    
     .staff-avatar {
         width: 50px;
         height: 50px;
@@ -790,6 +888,10 @@ input:checked + .picture {
     
     .staff-role {
         margin-left: 75px;
+    }
+    
+    .staff-nick {
+        font-size: 2.8vw
     }
 }
 
@@ -805,6 +907,14 @@ input:checked + .picture {
     
     .description1 {
         font-size: 3vw;
+    }
+    
+    .staff-role {
+        font-size: 3.5vw;
+    }
+    
+    .staff-nick {
+        font-size: 3.5vw
     }
 
 }
