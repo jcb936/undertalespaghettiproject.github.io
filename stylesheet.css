@@ -806,7 +806,7 @@ input:checked + .picture {
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) and (orientation:portrait){
     
     .slide1 {
         height: 150vh;
@@ -899,7 +899,7 @@ input:checked + .picture {
     
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) and (orientation:portrait){
     
     .title2, .title35 {
         font-size: 14vw;
@@ -939,7 +939,7 @@ input:checked + .picture {
      
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (orientation:portrait){
     
     .description1 {
         font-size: 2.7vw;
@@ -947,7 +947,7 @@ input:checked + .picture {
 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) and (orientation:portrait){
     
     .description1 {
         font-size: 3vw;
