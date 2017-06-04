@@ -968,21 +968,21 @@ input:checked + .picture {
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) and (orientation:portrait){
     .slide3 {
         background-size: 75% auto, 40% auto;
         background-position: bottom -30px left -80px, bottom -20px right -50px;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) and (orientation:portrait){
     
     .description1 {
         font-size: 3.2vw;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) and (orientation:portrait){
     .slide3 {
         background-size: 90% auto, 45% auto;
     }
@@ -997,7 +997,7 @@ input:checked + .picture {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) and (orientation:portrait){
     
     .description1 {
         font-size: 3.6vw;
@@ -1013,16 +1013,16 @@ input:checked + .picture {
 
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) and (orientation:portrait){
     .previous-versions {
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) and (orientation:portrait){
     
     .staff-list li:nth-child(16) .staff-nick, .staff-list li:nth-child(20) .staff-nick {
-        font-size: 3vw;
+        font-size: 2.9vw;
     } 
     
     .staff-avatar {
@@ -1040,7 +1040,7 @@ input:checked + .picture {
     }   
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 300px) and (orientation:portrait){
     
     .description1 {
         font-size: 3.75vw;
@@ -1048,7 +1048,7 @@ input:checked + .picture {
 
 }
 
-@media screen and (max-width: 280px){
+@media screen and (max-width: 280px) and (orientation:portrait){
     
     .staff-avatar {
         width: 12vw;
