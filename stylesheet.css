@@ -1272,7 +1272,9 @@ input:checked + .picture {
         width: 35px;
         cursor: pointer;
         position: relative;
-        left: calc(50% - 17px);
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
         transition: .8s ease;
         margin-top: 2px;
     }
@@ -1287,7 +1289,7 @@ input:checked + .picture {
     }
     
     .activated-top-bar .dog {
-        transform: rotate(90deg);
+        transform: translateX(-50%) rotate(90deg);
     }
     
     .activated-top-bar ul {
@@ -1297,7 +1299,6 @@ input:checked + .picture {
     .top-bar li {
         display: block;
         font-size: 1em;
-        margin: 0;
     }
     
     .top-bar li:first-of-type {
