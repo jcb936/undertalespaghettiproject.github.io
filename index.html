@@ -311,21 +311,7 @@ window.addEventListener("scroll", throttle( callback, 300 ));
 					$(".title5").addClass("moved-title5");
 					$(".staff-list").addClass("animated-staff-list");
 					$(".staff-avatar").addClass("animated-staff-avatar");
-				}
-				
-				$('.top-bar').on('click',function (e) {
-					if  ($('.top-bar').hasClass('activated-top-bar')){
-						$('.top-bar').removeClass('activated-top-bar');
-					} else {
-						$('.top-bar').addClass('activated-top-bar');
-					}
-				});
-				
-				if  ($('.top-bar').hasClass('activated-top-bar')){
-					$('.top-bar li').on('click',function (e){
-						$('.top-bar').removeClass('activated-top-bar');            
-					});
-				}
+				}                                 
 			});
 		}
 		
@@ -354,7 +340,21 @@ $('a[href^="#"]').on('click',function (e) {
 	}, 500, 'swing', function () {
 		window.location.hash = target;
 	});				
-});    
+});
+    
+$('.top-bar').on('click',function (e) {
+	if  ($('.top-bar').hasClass('activated-top-bar')){
+		$('.top-bar').removeClass('activated-top-bar');
+	} else {
+		$('.top-bar').addClass('activated-top-bar');
+	}
+});
+				
+if  ($('.top-bar').hasClass('activated-top-bar')){
+	$('.top-bar li').on('click',function (e){
+		$('.top-bar').removeClass('activated-top-bar');            
+	});
+}       
 </script>
 
 </body>
