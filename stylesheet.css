@@ -60,13 +60,9 @@ header:before {
     background-color: rgba(255, 188, 89, 0.6);
     background-image: url(images/sans-sprite.png), url(images/papyrus-sprite.png);
     background-size: auto 50%, auto 50%;
-    background-position: bottom -105px left, bottom -50px right 30px;
+    background-position: bottom -35px left, bottom right 30px;   
     transition: 1.5s;
     transform: scale3d(1);
-}
-
-.moved-slide3 {
-    background-position: bottom -35px left, bottom right 30px;    
 }
 
 .slide4 {
@@ -241,6 +237,67 @@ header:before {
     text-decoration: none;
 }
 
+/* top bar */
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    z-index: 999;
+    margin-top: -50px;
+    transition: .8s ease;
+    opacity: .9;
+    overflow: hidden;
+}
+
+.visible-top-bar {
+    margin-top: 0;
+}
+
+.top-bar ul {
+    list-style: none;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    color: white;
+    padding: 0;
+    margin-top:0;
+    float: right;
+}
+
+.top-bar li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.top-bar li:last-of-type {
+    margin-right: 40px;
+}
+
+.top-bar a, .top-bar a:visited {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.top-bar a:hover {
+    color: rgb(222, 60, 60);
+    font-weight: bold;
+}
+
+.dog {
+    background-image: url(images/annoying-dog.gif);
+    height: 38px;
+    width: 46px;
+    display: block;
+    float: left;
+    background-size: cover;
+    image-rendering: pixelated;
+    margin: 4px 0 0 35px;
+}
+
 /* slider immagini */
 
 .slider-immagini {
@@ -331,13 +388,21 @@ input:checked + .picture {
     margin: 0 auto;
     position: relative;
     top: 13vh;
-    left: 2vw;
+    left: -2vw;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     white-space: nowrap;
     transition: .3s ease;
     background-color: #E57373;
     border-radius: 10px;
     opacity: 0;
+}
+
+.download-button:hover {
+    background-color: #942020
+}
+
+.download-button a {
+    text-decoration: none;
 }
 
 .animated-download-button {
@@ -356,6 +421,11 @@ input:checked + .picture {
     border-radius: 100%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transform: scale(0);
+    transition: .3s ease;
+}
+
+.download-button:hover .download-icon {
+    transform: scale(1.1);
 }
 
 @keyframes bounce {
@@ -1061,6 +1131,12 @@ input:checked + .picture {
 
 }
 
+@media screen and (max-width: 570px) and (orientation:portrait){
+    .top-bar li {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 550px) and (orientation:portrait){
     
     .description1 {
@@ -1104,6 +1180,18 @@ input:checked + .picture {
     .description1 {
         font-size: 3.2vw;
     }
+    
+    .top-bar li {
+        margin-right: 10px;
+    }
+    
+    .top-bar li:last-of-type {
+        margin-right: 20px;
+    }
+    
+    .dog:before {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 430px) and (orientation:portrait){
@@ -1145,6 +1233,15 @@ input:checked + .picture {
     .social-list .social-tumblr:before, .social-list .social-email:before {
         background-size: 30px 30px;
     }
+    
+    .top-bar li {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    
+    .dog {
+        margin-left: 10px;
+    }
 
 }
 
@@ -1160,6 +1257,56 @@ input:checked + .picture {
     
     .slider-immagini {
         padding-top: 10vh;
+    }
+    
+    .top-bar {
+        height: 40px;
+        overflow: visible;
+        cursor: pointer;
+    }
+    
+    .dog {
+        background-image: url(images/menu.svg);
+        background-size: cover;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        position: relative;
+        left: calc(50% - 17px);
+        transition: .8s ease;
+        margin-top: 2px;
+    }
+    
+    .top-bar ul {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        transition: max-height .7s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .activated-top-bar .dog {
+        transform: rotate(90deg);
+    }
+    
+    .activated-top-bar ul {
+        max-height: 50vh;
+    }
+    
+    .top-bar li {
+        display: block;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .top-bar li:first-of-type {
+        margin-top: 20px;
+    }
+    
+    .top-bar li:last-of-type {
+        margin: 0;
+        margin-bottom: 20px;
     }
 
 }
@@ -1194,7 +1341,8 @@ input:checked + .picture {
     .slide3 {
         background-size: 90% auto, 45% auto;
         background-position: bottom -15px left -90px, bottom right -25px;
-    }   
+    }
+
 }
 
 @media screen and (max-width: 331px) and (orientation:portrait){

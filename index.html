@@ -6,10 +6,20 @@
 <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="top-bar" id="top-bar">
+    <div class="dog" id="dog"></div>
+    <ul>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#galleria">Galleria</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#credits">Credits</a></li>
+    </ul>
+</div>
 <header>
 <img src="images/logo.svg" id="logo">
 </header>
-<div class="slide slide1">
+<div class="slide slide1" id="info">
     <div class="container container1">
         <a class="title title1">Traduzione italiana ufficiale</a><br>
         <span class="description description1">Undertale è un videogioco rilasciato a Settembre 2015 e sviluppato indipendentemente dall'autore Toby Fox.<br>
@@ -31,7 +41,7 @@ Ringraziamo le community degli Underminers e degli Undermodders su Reddit e in p
 per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gioco.</span>
     </div>
 </div>
-<div class="slide slide2">
+<div class="slide slide2" id="galleria">
     <div class="container container2">
         <a class="title title2">GALLERIA</a>
     </div>
@@ -51,15 +61,17 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
         </ul>
     </div>
 </div>
-<div class="slide slide3">
+<div class="slide slide3" id="download">
     <a class="title title3">Scarica la traduzione!</a>
+    <a href="">
     <div class="download-button">
         <div class="download-icon"></div>
-        <a class="download-text">
+        <a class="download-text" href="">
             <span class="download-title">INSTALLER (35MB)</span>
             <span class="download-description">Compatibile per dispositivi Windows</span>
         </a>
     </div>
+    </a>
     <div class="previous-versions"> Formato .zip
         <ul>
             <li>
@@ -83,7 +95,7 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
         </ul>
     </div>
 </div>
-<div class="slide slide4">
+<div class="slide slide4" id="contatti">
     <div class="container4">
         <div class="title title4">Contatti</div>
         <ul class="social-list">
@@ -94,7 +106,7 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
         </ul>
     </div>
 </div>
-<div class="slide slide5">
+<div class="slide slide5" id="credits">
     <a class="title title5">CREDITS</a>
     <div class="staff-list">
         <ul>
@@ -258,41 +270,91 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
 </div>
     
 <script>
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-    var viewportHeight = $(window).height();
+var viewportHeight = $(window).height();
+window.addEventListener("scroll", throttle( callback, 300 ));
+ 
+	function callback () {
+			$(window).scroll(function() {    
+				var scroll = $(window).scrollTop();
+				var viewportHeight = $(window).height();
 
-    if (scroll >= viewportHeight*0.5) {
-        $(".title1").addClass("moved-title1");
-        $(".description1").addClass("moved-description1");
-    }
-    
-    if (scroll >= viewportHeight*1.7) {
-        $(".title2").addClass("moved-title2");
-        $(".slider-immagini").addClass("moved-slider-immagini");
-    }
-    
-    if (scroll >= viewportHeight*2.7) {
-        $(".slide3").addClass("moved-slide3");        
-        $(".title3").addClass("moved-title3");
-        $(".download-icon").addClass("animated-download-icon");
-        $(".download-button").addClass("animated-download-button");
-    }
-    
-    if (scroll >= viewportHeight*3.7) {
-        $(".title4").addClass("moved-title4");
-        $(".social-fb").addClass("moved-social-fb");
-        $(".social-twitter").addClass("moved-social-twitter");
-        $(".social-tumblr").addClass("moved-social-tumblr");
-        $(".social-email").addClass("moved-social-email");
-    }
-    
-    if (scroll >= viewportHeight*4.7) {
-        $(".title5").addClass("moved-title5");
-        $(".staff-list").addClass("animated-staff-list");
-        $(".staff-avatar").addClass("animated-staff-avatar");
-    }    
-});
+				if (scroll >= viewportHeight*0.5) {
+					$(".title1").addClass("moved-title1");
+					$(".description1").addClass("moved-description1");
+					$(".top-bar").addClass("visible-top-bar");
+				}
+				
+				if (scroll < viewportHeight*0.5) {
+					$(".top-bar").removeClass("visible-top-bar");        
+				}
+				
+				if (scroll >= viewportHeight*1.7) {
+					$(".title2").addClass("moved-title2");
+					$(".slider-immagini").addClass("moved-slider-immagini");
+				}
+				
+				if (scroll >= viewportHeight*2.7) {
+					$(".title3").addClass("moved-title3");
+					$(".download-icon").addClass("animated-download-icon");
+					$(".download-button").addClass("animated-download-button");
+				}
+				
+				if (scroll >= viewportHeight*3.7) {
+					$(".title4").addClass("moved-title4");
+					$(".social-fb").addClass("moved-social-fb");
+					$(".social-twitter").addClass("moved-social-twitter");
+					$(".social-tumblr").addClass("moved-social-tumblr");
+					$(".social-email").addClass("moved-social-email");
+				}
+				
+				if (scroll >= viewportHeight*4.7) {
+					$(".title5").addClass("moved-title5");
+					$(".staff-list").addClass("animated-staff-list");
+					$(".staff-avatar").addClass("animated-staff-avatar");
+				}
+				
+				$('.top-bar').on('click',function (e) {
+					if  ($('.top-bar').hasClass('activated-top-bar')){
+						$('.top-bar').removeClass('activated-top-bar');
+					} else {
+						$('.top-bar').addClass('activated-top-bar');
+					}
+				});
+				
+				if  ($('.top-bar').hasClass('activated-top-bar')){
+					$('.top-bar li').on('click',function (e){
+						$('.top-bar').removeClass('activated-top-bar');            
+					});
+				}
+			});
+		}
+		
+	function throttle (callback, limit) {
+		var wait = false;                 
+		return function () {             
+			if (!wait) {                  
+				callback.call();          
+				wait = true;              
+				setTimeout(function () {  
+					wait = false;
+				}, limit);
+			}
+		}
+	 }
+</script>
+<script>
+$('a[href^="#"]').on('click',function (e) {
+	e.preventDefault();
+
+	var target = this.hash,
+	$target = $(target);
+
+	$('html, body').stop().animate({
+		'scrollTop': $target.offset().top
+	}, 500, 'swing', function () {
+		window.location.hash = target;
+	});				
+});    
 </script>
 
 </body>
