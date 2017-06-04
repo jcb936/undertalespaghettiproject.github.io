@@ -981,6 +981,36 @@ input:checked + .picture {
         margin-top: 30px;
     }
     
+    .container4 {
+        height: 40vh;
+        width: 100%;
+        margin-top: 60vh;
+    }
+    
+    .container4:before {
+        display: none;
+    }
+    
+    .title4 {
+        margin-top: 20px;
+    }
+    
+    .social-list {
+        top:0;
+        transform: none;
+        margin-left: 0;
+    }
+    
+    .social-list li:nth-child(n) {
+        display: inline-block;
+        margin: 10px 10px;
+        font-size: 1em;
+    }
+    
+    .social-list li:last-of-type {
+        font-size: .9em
+    }
+    
 }
 
 @media screen and (max-width: 640px) and (orientation:portrait){
@@ -1049,6 +1079,16 @@ input:checked + .picture {
     .staff-nick {
         font-size: 3.5vw
     }
+    
+    .social-list li:nth-child(n) {
+        font-size: .8em;
+        display: inline-block;
+        margin: 10px 8px;
+    }
+    
+    .social-list li:before {
+        margin-right: 10px;
+    }
 
 }
 
@@ -1079,6 +1119,33 @@ input:checked + .picture {
     .previous-version-download {
         font-size: 10px;
     }
+    
+    .title4 {
+        font-size: 12vw;
+    }
+    
+    .social-list li:nth-child(n) {
+        font-size: .75em;
+    }
+    
+    .social-list li:before {
+        height: 40px;
+        width: 40px;
+        margin-right: 8px;
+    }
+    
+    .social-list .social-fb:before {
+        background-size: 35px 35px;
+    }
+
+    .social-list .social-twitter:before {
+        background-size: 25px 25px;
+    }
+
+    .social-list .social-tumblr:before, .social-list .social-email:before {
+        background-size: 30px 30px;
+    }
+
 }
 
 @media screen and (max-width: 400px) and (orientation:portrait){
@@ -1097,21 +1164,23 @@ input:checked + .picture {
 
 }
 
+@media screen and (max-width: 371px) and (orientation:portrait){
+    .social-list li:nth-child(3), .social-list li:nth-child(4){
+        margin-top: -5px
+    }
+}
+
 @media screen and (max-width: 360px) and (orientation:portrait){
     .previous-versions {
         width: 80vw;
     }
+    
+    .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(20) .staff-nick {
+        font-size: 3vw;
+    } 
 }
 
 @media screen and (max-width: 350px) and (orientation:portrait){
-    
-    .staff-list li:nth-child(16) .staff-nick {
-        font-size: 2.8vw;
-    }
-    
-    .staff-list li:nth-child(20) .staff-nick {
-        font-size: 3vw;
-    } 
     
     .staff-avatar {
         width: 40px;
@@ -1128,12 +1197,31 @@ input:checked + .picture {
     }   
 }
 
+@media screen and (max-width: 331px) and (orientation:portrait){
+    .social-list li:nth-child(4){
+        font-size: .65em;
+    }
+    
+    .social-list li:nth-child(4):before {
+        width: 30px;
+        height: 30px;
+        background-size: 20px 20px;
+        margin-right: 7px;
+    }
+}
+
 @media screen and (max-width: 300px) and (orientation:portrait){
     
     .description1 {
         font-size: 3.75vw;
     }
 
+}
+
+@media screen and (max-width: 285px) and (orientation:portrait){
+    .social-list li:nth-child(4){
+        font-size: .5em;
+    }
 }
 
 @media screen and (max-width: 280px) and (orientation:portrait){
