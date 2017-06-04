@@ -47,7 +47,7 @@ header:before {
 }
 
 .slide1 {
-    background-color: grey;
+    background-color: black;
     background-image: url("images/sfondo-slide1.png"); 
     background-position: right -50px center;
 }
