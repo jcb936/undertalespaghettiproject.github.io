@@ -70,6 +70,7 @@ header:before {
 }
 
 .slide4 {
+    background-color: #3d120e;
     background-image: url(images/sfondo-slide3.png);
     overflow: hidden;
     box-shadow: inset 0px 20px 13px rgba(0,0,0,0.23), inset 0px -20px 13px rgba(0,0,0,0.23);
@@ -101,10 +102,21 @@ header:before {
 
 .container4 {
     height: 100vh;
-    width: 50vw;
+    width: 30vw;
     background-color: #222;
     float: right;
     text-align: center;
+}
+
+.container4:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 100vh solid transparent;
+    border-right: 10vw solid #222;
+    position: absolute;
+    left: 60%;
 }
 
 .title {
@@ -175,6 +187,7 @@ header:before {
     margin-top: 60px;
     margin-right: -250px;
     opacity: 0;
+    font-size: 50px;
 }
 
 .moved-title4 {
@@ -221,7 +234,7 @@ header:before {
 }
 
 .description1 a, .description1 a:visited {
-    color: white;   
+    color: white;  
 }
 
 .description1 a:hover, .description1 a:visited:hover {
@@ -507,8 +520,24 @@ input:checked + .picture {
     transition: .8s ease;
 }
 
+.social-list li:nth-child(1) {
+    margin-left: -40px;
+}
+
+.social-list li:nth-child(2) {
+    margin-left: -55px;
+}
+
+.social-list li:nth-child(3) {
+    margin-left: -70px;
+}
+
+.social-list li:nth-child(4) {
+    margin-left: -85px;
+}
+
 .social-list li a:hover {
-        border-bottom: solid 1px white;
+    border-bottom: solid 1px white;
     padding-bottom: 3px;
 }
 
@@ -523,36 +552,39 @@ input:checked + .picture {
 
 .social-list li:before {
     content: "";
-    height: 24px;
-    width: 24px;
+    height: 50px;
+    width: 50px;
     display: inline-block;
-    background-size: cover;
+    border-radius: 100%;
     background-repeat: no-repeat;
+    background-color: white;
     vertical-align: middle;
     margin-right: 20px;
 }
 
 .social-list .social-fb:before {
-    background-image: url(images/Facebook.png);
+    background-image: url(images/facebook.svg);
+    background-size: 45px 45px;
+    background-position: center;
 }
 
 .social-list .social-twitter:before {
-    background-image: url(images/Twitter.png);
+    background-image: url(images/twitter.svg);
+    background-size: 35px 35px;
+    background-position: center;
 }
 
 .social-list .social-tumblr:before {
-    background-image: url(images/Tumblr.png);
-    position: relative;
-    left: 9px;
+    background-image: url(images/tumblr.svg);
+    background-size: 40px 40px;
+    background-position: center;
 }
 
 .social-list .social-email:before {
-    content: "@";
-    font-size: 48px;
-    font-weight: bold;
-    vertical-align: top;
-    position: relative;
-    left: 4px;
+    background-image: url(images/mail.svg);
+    background-size: 40px 40px;
+    background-position: center;
+    margin-right: 10px;
 }
 
 .social-fb {
@@ -592,6 +624,7 @@ input:checked + .picture {
     position: relative;
     right: -650px;
     opacity: 0;
+    font-size: .8em
 }
 
 .moved-social-email {
@@ -754,6 +787,37 @@ input:checked + .picture {
 
 /* Mobile fixes */
 
+@media screen and (max-width: 1080px) {
+    
+    .social-list li:last-of-type {
+        font-size: .7em;
+    }
+
+    .social-list li:nth-child(1) {
+        margin-left: -50px;
+    }
+
+    .social-list li:nth-child(2) {
+        margin-left: -60px;
+    }
+
+    .social-list li:nth-child(3) {
+        margin-left: -75px;
+    }
+
+    .social-list li:nth-child(4) {
+        margin-left: -85px;
+    }
+    
+    .container4 {
+        width: 40vw;
+    }
+    
+    .container4:before {
+        left: 50%;
+    }
+}
+
 @media screen and (max-width: 1010px){
     .title1 {
         font-size: 5vh;
@@ -803,6 +867,26 @@ input:checked + .picture {
     
     .staff-role {
         font-size: 2.6vw
+    }
+    
+    .social-list {
+        font-size: 1.2em;
+    }
+
+    .social-list li:nth-child(1) {
+        margin-left: -40px;
+    }
+
+    .social-list li:nth-child(2) {
+        margin-left: -50px;
+    }
+
+    .social-list li:nth-child(3) {
+        margin-left: -65px;
+    }
+
+    .social-list li:nth-child(4) {
+        margin-left: -75px;
     }
 }
 
