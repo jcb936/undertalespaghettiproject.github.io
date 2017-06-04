@@ -1273,6 +1273,7 @@ input:checked + .picture {
         cursor: pointer;
         position: relative;
         display: block;
+        margin: 0 auto;
         left: 50%;
         transform: translateX(-50%);
         transition: .8s ease;
@@ -1288,11 +1289,11 @@ input:checked + .picture {
         overflow: hidden;
     }
     
-    .activated-top-bar .dog {
+    .visible-top-bar.activated-top-bar .dog {
         transform: translateX(-50%) rotate(90deg);
     }
     
-    .activated-top-bar ul {
+    .visible-top-bar.activated-top-bar ul {
         max-height: 50vh;
     }
     
@@ -1306,7 +1307,7 @@ input:checked + .picture {
     }
     
     .top-bar li:last-of-type {
-        margin: 0;
+        margin-right:5px;
         margin-bottom: 20px;
     }
 
