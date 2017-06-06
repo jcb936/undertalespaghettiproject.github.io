@@ -380,90 +380,19 @@ input:checked + .picture {
 /* download button */
 
 .download-button {
-    text-align: center;
-    height: 15vw;
-    max-height: 300px;
-    width: 45vw;
     display: block;
+    width: 516px;
+    height: 126px;
+    background-image: url(images/download-button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-    top: 13vh;
-    left: -2vw;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    white-space: nowrap;
-    transition: .3s ease;
-    background-color: #E57373;
-    border-radius: 10px;
-    opacity: 0;
+    top: 90px;
 }
 
 .download-button:hover {
-    background-color: #942020
-}
-
-.download-button a {
-    text-decoration: none;
-}
-
-.animated-download-button {
-    left: 3vw;
-    opacity: 1;
-}
-
-.download-icon {
-    width: 17vw;
-    height: 17vw;
-    background-image: url(images/download-icon.png);
-    background-size: cover;
-    position: absolute;
-    left: -8vw;
-    top: -1vw;
-    border-radius: 100%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transform: scale(0);
-    transition: .3s ease;
-}
-
-.download-button:hover .download-icon {
-    transform: scale(1.1);
-}
-
-@keyframes bounce {
-    0% {transform: scale(0)}
-    50% {transform: scale(1.1)}
-    70% {transform: scale(0.9)}
-    85% {transform: scale(1.05)}
-    100% {transform: scale(1)}
-}
-
-.animated-download-icon {
-    animation: bounce 1s;
-    transform: scale(1);
-}
-
-.download-text {
-    width: 35vw;
-    text-align: center;
-    position: absolute;
-    right: 0;
-    font-family: Raleway;
-    color: white; 
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.download-title {
-    font-size: 3vw;
-    font-weight: bold;
-    letter-spacing: 2px;
-    display: inline-block;
-}
-
-.download-description {
-    font-size: 1.9vw;
-    font-weight: 200;
-    display: block;
-    margin-top: 5px;
+    background-image: url(images/download-button_hover.png)
 }
 
 /* Lista versioni precedenti */
@@ -482,7 +411,7 @@ input:checked + .picture {
     margin-left: 50%;
     transition: .5s ease;
     position: relative;
-    top: calc(13vh + 50px);
+    top: 150px;
 }
 
 .previous-versions:before {
@@ -898,6 +827,13 @@ input:checked + .picture {
     }
 }
 
+@media screen and (max-width: 940px){
+    .previous-versions {
+        padding: 0 50px;
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 900px){
     .staff-list li {
         width: 39vw;
@@ -1025,23 +961,6 @@ input:checked + .picture {
         height: 22.5vw;
     }
     
-    .download-icon {
-        height: 24.5vw;
-        width: 24.5vw;
-    }
-    
-    .download-text {
-        width: 54.5vw;
-    }
-    
-    .download-title {
-        font-size: 4.5vw;
-    }
-    
-    .download-description {
-        font-size: 2.5vw;
-    }
-    
     .previous-versions {
         padding: 0;
         width: 60vw;
@@ -1143,6 +1062,10 @@ input:checked + .picture {
         font-size: 3vw;
     }
     
+    .previous-versions {
+        font-size: 13px;
+    }
+    
     .staff-avatar {
         margin-right: 10px;
     }
@@ -1192,11 +1115,28 @@ input:checked + .picture {
     .dog:before {
         margin-left: 20px;
     }
+    
+    .previous-versions {
+        width: 65vw;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 430px) and (orientation:portrait){
     .slide3 {
         background-size: 90% auto, 45% auto;
+    }
+    
+    .previous-versions {
+        font-size: 12px;
+        height: 60px;
+        padding: 0 20vw;
+        width: 30vw;
+    }
+    
+    .previous-versions:before {
+        right: 12px;
+        top: 22px;
     }
     
     .previous-versions ul {
@@ -1321,7 +1261,8 @@ input:checked + .picture {
 
 @media screen and (max-width: 360px) and (orientation:portrait){
     .previous-versions {
-        width: 80vw;
+        width: 40vw;
+        font-size: 10px;
     }
     
     .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(20) .staff-nick {
