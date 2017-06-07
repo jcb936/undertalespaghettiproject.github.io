@@ -135,44 +135,41 @@ header:before {
 .title1 {
     margin-top: 8vh;
     opacity: 0;
-    margin-left: 50px;
-    font-size: 6v
+    transform: translateX(50px)
 }
 
 .moved-title1 {
-    margin-left: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
 .title2 {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(200px);
     font-size: 70px;
     margin-top: 30px;
     opacity: 0;
-    top: 200px;
 }
 
 .moved-title2 {
     opacity: 1;
-    top: 0px;
+    transform: translateX(-50%)
 }
 
 .title3 {
     color: rgba(0,0,0,.7);
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-60px);
     font-size: 60px;
     margin-top: 50px;
-    top: -60px;
     opacity: 0;
 }
 
 .moved-title3 {
-    top: 0;
     opacity: 1;
+    transform: translateX(-50%)
 }
 
 .title3:after {
@@ -181,13 +178,13 @@ header:before {
 
 .title4 {
     margin-top: 60px;
-    margin-right: -250px;
+    transform: translateX(250px);
     opacity: 0;
     font-size: 50px;
 }
 
 .moved-title4 {
-    margin-right: 0;
+    transform: translateX(0px);
     opacity: 1;
 }
 
@@ -195,14 +192,13 @@ header:before {
     font-size: 60px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(130px);
     opacity: 0;
-    margin-top: 130px;
 }
 
 .moved-title5 {
     opacity: 1;
-    margin-top: 30px;
+    transform: translateX(-50%) translateY(30px);
 }
 
 .description {
@@ -216,16 +212,16 @@ header:before {
     display: block;
     margin-top: 20px;
     position: relative;
-    left: 100px;
     opacity: 0;
     transition: .8s ease;
     z-index: 2;
     font-size: 2.5vh;
-    font-weight:200
+    font-weight:200;
+    transform: translateX(100px);
 }
 
 .moved-description1 {
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -380,19 +376,90 @@ input:checked + .picture {
 /* download button */
 
 .download-button {
+    text-align: center;
+    height: 10vw;
+    max-height: 300px;
+    width: 40vw;
     display: block;
-    width: 516px;
-    height: 126px;
-    background-image: url(images/download-button.png);
-    background-size: contain;
-    background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
-    top: 90px;
+    top: 13vh;
+    left: 3vw;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    white-space: nowrap;
+    transition: .3s ease;
+    background-color: #E57373;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-50px);
 }
 
 .download-button:hover {
-    background-image: url(images/download-button_hover.png)
+    background-color: #942020
+}
+
+.download-button a {
+    text-decoration: none;
+}
+
+.animated-download-button {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.download-icon {
+    width: 12vw;
+    height: 12vw;
+    background-image: url(images/download-icon.svg);
+    background-size: cover;
+    position: absolute;
+    left: -8vw;
+    top: -1vw;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+.download-button:hover .download-icon {
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0% {transform: scale(0)}
+    50% {transform: scale(1.1)}
+    70% {transform: scale(0.9)}
+    85% {transform: scale(1.05)}
+    100% {transform: scale(1)}
+}
+
+.animated-download-icon {
+    animation: bounce 1s;
+    transform: scale(1);
+}
+
+.download-text {
+    width: 35vw;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    font-family: Raleway;
+    color: white; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.download-title {
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.download-description {
+    font-size: 1.9vw;
+    font-weight: 200;
+    display: block;
+    margin-top: 5px;
 }
 
 /* Lista versioni precedenti */
@@ -411,7 +478,7 @@ input:checked + .picture {
     margin-left: 50%;
     transition: .5s ease;
     position: relative;
-    top: 150px;
+    top: calc(13vh + 50px);
 }
 
 .previous-versions:before {
@@ -491,7 +558,7 @@ input:checked + .picture {
     width: 18px;
     display: block;
     float: left;
-    background-image: url(images/download-icon.svg);
+    background-image: url(images/download-icon-small.svg);
     background-size:cover;
     margin: 3px 5px;
     opacity: .9
@@ -588,46 +655,46 @@ input:checked + .picture {
 
 .social-fb {
     position: relative;
-    right: -350px;
+    transform: translateX(350px);
     opacity: 0;
 }
 
 .moved-social-fb {
-    right: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
 .social-twitter {
     position: relative;
-    right: -450px;
+    transform: translateX(450px);
     opacity: 0;
 }
 
 .moved-social-twitter {
-    right: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
 .social-tumblr {
     position: relative;
-    right: -550px;
+    transform: translateX(550px);
     opacity: 0;
 }
 
 .moved-social-tumblr {
-    right: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
 .social-email {
     position: relative;
-    right: -650px;
+    transform: translateX(650px);
     opacity: 0;
     font-size: .8em
 }
 
 .moved-social-email {
-    right: 0;
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -640,11 +707,13 @@ input:checked + .picture {
     position: relative;
     margin: 0 auto;
     opacity: 0;
-    transition: .8s ease;
+    transition: 1s ease;
+    transform: translateY(250px);
 }
 
 .animated-staff-list {
     opacity: 1;
+    transform: translateY(0px);
 }
 
 .staff-list ul {
@@ -959,6 +1028,23 @@ input:checked + .picture {
     .download-button {
         width: 70vw;
         height: 22.5vw;
+    }
+    
+    .download-icon {
+        height: 24.5vw;
+        width: 24.5vw;
+    }
+    
+    .download-text {
+        width: 54.5vw;
+    }
+    
+    .download-title {
+        font-size: 4.5vw;
+    }
+    
+    .download-description {
+        font-size: 2.5vw;
     }
     
     .previous-versions {
