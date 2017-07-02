@@ -112,7 +112,7 @@ header:before {
     border-top: 100vh solid transparent;
     border-right: 10vw solid #222;
     position: absolute;
-    left: 60%;
+    right: 30vw;
 }
 
 .title {
