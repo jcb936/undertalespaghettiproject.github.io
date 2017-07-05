@@ -882,7 +882,7 @@ input:checked + .picture {
     }
     
     .container4:before {
-        left: 50%;
+        right: 40vw;
     }
 }
 
