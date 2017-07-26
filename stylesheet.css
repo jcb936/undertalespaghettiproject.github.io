@@ -634,12 +634,6 @@ input:checked + .picture {
     background-position: center;
 }
 
-.social-list .social-twitter:before {
-    background-image: url(images/twitter.svg);
-    background-size: 35px 35px;
-    background-position: center;
-}
-
 .social-list .social-tumblr:before {
     background-image: url(images/tumblr.svg);
     background-size: 40px 40px;
@@ -660,17 +654,6 @@ input:checked + .picture {
 }
 
 .moved-social-fb {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.social-twitter {
-    position: relative;
-    transform: translateX(450px);
-    opacity: 0;
-}
-
-.moved-social-twitter {
     transform: translateX(0);
     opacity: 1;
 }
@@ -786,19 +769,19 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(6) .staff-avatar {
-    background-image: url("images/avatar/drake.jpg")
+    background-image: url("images/avatar/drake.png")
 }
 
 .staff-list li:nth-child(7) .staff-avatar {
-    background-image: url("images/avatar/napsta.jpg")
+    background-image: url("images/avatar/napsta.png")
 }
 
 .staff-list li:nth-child(8) .staff-avatar {
-    background-image: url("images/avatar/mens.jpg")
+    background-image: url("images/avatar/mens.png")
 }
 
 .staff-list li:nth-child(9) .staff-avatar {
-    background-image: url("images/avatar/ximenos.jpg")
+    background-image: url("images/avatar/ximenos.png")
 }
 
 .staff-list li:nth-child(10) .staff-avatar {
@@ -810,15 +793,15 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(12) .staff-avatar {
-    background-image: url("images/avatar/daizo.jpg")
+    background-image: url("images/avatar/daizo.png")
 }
 
 .staff-list li:nth-child(13) .staff-avatar {
-    background-image: url("images/avatar/lafaiette.jpg")
+    background-image: url("images/avatar/lafaiette.png")
 }
 
 .staff-list li:nth-child(14) .staff-avatar {
-    background-image: url("images/avatar/apino.jpg")
+    background-image: url("images/avatar/apino.png")
 }
 
 .staff-list li:nth-child(15) .staff-avatar {
@@ -826,7 +809,7 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(16) .staff-avatar {
-    background-image: url("images/avatar/dmc4everucci.jpg")
+    background-image: url("images/avatar/dmc4everucci.png")
 }
 
 .staff-list li:nth-child(17) .staff-avatar {
@@ -834,11 +817,11 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(18) .staff-avatar {
-    background-image: url("images/avatar/explo.jpg")
+    background-image: url("images/avatar/explo.png")
 }
 
 .staff-list li:nth-child(19) .staff-avatar {
-    background-image: url("images/avatar/pis.jpg")
+    background-image: url("images/avatar/pis.png")
 }
 
 .staff-list li:nth-child(20) .staff-avatar {
@@ -1252,10 +1235,6 @@ input:checked + .picture {
         background-size: 35px 35px;
     }
 
-    .social-list .social-twitter:before {
-        background-size: 25px 25px;
-    }
-
     .social-list .social-tumblr:before, .social-list .social-email:before {
         background-size: 30px 30px;
     }
@@ -1418,5 +1397,15 @@ input:checked + .picture {
     
     .previous-versions-download {
         font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 735px) and (orientation:landscape){
+    .title3 {
+        font-size: 13vh;
+    }
+    
+    .previous-versions {
+        font-size: 9px;
     }
 }
