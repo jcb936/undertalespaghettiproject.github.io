@@ -765,7 +765,7 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(5) .staff-avatar {
-    background-image: url("images/avatar/spizor.jpg")
+    background-image: url("images/avatar/spizor.png")
 }
 
 .staff-list li:nth-child(6) .staff-avatar {
