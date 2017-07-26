@@ -753,7 +753,7 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(1) .staff-avatar {
-    background-image: url("images/avatar/renard.jpg")
+    background-image: url("images/avatar/renard.png")
 }
 
 .staff-list li:nth-child(2) .staff-avatar {
