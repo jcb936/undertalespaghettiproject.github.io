@@ -740,6 +740,10 @@ input:checked + .picture {
     margin-top: 5px;
 }
 
+.staff-nick a {
+    color: white
+}
+
 .staff-role {
     margin-top: 5px;
     font-size: 1em;
