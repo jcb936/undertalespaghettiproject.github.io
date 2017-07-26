@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "DeterminationSans";
+    src: url("DeterminationSansWeb.woff") format('woff');
+}
+@font-face {
+    font-family: "DeterminationMono";
+    src: url("DeterminationMonoWeb.woff") format('woff');
+}
+
+body {
+    background-color: black;
+}
+div.main {
+    font-family: DeterminationSans;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.title {
+    font-size: 50px;
+    color: white;
+    padding: 5px 0;
+}
+
+div.message {
+    font-size: 25px;
+    color: white;
+}
+
+div.tobo {
+    padding: 20px 0;
+}
+
+a:link {
+    color: cyan;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+div.faq {
+    text-align: left;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 0.6;
+    padding: 15px;
+}
+
+#titoloFaq {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3.q {
+    color: red;
+    font-size: 25px;
+}
+
+p.a {
+    color: black;
+    font-size: 25px;
+    line-height: 100%;
+}
+
+
+
+
+
+
+
+
+
