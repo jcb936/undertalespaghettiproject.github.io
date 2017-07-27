@@ -39,6 +39,7 @@ header:before {
     width: 100%;
     min-height: 100vh;
     background-size: auto 100vh;
+    image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
     background-repeat: no-repeat;
@@ -789,7 +790,7 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(10) .staff-avatar {
-    background-image: url("images/avatar/chri.jpg")
+    background-image: url("images/avatar/Chri.jpg")
 }
 
 .staff-list li:nth-child(11) .staff-avatar {
@@ -833,7 +834,7 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(21) .staff-avatar {
-    background-image: url("images/avatar/mvrhh.jpg")
+    background-image: url("images/avatar/MVRRH.jpg")
 }
 
 /* Mobile fixes */
