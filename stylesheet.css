@@ -813,30 +813,26 @@ input:checked + .picture {
 }
 
 .staff-list li:nth-child(16) .staff-avatar {
-    background-image: url("images/avatar/dmc4everucci.png")
-}
-
-.staff-list li:nth-child(17) .staff-avatar {
     background-image: url("images/avatar/dummy.png")
 }
 
-.staff-list li:nth-child(18) .staff-avatar {
+.staff-list li:nth-child(17) .staff-avatar {
     background-image: url("images/avatar/explo.png")
 }
 
-.staff-list li:nth-child(19) .staff-avatar {
+.staff-list li:nth-child(18) .staff-avatar {
     background-image: url("images/avatar/pis.png")
 }
 
-.staff-list li:nth-child(20) .staff-avatar {
+.staff-list li:nth-child(19) .staff-avatar {
     background-image: url("images/avatar/panda.png")
 }
 
-.staff-list li:nth-child(21) .staff-avatar {
+.staff-list li:nth-child(20) .staff-avatar {
     background-image: url("images/avatar/wi-fu.jpg")
 }
 
-.staff-list li:nth-child(22) .staff-avatar {
+.staff-list li:nth-child(21) .staff-avatar {
     background-image: url("images/avatar/mvrhh.jpg")
 }
 
