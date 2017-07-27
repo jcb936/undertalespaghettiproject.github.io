@@ -292,6 +292,8 @@ header:before {
     float: left;
     background-size: cover;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
     margin: 4px 0 0 35px;
 }
 
@@ -315,6 +317,10 @@ header:before {
 }
 
 .pictures input {
+    display: none;
+}
+
+.pictures label {
     float: left;
     width: 80px;
     height: 60px;
@@ -327,39 +333,39 @@ header:before {
     margin-bottom: 50px;
 }
 
-.pictures input:first-of-type {
-    margin-left: 80px;
-}
-
-.pictures input:hover, .pictures input:checked {
+.pictures label:hover, .pictures input:checked + label {
     opacity: 1;
 }
 
-input:before {
+.pictures label:first-of-type {
+    margin-left: 80px;
+}
+
+.pictures label:before {
     content: "";
     width: 80px;
     height: 60px;
-    display: inline-block;
     background-size: cover;
+    display: inline-block;
 }
 
-input#img-1:before {
+input#img-1 + label:before {
     background-image: url("images/screenshot1.png")
 }
 
-input#img-2:before {
+input#img-2 + label:before {
     background-image: url("images/screenshot2.png")
 }
 
-input#img-3:before {
+input#img-3 + label:before {
     background-image: url("images/screenshot3.png")
 }
 
-input#img-4:before {
+input#img-4 + label:before {
     background-image: url("images/screenshot4.png")
 }
 
-input#img-5:before {
+input#img-5 + label:before {
     background-image: url("images/screenshot5.png")
 }
 
@@ -370,7 +376,7 @@ input#img-5:before {
     font-size: 0;
 }
 
-input:checked + .picture {
+input:checked + label + .picture {
     opacity: 1;
 }
 
@@ -1084,16 +1090,16 @@ input:checked + .picture {
         margin-left: 9vw;
     }
     
-    input:before, .pictures input {
+    .pictures label:before, .pictures label {
         width: 12vw;
         height: 8vw;
     }
     
-    .pictures input {
+    .pictures label {
         margin-top: 65vw;
     }
     
-    .pictures input:first-of-type {
+    .pictures label:first-of-type {
         margin-left: calc(20vw - 40px);
     }
 
