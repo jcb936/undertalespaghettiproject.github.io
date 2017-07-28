@@ -1263,7 +1263,7 @@ input:checked + label + .picture {
         font-size: 3.6vw;
     }
     
-    .staff-list li:nth-child(16) .staff-nick, .staff-list li:nth-child(20) .staff-nick {
+    .staff-list li:nth-child(16) .staff-nick, .staff-list li:nth-child(19) .staff-nick {
         font-size: 3.2vw;
     }
     
@@ -1337,7 +1337,7 @@ input:checked + label + .picture {
         font-size: 10px;
     }
     
-    .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(20) .staff-nick {
+    .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(19) .staff-nick {
         font-size: 3vw;
     } 
 }
