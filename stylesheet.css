@@ -1280,8 +1280,7 @@ input:checked + label + .picture {
     }
     
     .report-button {
-        font-size: 20vw;
-        margin-left: 10vw;
+        font-size: 8vw;
     }
 }
 
