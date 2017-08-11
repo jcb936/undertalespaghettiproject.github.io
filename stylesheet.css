@@ -597,6 +597,19 @@ input:checked + label + .picture {
     opacity: .9
 }
 
+/* Release notes */
+
+.release-notes {
+		position: relative;
+		right: 50%;
+		transform: translateX(50%);
+		top: calc(13vh + 10px);
+		float: right;
+		font-family: Raleway;
+		font-size: 14px;
+		color: black;
+}
+
 /* Lista social */
 
 .social-list {
