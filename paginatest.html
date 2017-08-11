@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
 <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -40,21 +40,21 @@
     <div class="container container1">
         <a class="title title1">Progetto traduzione italiana</a><br>
         <span class="description description1">Undertale è un videogioco rilasciato a Settembre 2015 e sviluppato indipendentemente dall'autore Toby Fox.<br>
-Sebbene la formula di base sia quella di un RPG, questa viene variata dalla possibilità di 
-proseguire nell'avventura senza la necessità di uccidere nessun nemico, sottolineando così 
+Sebbene la formula di base sia quella di un RPG, questa viene variata dalla possibilità di
+proseguire nell'avventura senza la necessità di uccidere nessun nemico, sottolineando così
 l'impianto narrativo dell'opera, dove ogni scelta del giocatore ha un suo peso. Il tutto condito
 dalla presenza di route e finali multipli.<br>
-Nel corso di quasi due anni, Undertale è diventato un vero e proprio fenomeno di massa sulla rete: in parte grazie al suo 
-spiccato apparato comico di stampo internettiano, e in parte grazie alla sua mole di referenze, citazioni e 
+Nel corso di quasi due anni, Undertale è diventato un vero e proprio fenomeno di massa sulla rete: in parte grazie al suo
+spiccato apparato comico di stampo internettiano, e in parte grazie alla sua mole di referenze, citazioni e
 rimandi a grandi videogiochi del passato, Earthbound in primis.
 <br><br>
 Undertale Spaghetti Project sta lavorando a una patch completa del gioco in italiano, in modo
 da permettere a più gente possibile di godersi questa piccola perla. Per informazioni sullo sviluppo
             e sui dettagli tecnici della patch, dai un'occhiata al <a href="http://blog.undertaleita.net/">devblog</a>.
 <br><br>
-Puoi acquistare Undertale da <a href="http://store.steampowered.com/app/391540/Undertale/">Steam</a> o dal <a href="http://undertale.com/">sito ufficiale</a>. 
+Puoi acquistare Undertale da <a href="http://store.steampowered.com/app/391540/Undertale/">Steam</a> o dal <a href="http://undertale.com/">sito ufficiale</a>.
 <br><br>
-Ringraziamo le community degli Underminers e degli Undermodders su Reddit e in particolare AlexWaveDiver, 
+Ringraziamo le community degli Underminers e degli Undermodders su Reddit e in particolare AlexWaveDiver,
 per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gioco.</span>
     </div>
 </div>
@@ -158,7 +158,7 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
                 <div class="staff-text">
                     <div class="staff-nick">Drake</div>
                     <div class="staff-role">Programmatore</div>
-                </div>           
+                </div>
             </li>
             <li>
                 <div class="staff-avatar"></div>
@@ -271,14 +271,14 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
 </div>
 <div class="slide slide6" id="report">
     <span class="description description2">Vuoi segnalare un bug o un errore?</span>
-    <a href="#something"><div class="report-button">SEGNALA</div></a>
+    <a href="https://goo.gl/forms/3DxQrDvv3xMDQok22"><div class="report-button">SEGNALA</div></a>
 </div>
 <script>
 var viewportHeight = $(window).height();
 window.addEventListener("scroll", throttle( callback, 400 ));
- 
+
 	function callback () {
-			$(window).scroll(function() {    
+			$(window).scroll(function() {
 				var scroll = $(window).scrollTop();
 				var viewportHeight = $(window).height();
 
@@ -287,22 +287,22 @@ window.addEventListener("scroll", throttle( callback, 400 ));
 					$(".description1").addClass("moved-description1");
 					$(".top-bar").addClass("visible-top-bar");
 				}
-				
+
 				if (scroll < viewportHeight*0.5) {
-					$(".top-bar").removeClass("visible-top-bar");        
+					$(".top-bar").removeClass("visible-top-bar");
 				}
-				
+
 				if (scroll >= viewportHeight*1.7) {
 					$(".title2").addClass("moved-title2");
 					$(".slider-immagini").addClass("moved-slider-immagini");
 				}
-				
+
 				if (scroll >= viewportHeight*2.7) {
 					$(".title3").addClass("moved-title3");
 					$(".download-icon").addClass("animated-download-icon");
 					$(".download-button").addClass("animated-download-button");
 				}
-				
+
 				if (scroll >= viewportHeight*3.7) {
 					$(".title4").addClass("moved-title4");
 					$(".social-fb").addClass("moved-social-fb");
@@ -310,22 +310,22 @@ window.addEventListener("scroll", throttle( callback, 400 ));
 					$(".social-tumblr").addClass("moved-social-tumblr");
 					$(".social-email").addClass("moved-social-email");
 				}
-				
+
 				if (scroll >= viewportHeight*4.7) {
 					$(".title5").addClass("moved-title5");
 					$(".staff-list").addClass("animated-staff-list");
 					$(".staff-avatar").addClass("animated-staff-avatar");
-				}                                 
+				}
 			});
 		}
-		
+
 	function throttle (callback, limit) {
-		var wait = false;                 
-		return function () {             
-			if (!wait) {                  
-				callback.call();          
-				wait = true;              
-				setTimeout(function () {  
+		var wait = false;
+		return function () {
+			if (!wait) {
+				callback.call();
+				wait = true;
+				setTimeout(function () {
 					wait = false;
 				}, limit);
 			}
@@ -343,9 +343,9 @@ $('a[href^="#"]').on('click',function (e) {
 		'scrollTop': $target.offset().top
 	}, 500, 'swing', function () {
 		window.location.hash = target;
-	});				
+	});
 });
-    
+
 $('.top-bar').on('click',function (e) {
 	if  ($('.top-bar').hasClass('activated-top-bar')){
 		$('.top-bar').removeClass('activated-top-bar');
@@ -353,12 +353,12 @@ $('.top-bar').on('click',function (e) {
 		$('.top-bar').addClass('activated-top-bar');
 	}
 });
-				
+
 if  ($('.top-bar').hasClass('activated-top-bar')){
 	$('.top-bar li').on('click',function (e){
-		$('.top-bar').removeClass('activated-top-bar');            
+		$('.top-bar').removeClass('activated-top-bar');
 	});
-}       
+}
 </script>
 
 </body>
