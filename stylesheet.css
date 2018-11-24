@@ -495,6 +495,22 @@ input:checked + label + .picture {
     margin-top: 5px;
 }
 
+.warning {
+    font-family: Raleway;
+    color: #3b3b3b;
+    position: relative;
+    text-align: center;
+    float:left;
+    top: 16vh;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    width: calc(100% - 40px);
+}
+
+.warning a {
+    color: #3b3b3b;
+}
+
 /* Lista versioni precedenti */
 
 .previous-versions {
@@ -1291,6 +1307,10 @@ input:checked + label + .picture {
     .social-list li:before {
         margin-right: 10px;
     }
+    
+    .warning {
+        font-size: 12px;
+    }
 
 }
 
@@ -1479,6 +1499,7 @@ input:checked + label + .picture {
     .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(19) .staff-nick {
         font-size: 3vw;
     }
+
 }
 
 @media screen and (max-width: 350px) and (orientation:portrait){
