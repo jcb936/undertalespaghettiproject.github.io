@@ -23,12 +23,12 @@
       var jevil_2 = new Audio("audio/2.wav");
 
       function playSound() {
-        if (!counter && jevil_2.ended) {
+        if (!counter || (counter == 2 && jevil_2.ended)) {
           jevil_1.play();
           counter = 1;
         } else if {counter && jevil_1.ended} {
           jevil_2.play();
-          counter = 0;
+          counter = 2;
         }
       }
     </script>
