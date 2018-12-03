@@ -19,14 +19,15 @@
     </style>
     <script type="text/javascript">
       var counter = 0;
+      var jevil_1 = new Audio("audio/1.wav");
+      var jevil_2 = new Audio("audio/2.wav");
+
       function playSound() {
-        if (!counter) {
-          var jevil = new Audio("audio/1.wav");
-          jevil.play();
+        if (!counter && jevil_2.ended) {
+          jevil_1.play();
           counter = 1;
-        } else {
-          var jevil = new Audio("audio/2.wav");
-          jevil.play();
+        } else if {counter && jevil_1.ended} {
+          jevil_2.play();
           counter = 0;
         }
       }
