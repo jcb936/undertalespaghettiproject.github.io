@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="OSCURO MA PIÙ BUIO">
+    <link rel="icon" href="images/darker.ico" />
+    <title>BUIO</title>
+    <style>
+      .centered {
+        position: absolute;
+        width: 640px;
+        height: 640px;
+        z-index: 15;
+        top: 50%;
+        left: 50%;
+        margin: -320px 0 0 -320px;
+      }
+    </style>
+    <script type="text/javascript">
+      function playSound() {
+        var i = Math.floor(Math.random() * 2) + 1;
+        var el = new Audio("audio/"+ i +".wav");
+        el.play();
+      }
+    </script>
+  </head>
+  <body style="background-color:black;">
+    <div class="centered">
+      <span id="dummy" onclick="playSound();">
+        <img src="images/darker.gif" alt="BUIO">
+      </span>
+    </div>
+  </body>
+</html>
