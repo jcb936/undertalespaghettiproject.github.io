@@ -1,25 +1,30 @@
 <html>
 <head>
-<!— Global site tag (gtag.js) - Google Analytics —>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117084489-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!— Global site tag (gtag.js) - Google Analytics —>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117084489-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-117084489-1');
-</script>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
-<link href='stylesheet.css' rel='stylesheet' type='text/css'>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117084489-1');
+    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
+    <link href='stylesheet.css' rel='stylesheet' type='text/css'>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="theme-color" content="#000000">
-    <meta name="keywords" content="Undertale, undertaleita, Undertalia, Traduzione, undertale in italiano, italiana, patch ita, Undertale Spaghetti, Spaghetti, Undertale patch in italiano, undertale traduzione italiana">
-    <meta http-equiv="content-language" content="it" />
+    <meta name="keywords"
+          content="Undertale, undertaleita, Undertalia, Traduzione, undertale in italiano, italiana, patch ita, Undertale Spaghetti, Spaghetti, Undertale patch in italiano, undertale traduzione italiana">
+    <meta http-equiv="content-language" content="it"/>
     <meta name="description" content="Dove i sogni diventano spaghetti.">
-    <link rel="canonical" href="http://undertaleita.net" />
-    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="canonical" href="http://undertaleita.net"/>
+    <link rel="icon" href="/images/favicon.ico"/>
     <meta property=og:site_name content="Undertale Spaghetti Project">
     <meta property=og:description content="Dove i sogni diventano spaghetti.">
     <meta property=og:locale content="it_IT">
@@ -35,19 +40,26 @@
     <div class="dog" id="dog"></div>
     <ul>
         <li><a href="#info">Info</a></li>
-        <li><a href="#galleria">Galleria</a></li>
         <li><a href="#download">Download</a></li>
-        <li><a href="#contatti">Contatti</a></li>
         <li><a href="#credits">Credits</a></li>
-        <li><a href="#report">Segnala</a></li>
+        <li><a href="#contatti">Contatti</a></li>
         <li><a href="http://blog.undertaleita.net/">Blog</a></li>
     </ul>
 </div>
-<header>
-<img src="images/logo.svg" id="logo">
+<header class="rune">
+    <img src="images/logo.svg" id="logo">
 </header>
-<div class="slide slide1" id="info">
-    <div class="container container1">
+<div class="sliderune slide2" id="info">
+    <div class="container1rune">
+        <img class="darker" src="images/darkerRelease.gif" alt="deltarune">
+        <img class="darkerUSP" src="images/USPretro.png" alt="deltarune">
+        <a href="#download">
+            <div class="link">Download</div>
+        </a>
+    </div>
+</div>
+<div class="slideGrey" id="download">
+    <div class="container container1runeDesc">
         <a class="title title1">Progetto traduzione italiana</a><br>
         <span class="description description1">Undertale è un videogioco rilasciato a Settembre 2015 e sviluppato indipendentemente dall'autore Toby Fox.<br>
 Sebbene la formula di base sia quella di un RPG, questa viene variata dalla possibilità di
@@ -68,69 +80,7 @@ Ringraziamo le community degli Underminers e degli Undermodders su Reddit e in p
 per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gioco.</span>
     </div>
 </div>
-<div class="slide slide2" id="galleria">
-    <div class="container container2">
-        <a class="title title2">GALLERIA</a>
-    </div>
 
-    <div class="slider-immagini">
-        <ul class="pictures">
-            <input type="radio" name="radio-btn" id="img-1" value="img-1" checked/>
-            <label for="img-1"></label>
-            <li class="picture"><img src="images/screenshot1.png"></li>
-            <input type="radio" name="radio-btn" id="img-2" value="img-2" />
-            <label for="img-2"></label>
-            <li class="picture"><img src="images/screenshot2.png" value="img-3"></li>
-            <input type="radio" name="radio-btn" id="img-3" value="img-4" />
-            <label for="img-3"></label>
-            <li class="picture"><img src="images/screenshot3.png"></li>
-            <input type="radio" name="radio-btn" id="img-4" value="img-4" />
-            <label for="img-4"></label>
-            <li class="picture"><img src="images/screenshot4.png"></li>
-            <input type="radio" name="radio-btn" id="img-5" value="img-5" />
-            <label for="img-5"></label>
-            <li class="picture"><img src="images/screenshot5.png"></li>
-        </ul>
-    </div>
-</div>
-<div class="slide slide3" id="download">
-    <a class="title title3">Scarica la traduzione!</a>
-    <a href="download/installer.zip">
-        <div class="download-button animated-download-button">
-            <div class="download-icon animated-download-icon"></div>
-            <span class="download-text">
-                <span class="download-title">INSTALLER (773 kB)</span>
-                <span class="download-description">Windows | Per Undertale V. 1.01</span>
-            </span>
-        </div>
-    </a>
-    <a href="http://blog.undertaleita.net/" class="release-notes">Versione corrente: 1.1 (note di rilascio)</a>
-    <p class="warning"><b>NOTA</b>: la patch è compatibile <b>solo</b> con la versione <b>1.01</b> del gioco. <a href="http://blog.undertaleita.net/post/164297907199/release-usp-v11">Guida al downgrade</a></p>
-    <div class="previous-versions"> Formato .zip (per utenti esperti)
-        <ul>
-            <li>
-                Versione 1.1
-                <a href="releases/v1.1.zip"><div class="previous-version-download">SCARICA
-                </div></a>
-            </li>
-            <li>
-                Versione 1.0
-                <a href="releases/v1.0.zip"><div class="previous-version-download">SCARICA
-                </div></a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="slide slide4" id="contatti">
-    <div class="container4">
-        <div class="title title4">Contatti</div>
-        <ul class="social-list">
-            <li class="social-fb"><a href="https://www.facebook.com/undertalespaghettiproject">Facebook</a></li>
-            <li class="social-tumblr"><a href="http://blog.undertaleita.net/">Tumblr</a></li>
-            <li class="social-email"><a href="mailto:undertalespaghettiproject@gmail.com">undertalespaghettiproject@gmail.com</a></li>
-        </ul>
-    </div>
-</div>
 <div class="slide slide5" id="credits">
     <a class="title title5">CREDITS</a>
     <div class="staff-list">
@@ -180,7 +130,7 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
             <li>
                 <div class="staff-avatar"></div>
                 <div class="staff-text">
-                    <div class="staff-nick">Napsta </div>
+                    <div class="staff-nick">Napsta</div>
                     <div class="staff-role">Traduttore</div>
                 </div>
             </li>
@@ -244,14 +194,14 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
             <li>
                 <div class="staff-avatar"></div>
                 <div class="staff-text">
-                    <div class="staff-nick">Dummyn45 </div>
+                    <div class="staff-nick">Dummyn45</div>
                     <div class="staff-role">Traduttore</div>
                 </div>
             </li>
             <li>
                 <div class="staff-avatar"></div>
                 <div class="staff-text">
-                    <div class="staff-nick">Explo </div>
+                    <div class="staff-nick">Explo</div>
                     <div class="staff-role">Traduttore</div>
                 </div>
             </li>
@@ -286,96 +236,109 @@ per il suo lavoro sul principale tool da noi utilizzato per la traduzione del gi
         </ul>
     </div>
 </div>
+<div class="slide slide4" id="contatti">
+    <div class="container4">
+        <div class="title title4">Contatti</div>
+        <ul class="social-list">
+            <li class="social-fb"><a href="https://www.facebook.com/undertalespaghettiproject">Facebook</a></li>
+            <li class="social-tumblr"><a href="http://blog.undertaleita.net/">Tumblr</a></li>
+            <li class="social-email"><a href="mailto:undertalespaghettiproject@gmail.com">undertalespaghettiproject@gmail.com</a>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="slide slide6" id="report">
     <span class="description description2">Vuoi segnalare un bug o un errore?</span>
-    <a href="https://goo.gl/forms/3DxQrDvv3xMDQok22"><div class="report-button">SEGNALA</div></a>
+    <a href="https://goo.gl/forms/3DxQrDvv3xMDQok22">
+        <div class="report-button">SEGNALA</div>
+    </a>
 </div>
 <script>
-var viewportHeight = $(window).height();
-window.addEventListener("scroll", throttle( callback, 400 ));
+    var viewportHeight = $(window).height();
+    window.addEventListener("scroll", throttle(callback, 400));
 
-	function callback () {
-			$(window).scroll(function() {
-				var scroll = $(window).scrollTop();
-				var viewportHeight = $(window).height();
+    function callback() {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var viewportHeight = $(window).height();
 
-				if (scroll >= viewportHeight*0.5) {
-					$(".title1").addClass("moved-title1");
-					$(".description1").addClass("moved-description1");
-					$(".top-bar").addClass("visible-top-bar");
-				}
+            if (scroll >= viewportHeight * 0.2) {
+                $(".title1").addClass("moved-title1");
+                $(".description1").addClass("moved-description1");
+                $(".top-bar").addClass("visible-top-bar");
+            }
 
-				if (scroll < viewportHeight*0.5) {
-					$(".top-bar").removeClass("visible-top-bar");
-				}
+            if (scroll < viewportHeight * 0.4) {
+                $(".top-bar").removeClass("visible-top-bar");
+            }
 
-				if (scroll >= viewportHeight*1.7) {
-					$(".title2").addClass("moved-title2");
-					$(".slider-immagini").addClass("moved-slider-immagini");
-				}
+            if (scroll >= viewportHeight * 1.7) {
+                $(".title2").addClass("moved-title2");
+                $(".slider-immagini").addClass("moved-slider-immagini");
+            }
 
-				if (scroll >= viewportHeight*2.7) {
-					$(".title3").addClass("moved-title3");
-					$(".download-icon").addClass("animated-download-icon");
-					$(".download-button").addClass("animated-download-button");
-				}
+            if (scroll >= viewportHeight * 2.7) {
+                $(".title3").addClass("moved-title3");
+                $(".download-icon").addClass("animated-download-icon");
+                $(".download-button").addClass("animated-download-button");
+            }
 
-				if (scroll >= viewportHeight*3.7) {
-					$(".title4").addClass("moved-title4");
-					$(".social-fb").addClass("moved-social-fb");
-					$(".social-twitter").addClass("moved-social-twitter");
-					$(".social-tumblr").addClass("moved-social-tumblr");
-					$(".social-email").addClass("moved-social-email");
-				}
+            if (scroll >= viewportHeight * 1.5) {
+                $(".title4").addClass("moved-title4");
+                $(".social-fb").addClass("moved-social-fb");
+                $(".social-twitter").addClass("moved-social-twitter");
+                $(".social-tumblr").addClass("moved-social-tumblr");
+                $(".social-email").addClass("moved-social-email");
+            }
 
-				if (scroll >= viewportHeight*4.7) {
-					$(".title5").addClass("moved-title5");
-					$(".staff-list").addClass("animated-staff-list");
-					$(".staff-avatar").addClass("animated-staff-avatar");
-				}
-			});
-		}
+            if (scroll >= viewportHeight * 1.0) {
+                $(".title5").addClass("moved-title5");
+                $(".staff-list").addClass("animated-staff-list");
+                $(".staff-avatar").addClass("animated-staff-avatar");
+            }
+        });
+    }
 
-	function throttle (callback, limit) {
-		var wait = false;
-		return function () {
-			if (!wait) {
-				callback.call();
-				wait = true;
-				setTimeout(function () {
-					wait = false;
-				}, limit);
-			}
-		}
-	 }
+    function throttle(callback, limit) {
+        var wait = false;
+        return function () {
+            if (!wait) {
+                callback.call();
+                wait = true;
+                setTimeout(function () {
+                    wait = false;
+                }, limit);
+            }
+        }
+    }
 </script>
 <script>
-$('a[href^="#"]').on('click',function (e) {
-	e.preventDefault();
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
 
-	var target = this.hash,
-	$target = $(target);
+        var target = this.hash,
+            $target = $(target);
 
-	$('html, body').stop().animate({
-		'scrollTop': $target.offset().top
-	}, 500, 'swing', function () {
-		window.location.hash = target;
-	});
-});
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 
-$('.top-bar').on('click',function (e) {
-	if  ($('.top-bar').hasClass('activated-top-bar')){
-		$('.top-bar').removeClass('activated-top-bar');
-	} else {
-		$('.top-bar').addClass('activated-top-bar');
-	}
-});
+    $('.top-bar').on('click', function (e) {
+        if ($('.top-bar').hasClass('activated-top-bar')) {
+            $('.top-bar').removeClass('activated-top-bar');
+        } else {
+            $('.top-bar').addClass('activated-top-bar');
+        }
+    });
 
-if  ($('.top-bar').hasClass('activated-top-bar')){
-	$('.top-bar li').on('click',function (e){
-		$('.top-bar').removeClass('activated-top-bar');
-	});
-}
+    if ($('.top-bar').hasClass('activated-top-bar')) {
+        $('.top-bar li').on('click', function (e) {
+            $('.top-bar').removeClass('activated-top-bar');
+        });
+    }
 </script>
 
 </body>
