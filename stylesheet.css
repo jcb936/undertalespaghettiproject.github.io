@@ -82,8 +82,9 @@ header:before {
     background-image: url(images/sfondo.png);
     overflow: hidden;
     box-shadow: inset 0px 20px 13px rgba(0, 0, 0, 0.23), inset 0px -20px 13px rgba(0, 0, 0, 0.23);
-    background-position: right;
+    background-position: right center;
     background-size: cover;
+    background-position-x: -300px;
 }
 
 .slide5 {
