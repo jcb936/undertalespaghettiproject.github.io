@@ -2,6 +2,7 @@ html,body {
 	height: 100%;
 	width: device-width;
 	margin: 0;
+    overflow: -moz-scrollbars-none;
 }
 .rune {
     display: none;
@@ -1582,39 +1583,52 @@ input:checked + label + .picture {
 }
 .container1rune{
     width: 100%;
+    height: 100%;
+
     background-color: black;
     padding-left: 20px;
     padding-right: auto;
 }
 .container1runeDesc{
-    width: 50%;
+    width: 100%;
     background-color: #222;
     padding-left: 20px;
     padding-right: auto;
 }
+.container1runeDescTot{
+    width: 100%;
+    background-color: #222;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 20px;
+
+}
 
 .darker{
-    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 .darkerUSP{
-    margin-top: 100px;
-    width: 50%;
-    position: absolute;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 /* Download Link */
 
 .link {
     color: white;
-    display: inline;
     width: 40%;
     font-family: Raleway;
     font-size: 60px;
     text-align: center;
-    position: absolute;
-    margin-top: 400px;
-    margin-left: 100px;
     text-decoration: underline;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
 
 }
 
