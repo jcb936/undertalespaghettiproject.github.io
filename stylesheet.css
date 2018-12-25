@@ -799,15 +799,39 @@ input:checked + label + .picture {
     transform: translateY(250px);
 }
 
+.staff-listRune {
+    color: #FAFAFA;
+    padding-top: 50px;
+    width: 90vw;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 1s ease;
+    transform: translateY(250px);
+}
+
 .animated-staff-list {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.staff-listRune ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .staff-list ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.staff-listRune li {
+    display: inline-block;
+    width: 25vw;
+    max-height: 70px;
+    margin: 20px 2.3vw;
 }
 
 .staff-list li {
@@ -1047,6 +1071,10 @@ input:checked + label + .picture {
 
 @media screen and (max-width: 900px) {
     .staff-list li {
+        width: 39vw;
+    }
+
+    .staff-listRune li {
         width: 39vw;
     }
 
@@ -1711,4 +1739,52 @@ input:checked + label + .picture {
     text-align: center;
     display: inline;
 
+}
+
+.staff-listRune li:nth-child(1) .staff-avatar {
+    background-image: url("images/avatar/renard.png")
+}
+
+.staff-listRune li:nth-child(2) .staff-avatar {
+    background-image: url("images/avatar/auster.jpg")
+}
+
+.staff-listRune li:nth-child(3) .staff-avatar {
+    background-image: url("images/avatar/crefice.jpg")
+}
+
+.staff-listRune li:nth-child(4) .staff-avatar {
+    background-image: url("images/avatar/jacklemon.jpg")
+}
+
+.staff-listRune li:nth-child(5) .staff-avatar {
+    background-image: url("images/avatar/fim.jpg")
+}
+
+.staff-listRune li:nth-child(6) .staff-avatar {
+    background-image: url("images/avatar/daizo.png")
+}
+
+.staff-listRune li:nth-child(7) .staff-avatar {
+    background-image: url("images/avatar/shoshia.png")
+}
+
+.staff-listRune .ty li:nth-child(1) .staff-avatar {
+    background-image: url("images/avatar/chri.jpg")
+}
+
+.staff-listRune .ty li:nth-child(2) .staff-avatar {
+    background-image: url("images/avatar/fakedubita.jpg")
+}
+
+.staff-listRune .ty li:nth-child(3) .staff-avatar {
+    background-image: url("images/avatar/wander.png")
+}
+
+.staff-listRune .ty li:nth-child(4) .staff-avatar {
+    background-image: url("images/avatar/fim.jpg")
+}
+
+.staff-listRune .ty li:nth-child(5) .staff-avatar {
+    background-image: url("images/avatar/rake.png")
 }

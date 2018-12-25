@@ -83,7 +83,7 @@ Ringraziamo come al solito la community degli Undermodders e degli Underminers s
 
 <div class="slide slide5Rune" id="credits">
     <a class="title title5">CREDITS</a>
-    <div class="staff-list">
+    <div class="staff-listRune">
         <ul>
             <li>
                 <div class="staff-avatar"></div>
@@ -136,7 +136,7 @@ Ringraziamo come al solito la community degli Undermodders e degli Underminers s
             </li>
         </ul>
         <a class="title title5">RINGRAZIAMENTI</a>
-        <div class="staff-list">
+        <div class="staff-listRune ty">
             <ul>
                 <li>
                     <div class="staff-avatar"></div>
@@ -191,7 +191,7 @@ Ringraziamo come al solito la community degli Undermodders e degli Underminers s
             </ul>
         </div>
     </div>
-
+</div>
     <script>
         var viewportHeight = $(window).height();
         window.addEventListener("scroll", throttle(callback, 400));
@@ -233,6 +233,11 @@ Ringraziamo come al solito la community degli Undermodders e degli Underminers s
                 if (scroll >= viewportHeight * 1.0) {
                     $(".title5").addClass("moved-title5");
                     $(".staff-list").addClass("animated-staff-list");
+                    $(".staff-avatar").addClass("animated-staff-avatar");
+                }
+                if (scroll >= viewportHeight * 1.0) {
+                    $(".title5").addClass("moved-title5");
+                    $(".staff-listRune").addClass("animated-staff-list");
                     $(".staff-avatar").addClass("animated-staff-avatar");
                 }
             });
