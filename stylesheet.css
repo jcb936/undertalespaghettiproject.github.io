@@ -2,7 +2,6 @@ html,body {
 	height: 100%;
 	width: device-width;
 	margin: 0;
-    overflow: -moz-scrollbars-none;
 }
 .rune {
     display: none;
@@ -1582,7 +1581,6 @@ input:checked + label + .picture {
     }
 }
 .container1rune{
-    width: 100%;
     height: 100%;
 
     background-color: black;
@@ -1590,17 +1588,15 @@ input:checked + label + .picture {
     padding-right: auto;
 }
 .container1runeDesc{
-    width: 100%;
+    width: 95%;
     background-color: #222;
-    padding-left: 20px;
-    padding-right: auto;
+    text-align: center;
 }
 .container1runeDescTot{
     width: 100%;
-    background-color: #222;
-    padding-left: auto;
-    padding-right: auto;
-    padding-bottom: 20px;
+    background-color: black;
+   text-align: center;
+    padding-bottom: 30px;
 
 }
 
