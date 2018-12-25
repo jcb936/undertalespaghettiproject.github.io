@@ -1,8 +1,9 @@
-html,body {
-	height: 100%;
-	width: device-width;
-	margin: 0;
+html, body {
+    height: 100%;
+    width: device-width;
+    margin: 0;
 }
+
 .rune {
     display: none;
 }
@@ -18,7 +19,7 @@ header {
 
 header:before {
     content: "";
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     height: 100vh;
     width: 100%;
     display: block;
@@ -73,18 +74,43 @@ header:before {
     background-color: #3d120e;
     background-image: url(images/sfondo-slide3.png);
     overflow: hidden;
-    box-shadow: inset 0px 20px 13px rgba(0,0,0,0.23), inset 0px -20px 13px rgba(0,0,0,0.23);
+    box-shadow: inset 0px 20px 13px rgba(0, 0, 0, 0.23), inset 0px -20px 13px rgba(0, 0, 0, 0.23);
+}
+
+.slide4Rune {
+    background-color: #3d120e;
+    background-image: url(images/sfondo.png);
+    overflow: hidden;
+    box-shadow: inset 0px 20px 13px rgba(0, 0, 0, 0.23), inset 0px -20px 13px rgba(0, 0, 0, 0.23);
+    background-position: right;
+    background-size: cover;
 }
 
 .slide5 {
     background-color: black;
 }
 
+.slide5Rune {
+    background-color: black;
+}
+
+
 .slide6 {
     background-image: url(images/sleeping-dog.png);
     background-size: 350px auto;
     background-position: left bottom -10px;
     background-color: black
+}
+
+.slide5Rune:after {
+    content: "";
+    width: 90vw;
+    margin-left: 5vw;
+    height: 1px;
+    background-color: white;
+    display: block;
+    opacity: .1;
+
 }
 
 .slide5:after {
@@ -180,7 +206,7 @@ header:before {
 }
 
 .title3 {
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
     position: relative;
     left: 50%;
     transform: translateX(-50%) translateY(-60px);
@@ -195,7 +221,7 @@ header:before {
 }
 
 .title3:after {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .title4 {
@@ -238,7 +264,7 @@ header:before {
     transition: .8s ease;
     z-index: 2;
     font-size: 2.5vh;
-    font-weight:200;
+    font-weight: 200;
     transform: translateX(100px);
 }
 
@@ -289,7 +315,7 @@ header:before {
     line-height: 45px;
     color: white;
     padding: 0;
-    margin-top:0;
+    margin-top: 0;
     float: right;
 }
 
@@ -421,7 +447,7 @@ input:checked + label + .picture {
     position: relative;
     top: 13vh;
     left: 3vw;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     white-space: nowrap;
     transition: .3s ease;
     background-color: #E57373;
@@ -461,11 +487,21 @@ input:checked + label + .picture {
 }
 
 @keyframes bounce {
-    0% {transform: scale(0)}
-    50% {transform: scale(1.1)}
-    70% {transform: scale(0.9)}
-    85% {transform: scale(1.05)}
-    100% {transform: scale(1)}
+    0% {
+        transform: scale(0)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    70% {
+        transform: scale(0.9)
+    }
+    85% {
+        transform: scale(1.05)
+    }
+    100% {
+        transform: scale(1)
+    }
 }
 
 .animated-download-icon {
@@ -504,7 +540,7 @@ input:checked + label + .picture {
     color: #3b3b3b;
     position: relative;
     text-align: center;
-    float:left;
+    float: left;
     top: 16vh;
     padding: 0 20px 0 20px;
     margin: 0;
@@ -536,7 +572,7 @@ input:checked + label + .picture {
 
 .previous-versions:before {
     content: "";
-    border-left: 13px solid rgba(0,0,0,0.2);
+    border-left: 13px solid rgba(0, 0, 0, 0.2);
     border-bottom: 8px solid transparent;
     border-top: 8px solid transparent;
     display: block;
@@ -582,7 +618,7 @@ input:checked + label + .picture {
 }
 
 .previous-versions ul li:nth-child(even) {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .previous-version-download {
@@ -592,7 +628,7 @@ input:checked + label + .picture {
     height: 25px;
     margin-top: 7px;
     border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: rgb(216, 88, 88);
     color: white;
     font-weight: bold;
@@ -612,7 +648,7 @@ input:checked + label + .picture {
     display: block;
     float: left;
     background-image: url(images/download-icon-small.svg);
-    background-size:cover;
+    background-size: cover;
     margin: 3px 5px;
     opacity: .9
 }
@@ -627,9 +663,9 @@ input:checked + label + .picture {
     float: right;
     font-family: Raleway;
     font-size: 14px;
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
     text-decoration: none;
-    border-bottom: 1px solid rgba(0,0,0,.3)
+    border-bottom: 1px solid rgba(0, 0, 0, .3)
 }
 
 /* Lista social */
@@ -926,12 +962,12 @@ input:checked + label + .picture {
     line-height: 200px;
     text-align: center;
     transition: .3s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 125px;
 }
 
 .report-button:before {
-    content:"!";
+    content: "!";
     color: white;
     font-family: initial;
     font-size: 190px;
@@ -991,7 +1027,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1010px) {
     .title1 {
         font-size: 5vh;
     }
@@ -1001,14 +1037,14 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 940px) {
     .previous-versions {
         padding: 0 50px;
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .staff-list li {
         width: 39vw;
     }
@@ -1043,7 +1079,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
     #logo {
         max-width: 70vw;
@@ -1084,26 +1120,26 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 700px){
-		.top-bar a {
-			font-size: 2.3vw;
-		}
+@media screen and (max-width: 700px) {
+    .top-bar a {
+        font-size: 2.3vw;
+    }
 
-		.top-bar li {
-			margin-right: 12px;
-		}
+    .top-bar li {
+        margin-right: 12px;
+    }
 
-		.top-bar li:last-of-type {
-			margin-right: 30px;
-		}
+    .top-bar li:last-of-type {
+        margin-right: 30px;
+    }
 }
 
-@media screen and (max-width: 700px) and (orientation:portrait){
+@media screen and (max-width: 700px) and (orientation: portrait) {
 
     .slide1 {
         height: 150vh;
         background-position: center bottom -260px;
-        background-size:cover;
+        background-size: cover;
     }
 
     .container1 {
@@ -1204,7 +1240,7 @@ input:checked + label + .picture {
     }
 
     .social-list {
-        top:0;
+        top: 0;
         transform: none;
         margin-left: 0;
     }
@@ -1221,7 +1257,7 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 640px) and (orientation:portrait){
+@media screen and (max-width: 640px) and (orientation: portrait) {
 
     .title2, .title35 {
         font-size: 14vw;
@@ -1265,7 +1301,7 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 600px) and (orientation:portrait){
+@media screen and (max-width: 600px) and (orientation: portrait) {
 
     .description1 {
         font-size: 2.7vw;
@@ -1273,13 +1309,13 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 570px) and (orientation:portrait){
+@media screen and (max-width: 570px) and (orientation: portrait) {
     .top-bar li {
         font-size: 15px;
     }
 }
 
-@media screen and (max-width: 550px) and (orientation:portrait){
+@media screen and (max-width: 550px) and (orientation: portrait) {
 
     .description1 {
         font-size: 3vw;
@@ -1311,14 +1347,14 @@ input:checked + label + .picture {
     .social-list li:before {
         margin-right: 10px;
     }
-    
+
     .warning {
         font-size: 12px;
     }
 
 }
 
-@media screen and (max-width: 500px) and (orientation:portrait){
+@media screen and (max-width: 500px) and (orientation: portrait) {
     .slide3 {
         background-size: 75% auto, 40% auto;
         background-position: bottom -30px left -80px, bottom -20px right -50px;
@@ -1337,7 +1373,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 480px) and (orientation:portrait){
+@media screen and (max-width: 480px) and (orientation: portrait) {
 
     .description1 {
         font-size: 3.2vw;
@@ -1361,7 +1397,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 430px) and (orientation:portrait){
+@media screen and (max-width: 430px) and (orientation: portrait) {
     .slide3 {
         background-size: 90% auto, 45% auto;
     }
@@ -1420,7 +1456,7 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 400px) and (orientation:portrait){
+@media screen and (max-width: 400px) and (orientation: portrait) {
 
     .description1 {
         font-size: 3.6vw;
@@ -1482,31 +1518,31 @@ input:checked + label + .picture {
     }
 
     .top-bar li:last-of-type {
-        margin-right:5px;
+        margin-right: 5px;
         margin-bottom: 20px;
     }
 
 }
 
-@media screen and (max-width: 371px) and (orientation:portrait){
-    .social-list li:nth-child(3), .social-list li:nth-child(4){
+@media screen and (max-width: 371px) and (orientation: portrait) {
+    .social-list li:nth-child(3), .social-list li:nth-child(4) {
         margin-top: -5px
     }
 }
 
-@media screen and (max-width: 360px) and (orientation:portrait){
+@media screen and (max-width: 360px) and (orientation: portrait) {
     .previous-versions {
         width: 40vw;
         font-size: 10px;
     }
 
-    .staff-list li:nth-child(16) .staff-nick , .staff-list li:nth-child(19) .staff-nick {
+    .staff-list li:nth-child(16) .staff-nick, .staff-list li:nth-child(19) .staff-nick {
         font-size: 3vw;
     }
 
 }
 
-@media screen and (max-width: 350px) and (orientation:portrait){
+@media screen and (max-width: 350px) and (orientation: portrait) {
 
     .staff-avatar {
         width: 40px;
@@ -1524,8 +1560,8 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 331px) and (orientation:portrait){
-    .social-list li:nth-child(4){
+@media screen and (max-width: 331px) and (orientation: portrait) {
+    .social-list li:nth-child(4) {
         font-size: .65em;
     }
 
@@ -1537,7 +1573,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 300px) and (orientation:portrait){
+@media screen and (max-width: 300px) and (orientation: portrait) {
 
     .description1 {
         font-size: 3.75vw;
@@ -1545,13 +1581,13 @@ input:checked + label + .picture {
 
 }
 
-@media screen and (max-width: 285px) and (orientation:portrait){
-    .social-list li:nth-child(4){
+@media screen and (max-width: 285px) and (orientation: portrait) {
+    .social-list li:nth-child(4) {
         font-size: .5em;
     }
 }
 
-@media screen and (max-width: 280px) and (orientation:portrait){
+@media screen and (max-width: 280px) and (orientation: portrait) {
 
     .staff-avatar {
         width: 12vw;
@@ -1571,7 +1607,7 @@ input:checked + label + .picture {
     }
 }
 
-@media screen and (max-width: 735px) and (orientation:landscape){
+@media screen and (max-width: 735px) and (orientation: landscape) {
     .title3 {
         font-size: 13vh;
     }
@@ -1580,38 +1616,43 @@ input:checked + label + .picture {
         font-size: 9px;
     }
 }
-.container1rune{
+
+.container1rune {
     height: 100%;
 
     background-color: black;
     padding-left: 20px;
     padding-right: auto;
 }
-.container1runeDesc{
+
+.container1runeDesc {
     width: 95%;
     background-color: #222;
     text-align: center;
 }
-.container1runeDescTot{
+
+.container1runeDescTot {
     width: 100%;
     background-color: black;
-   text-align: center;
+    text-align: center;
     padding-bottom: 30px;
 
 }
 
-.darker{
+.darker {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
 }
-.darkerUSP{
+
+.darkerUSP {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
 }
+
 /* Download Link */
 
 .link {
@@ -1636,6 +1677,7 @@ input:checked + label + .picture {
 .link:hover:before {
     transform: scale(1.15)
 }
+
 .sliderune {
     width: 100%;
     min-height: 50vh;
@@ -1659,6 +1701,7 @@ input:checked + label + .picture {
     overflow: hidden;
     background-color: #222;
 }
+
 .container4rune {
     height: 100vh;
     width: 30vw;
