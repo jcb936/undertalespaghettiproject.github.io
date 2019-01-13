@@ -11,6 +11,8 @@
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/modal.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
 <link href='stylesheet.css' rel='stylesheet' type='text/css'>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -44,12 +46,31 @@
         <li><a href="http://blog.undertaleita.net/">Blog</a></li>
     </ul>
 </div>
-  <div id="deltaruneModal" class="modal">
+<div id="deltaruneModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--<div id="deltaruneModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Abbiamo realizzato una patch italiana anche per DELTARUNE! <a id="modalLink" href="deltarune.html">Clicca qui</a> per ulteriori informazioni.</p>
   </div>
-</div>
+</div> -->
 <header>
 <img src="images/logo.svg" id="logo">
 </header>
@@ -389,7 +410,11 @@ if  ($('.top-bar').hasClass('activated-top-bar')){
 var modal = document.getElementById('deltaruneModal');
 var span = document.getElementsByClassName("close")[0];
 
-window.onload = function() {
+$(window).on('load',function(){
+        $('#deltaruneModal').modal('show');
+});
+
+/*window.onload = function() {
   //modal.style.display = "block";
   $("#deltaruneModal").fadeIn();
   document.body.style.overflowY = "hidden";
@@ -410,7 +435,7 @@ window.onclick = function(event) {
 
 
   }
-}
+} */
 
 
 </script>
