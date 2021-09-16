@@ -1789,3 +1789,7 @@ input:checked + label + .picture {
 .staff-listRune .ty li:nth-child(5) .staff-avatar {
     background-image: url("images/avatar/rake.png")
 }
+
+.staff-listRune .ty li:nth-child(6) .staff-avatar {
+    background-image: url("images/avatar/thea.png")
+}
