@@ -237,7 +237,7 @@ header:before {
 }
 
 .title5 {
-    font-size: 60px;
+    font-size: 7vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%) translateY(130px);
@@ -1808,5 +1808,32 @@ BISOGNA PRIMA DICHIARARE LE CLASSI/ID E POI MODIFICARLI.*/
         font-size: 3.5vh;
     }
 }
+
+@media ( max-width: 700px ){
+
+    .slide4Rune {
+        background-position-x: -380px;
+
+    }
+}
+
+@media ( max-width: 635px ){
+
+    .slide4Rune {
+        background-position-x: -250px;
+        background-position-y: -250px;
+    }
+}
+
+@media ( max-width: 500px ){
+
+    .slide4Rune {
+        background-position-x: -390px;
+        background-position-y: -250px;
+    }
+}
+
+
+
 
 
