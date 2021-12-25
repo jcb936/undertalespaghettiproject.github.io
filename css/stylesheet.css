@@ -888,7 +888,7 @@ input:checked + label + .picture {
     display: inline-block;
     width: 25vw;
     max-height: 70px;
-    margin: 5px 2.3vw;
+    margin: 20px 2.3vw;
 }
 
 .staff-avatar {
