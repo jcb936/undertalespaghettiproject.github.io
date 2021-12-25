@@ -17,7 +17,27 @@ header {
     background-position: center;
 }
 
-header:before {
+.header-dr:before {
+    content: "";
+    background-color: rgba(0, 0, 0, .3);
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-dr {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/header-dr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-dr:before {
     content: "";
     background-color: rgba(0, 0, 0, .3);
     height: 100vh;
@@ -34,9 +54,9 @@ header:before {
     margin-right: auto;
     position: relative;
     top: 25%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    max-width: 50vw;
+    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
+    max-width: 40vw;
 }
 
 .slide {
@@ -552,6 +572,23 @@ input:checked + label + .picture {
     color: #3b3b3b;
 }
 
+.warning-dr {
+    font-family: Raleway;
+    font-size: 24px;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    float: left;
+    top: 16vh;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    width: calc(100% - 40px);
+}
+
+.warning-dr a {
+    color: #ff9999;
+}
+
 /* Lista versioni precedenti */
 
 .previous-versions {
@@ -665,6 +702,19 @@ input:checked + label + .picture {
     font-family: Raleway;
     font-size: 14px;
     color: rgba(0, 0, 0, .7);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .3)
+}
+
+.release-notes-dr {
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    top: calc(13vh + 10px);
+    float: right;
+    font-family: Raleway;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, .3)
 }
@@ -918,7 +968,7 @@ input:checked + label + .picture {
 }
 
 .staff-list li:nth-child(10) .staff-avatar {
-    background-image: url("../images/avatar/Chri.jpg")
+    background-image: url("../images/avatar/chri.jpg")
 }
 
 .staff-list li:nth-child(11) .staff-avatar {
@@ -926,7 +976,7 @@ input:checked + label + .picture {
 }
 
 .staff-list li:nth-child(12) .staff-avatar {
-    background-image: url("../images/avatar/daizo.png")
+    background-image: url("../images/avatar/daizo.jpg")
 }
 
 .staff-list li:nth-child(13) .staff-avatar {
@@ -1381,6 +1431,11 @@ input:checked + label + .picture {
         font-size: 12px;
     }
 
+    /* .warning-dr {
+        font-size: 12px;
+        color:#F5F5F5;
+    } */
+
 }
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
@@ -1756,19 +1811,27 @@ input:checked + label + .picture {
 }
 
 .staff-listRune li:nth-child(5) .staff-avatar {
-    background-image: url("../images/avatar/fim.jpg")
+    background-image: url("../images/avatar/nik.png")
 }
 
 .staff-listRune li:nth-child(6) .staff-avatar {
-    background-image: url("../images/avatar/daizo.png")
+    background-image: url("../images/avatar/daizo.jpg")
 }
 
 .staff-listRune li:nth-child(7) .staff-avatar {
-    background-image: url("../images/avatar/shoshia.png")
+    background-image: url("../images/avatar/shosia.gif")
+}
+
+.staff-listRune li:nth-child(8) .staff-avatar {
+    background-image: url("../images/avatar/gmoody.jpg")
+}
+
+.staff-listRune li:nth-child(9) .staff-avatar {
+    background-image: url("../images/avatar/armor.png")
 }
 
 .staff-listRune .ty li:nth-child(1) .staff-avatar {
-    background-image: url("../images/avatar/Chri.jpg")
+    background-image: url("../images/avatar/chri.jpg")
 }
 
 .staff-listRune .ty li:nth-child(2) .staff-avatar {
@@ -1789,6 +1852,26 @@ input:checked + label + .picture {
 
 .staff-listRune .ty li:nth-child(6) .staff-avatar {
     background-image: url("../images/avatar/thea.png")
+}
+
+.staff-listRune .ty li:nth-child(7) .staff-avatar{
+    background-image: url("../images/avatar/fim.jpg")
+}
+
+.staff-listRune .ty li:nth-child(8) .staff-avatar{
+    background-image: url("../images/avatar/depa.jpg")
+}
+
+.staff-listRune .ty li:nth-child(9) .staff-avatar{
+    background-image: url("../images/avatar/giulia.jpg")
+}
+
+.staff-listRune .ty li:nth-child(10) .staff-avatar{
+    background-image: url("../images/avatar/naebulis.jpeg")
+}
+
+.staff-listRune .ty li:nth-child(11) .staff-avatar{
+    background-image: url("../images/avatar/leovius.png")
 }
 
 /*MEDIA DELTARUNE*/

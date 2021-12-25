@@ -4,43 +4,87 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guida Installazione</title>
+  <title>Welcome file</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><h1 id="installare-la-patch-per-lultima-versione-di-undertale">Installare la patch per l’ultima versione di UNDERTALE</h1>
+  <div class="stackedit__html"><h1 id="utilizzare-linstaller-universale">Utilizzare l’installer universale</h1>
 <p>Ciao!<br>
-Abbiamo aggiornato la patch (<strong>V1.15</strong>), e ora è compatibile con l’ultima versione di <em>UNDERTALE</em> su PC (<strong>V1.08</strong>). Purtroppo non abbiamo ancora avuto modo di correggere i vari errori presenti, e qualche stringa è rimasta non tradotta (per esempio alcune linee nel menu delle opzioni). Ci stiamo arrivando, sarà tutto sistemato nella prossima release.</p>
+Finalmente abbiamo un installer universale! Con questo potrete patchare <em>UNDERTALE</em> e <em>DELTARUNE</em> (Capitolo 1 e 2), sia su <strong>Windows</strong>, <strong>macOS</strong> e <strong>Linux</strong>! L’installer vi permettera’ anche di aggiornare la patch nel caso rilasceremo aggiornamenti. Insomma, conveniente!</p>
+<h2 id="compatibilita">Compatibilita’</h2>
+<p>L’installer e’ compatibile con le seguenti versioni dei giochi:</p>
+<ul>
+<li><strong>DELTARUNE (Chaper 1 &amp; 2 DEMO)</strong>, versione <strong>1.07</strong></li>
+<li><strong>UNDERTALE</strong>, versione <strong>1.08</strong><br>
+E con qualsiasi versione di Windows, macOS o distribuzione Linux in grado di far girare <strong>.NET Runtime 6.0</strong> (piu’ info nei prerequisit).</li>
+</ul>
 <h2 id="prerequisiti">Prerequisiti</h2>
 <ul>
-<li>Come prima cosa, trovate la cartella dove avete installato <em>UNDERTALE</em>; generalmente, se avete installato il gioco tramite Steam, questa sarà:</li>
+<li>Come prima cosa, trovate la cartella dove avete installato <em>UNDERTALE</em> o <em>DELTARUNE</em>; generalmente, se avete installato il gioco tramite Steam, questa sarà:</li>
 </ul>
-<pre><code>C:\Programmi(x86)\Steam\steamapps\common\Undertale
+<pre><code>C:\Programmi(x86)\Steam\steamapps\common\Undertale 
+// oppure
+C:\Programmi(x86)\Steam\steamapps\common\DELTARUNEdemo
 </code></pre>
 <ul>
 <li>Verificate se il vostro sistema è a 32Bit o 64Bit, potete farlo andando su Informazioni sul Sistema dalla barra di ricerca di Windows in basso a sinistra.</li>
-<li>Installate il runtime di .NET 5.0 da qua: <a href="https://dotnet.microsoft.com/download/dotnet/5.0/runtime">https://dotnet.microsoft.com/download/dotnet/5.0/runtime</a>, selezionando <em>Download x64</em> o <em>Download x86</em> sotto <em>Run console apps</em>, a seconda se avete rispettivamente un sistema a 64 o 32 bit.</li>
-</ul>
-<h2 id="installazione">Installazione</h2>
+<li><strong>Solo per Windows e Linux</strong>, nstallate il runtime di .NET 5.0 da qua: <a href="https://dotnet.microsoft.com/download/dotnet/5.0/runtime">https://dotnet.microsoft.com/download/dotnet/5.0/runtime</a>,
 <ul>
-<li>Scaricate il file .zip con l’installer dal sito <a href="https://undertaleita.net/">https://undertaleita.net/</a></li>
-<li>Decomprimete il contenuto del file nella cartella in cui avete installato <em>UNDERTALE</em>.</li>
-<li>Assicuratevi che ora la cartella includa questi tre file:
-<ul>
-<li><em>data.win</em> (dall’installazione del gioco)</li>
-<li><em>UndertaleItaInstaller_x86.exe</em> (dallo zip dell’installer)</li>
-<li><em>UndertaleItaInstaller_x64.exe</em> (dallo zip dell’installer)</li>
+<li><strong>Windows</strong>: Selezionate <em>Download x64</em> o <em>Download x86</em> sotto <em>Run desktop apps</em>, a seconda se avete un sistema a 64 o 32 bit rispettivamente, e installate il runtime seguendo le istruzioni,</li>
+<li><strong>Linux</strong>: Seguite le istruzioni per la vostra distribuzione qua: <a href="https://docs.microsoft.com/it-it/dotnet/core/install/linux">https://docs.microsoft.com/it-it/dotnet/core/install/linux</a>, in particolare dovrete installare il pacchetto <strong>dotnet-runtime-5.0</strong></li>
+<li></li>
 </ul>
 </li>
-<li>Avviate <em><strong>UndertaleItaInstaller_x86.exe</strong></em> se avete un sistema a 32Bit, o <em><strong>UndertaleItaInstaller_x64.exe</strong></em> su un sistema a 64Bit, e aspettate che l’installazione sia conclusa.</li>
-<li>Tutto fatto! Potete ora avviare il gioco e sarà in italiano!</li>
+</ul>
+<h2 id="installazione-su-windows">Installazione su Windows</h2>
+<ul>
+<li>Scaricate il file .zip con l’installer dal sito <a href="https://undertaleita.net/">https://undertaleita.net/</a></li>
+<li>Decomprimete il contenuto del file in una cartella</li>
+<li>Aprite <em>Italian Patcher by USP</em></li>
+<li>Aspettate che l’installer scarichi gli aggiornamenti, poi cliccate su <strong>Installa</strong>.</li>
+<li>Cliccate su <strong>Sfoglia</strong> e selezionate, dalla cartella dove avete installato il gioco, il file <strong>data.win</strong>, o <strong>DELTARUNE.exe</strong> o <strong>UNDERTALE.exe</strong>.</li>
+<li>Cliccate <strong>Applica la patch</strong>, e attendete</li>
+<li>Appena sara’ tutto concluso, il vostro gioco sara’ tradotto! Potete ora avviarlo e giocare</li>
 </ul>
 <p><strong>NOTA</strong>: Se quando provate ad avviare l’exe Windows vi blocca con un popup di Windows SmartScreen, cliccate su <em>Ulteriori Informazioni</em>, e poi su <em>Esegui comunque</em>.</p>
+<h2 id="installazione-su-macos">Installazione su macOS</h2>
+<ul>
+<li>Scaricate il file .tar con l’installer dal sito <a href="https://undertaleita.net/">https://undertaleita.net/</a></li>
+<li>Decomprimete il contenuto del file</li>
+<li>Spostate il file <em>Italian Patch by USP</em> nella cartella <em>Applicazioni</em> (<strong>IMPORTANTE</strong>)</li>
+<li>Aprite il <em>Finder</em>, navigate nella cartella <em>Applicazioni</em>, fate tasto destro su <em>Spaghetti Installer</em> e cliccate su <strong>Apri</strong>.</li>
+<li>Accettate qualsiasi avviso apparira’ su schermo.</li>
+<li>Aspettate che l’installer scarichi gli aggiornamenti, poi cliccate su <strong>Installa</strong>.</li>
+<li>Cliccate su <strong>Sfoglia</strong> e selezionate, dalla cartella dove avete installato il gioco, il file <strong>data.ios</strong>, o <strong>DELTARUNE.app</strong> o <strong>UNDERTALE.app</strong>.</li>
+<li>Cliccate <strong>Applica la patch</strong>, e attendete</li>
+<li>Appena sara’ tutto concluso, il vostro gioco sara’ tradotto! Potete ora avviarlo e giocare</li>
+</ul>
+<h2 id="installazione-su-linux">Installazione su Linux</h2>
+<p><strong>NOTA</strong>: Le istruzioni per Linux verranno fornite per essere eseguite tramite terminale.</p>
+<ul>
+<li>Scaricate il file .tar con l’installer dal sito <a href="https://undertaleita.net/">https://undertaleita.net/</a></li>
+<li>Decomprimete il contenuto del file in una cartella</li>
+<li><strong>ASSICURATEVI DI AVER INSTALLATO IL RUNTIME DI .NET</strong>, leggi i prerequisiti in caso.</li>
+<li>Aprite una finestra di terminale, e navigate tramite <code>cd</code> nella directory in cui avete decompresso, per esempio se ho decompresso il gioco in <code>~/SpaghettiInstaller</code> faro’:</li>
+</ul>
+<pre><code>$ cd ~/SpaghettiInstaller
+</code></pre>
+<ul>
+<li>Ora eseguite i seguenti comandi:</li>
+</ul>
+<pre><code>$ chmod a+x ItalianPatcherLinux.sh
+$ ./ItalianPatcherLinux
+</code></pre>
+<ul>
+<li>Aspettate che l’installer scarichi gli aggiornamenti, poi cliccate su <strong>Installa</strong>.</li>
+<li>Cliccate su <strong>Sfoglia</strong> e selezionate, dalla cartella dove avete installato il gioco, il file <strong>data.unx</strong></li>
+<li>Cliccate <strong>Applica la patch</strong>, e attendete</li>
+<li>Appena sara’ tutto concluso, il vostro gioco sara’ tradotto! Potete ora avviarlo e giocare</li>
+</ul>
 <h2 id="note-aggiuntive">Note aggiuntive</h2>
-<p>L’aggiornamento della patch è stato possibile grazie ai nuovi membri del team <a href="https://github.com/nkrapivin">@Nik</a>, <a href="https://www.youtube.com/c/depa31/">@Depa</a> e @GiMoody, sentirete ancora parlare di loro. In più, un grazie speciale a <a href="https://github.com/krzys-h">@krzys_h</a> per aver sviluppato <em>UndertaleModTool</em>, che è stato essenziale per lo sviluppo.</p>
-<p>Come già accennato, aggiorneremo e sistemeremo gli errori della patch con la prossima release. La priorita’, per adesso, è sulla traduzione del Capitolo 2 di <em>DELTARUNE</em>. Approfitteremo della release anche per aggiornare il sito, che ha bisogno di una svecchiata.<br>
-Nel frattempo, potete seguire tutti gli aggiornamenti sulla pagina Facebook.</p>
+<p>L’installer e’ stato possibile grazie al nostro <a href="https://github.com/nkrapivin">@Nik</a>. In più, un grazie speciale a <a href="https://github.com/krzys-h">@krzys_h</a> per aver sviluppato <em>UndertaleModTool</em>, che è stato essenziale per lo sviluppo.</p>
+<p>Se avete problemi, scriveteci su Facebook o mandateci un’email a <em><a href="mailto:undertalespaghettiproject@gmail.com">undertalespaghettiproject@gmail.com</a></em>. Grazie del supporto e della pazienza! Speriamo possiate divertirvi con DELTARUNE e UNDERTALE in italiano!</p>
 <p>A presto!</p>
 <p><em>Renard</em></p>
 </div>
