@@ -802,6 +802,20 @@ input:checked + label + .picture {
     margin-right: 10px;
 }
 
+.social-list .social-discord:before {
+    background-image: url(../images/discord.svg);
+    background-size: 40px 40px;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.social-list .social-bluesky:before {
+    background-image: url(../images/bluesky.svg);
+    background-size: 40px 40px;
+    background-position: center;
+    margin-right: 10px;
+}
+
 .social-fb {
     position: relative;
     transform: translateX(350px);
@@ -832,6 +846,28 @@ input:checked + label + .picture {
 }
 
 .moved-social-email {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.social-discord {
+    position: relative;
+    transform: translateX(550px);
+    opacity: 0;
+}
+
+.moved-social-discord {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.social-bluesky {
+    position: relative;
+    transform: translateX(550px);
+    opacity: 0;
+}
+
+.moved-social-bluesky {
     transform: translateX(0);
     opacity: 1;
 }
@@ -1525,7 +1561,7 @@ input:checked + label + .picture {
         background-size: 35px 35px;
     }
 
-    .social-list .social-tumblr:before, .social-list .social-email:before {
+    .social-list .social-tumblr:before, .social-list .social-email:before .social-discord .social-discord:before .social-bluesky .social-bluesky-before {
         background-size: 30px 30px;
     }
 
