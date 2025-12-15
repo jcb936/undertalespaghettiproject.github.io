@@ -48,7 +48,7 @@ header {
     right: 0;
 }
 
-#logo {
+#logo_dr {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -56,6 +56,17 @@ header {
     top: 25%;
     transform: translateY(+120%);
     -webkit-transform: translateY(+120%);
+    max-width: 40vw;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 25%;
+    transform: translateY(-30%);
+    -webkit-transform: translateY(-30%);
     max-width: 40vw;
 }
 
@@ -1878,17 +1889,17 @@ input:checked + label + .picture {
 
 /* andre */
 .staff-listRune .pt li:nth-child(1) .staff-avatar {
-    background-image: url("../images/avatar/renard.jpg")
+    background-image: url("../images/avatar/A.CraftDEV.png")
 }
 
 /* KnuckleBuckle */
 .staff-listRune .pt li:nth-child(2) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/KnuckleBuckle.jpg")
 }
 
 /* L'Armadio */
 .staff-listRune .pt li:nth-child(3) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/armadio.png")
 }
 
 /* Noire */
@@ -1898,12 +1909,12 @@ input:checked + label + .picture {
 
 /* BetweenShades */
 .staff-listRune .pt li:nth-child(5) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/BetweenShades.jpg")
 }
 
 /* Matteo Nori */
 .staff-listRune .pt li:nth-child(6) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/MatteoNori.jpeg")
 }
 
 /* Giob Caridi */
@@ -1913,12 +1924,12 @@ input:checked + label + .picture {
 
 /* robinchips */
 .staff-listRune .pt li:nth-child(8) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/rob.png")
 }
 
 /* IoSonoOtakuman */
 .staff-listRune .pt li:nth-child(9) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/otakuman.jpg")
 }
 
 /* Ringraziamenti */
