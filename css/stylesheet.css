@@ -1877,9 +1877,9 @@ input:checked + label + .picture {
 }
 
 /* willow */
-/* .staff-listRune li:nth-child(9) .staff-avatar {
-    background-image: url("../images/avatar/armor.png")
-} */
+.staff-listRune li:nth-child(9) .staff-avatar {
+    background-image: url("../images/avatar/willow.jpg")
+}
 
 .staff-listRune li:nth-child(10) .staff-avatar {
     background-image: url("../images/avatar/depa.jpg")
@@ -1919,7 +1919,7 @@ input:checked + label + .picture {
 
 /* Giob Caridi */
 .staff-listRune .pt li:nth-child(7) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/giob.jpeg")
 }
 
 /* robinchips */
