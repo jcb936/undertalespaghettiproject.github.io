@@ -31,7 +31,7 @@ header {
 .header-dr {
     width: 100%;
     height: 100vh;
-    background-image: url("../images/header-dr.png");
+    background-image: url("../images/header-dr2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,6 +46,17 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#logo_dr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 25%;
+    transform: translateY(+120%);
+    -webkit-transform: translateY(+120%);
+    max-width: 40vw;
 }
 
 #logo {
@@ -257,7 +268,7 @@ header {
 }
 
 .title5 {
-    font-size: 7vw;
+    font-size: 4vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%) translateY(130px);
@@ -286,6 +297,8 @@ header {
     font-size: 2.5vh;
     font-weight: 200;
     transform: translateX(100px);
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .moved-description1 {
@@ -1831,11 +1844,11 @@ input:checked + label + .picture {
 }
 
 .staff-listRune li:nth-child(1) .staff-avatar {
-    background-image: url("../images/avatar/renard.png")
+    background-image: url("../images/avatar/renard.jpg")
 }
 
 .staff-listRune li:nth-child(2) .staff-avatar {
-    background-image: url("../images/avatar/auster.jpg")
+    background-image: url("../images/avatar/jacklemon.jpg")
 }
 
 .staff-listRune li:nth-child(3) .staff-avatar {
@@ -1843,70 +1856,129 @@ input:checked + label + .picture {
 }
 
 .staff-listRune li:nth-child(4) .staff-avatar {
-    background-image: url("../images/avatar/jacklemon.jpg")
-}
-
-.staff-listRune li:nth-child(5) .staff-avatar {
-    background-image: url("../images/avatar/nik.png")
-}
-
-.staff-listRune li:nth-child(6) .staff-avatar {
     background-image: url("../images/avatar/daizo.jpg")
 }
 
-.staff-listRune li:nth-child(7) .staff-avatar {
+.staff-listRune li:nth-child(5) .staff-avatar {
     background-image: url("../images/avatar/shosia.gif")
 }
 
-.staff-listRune li:nth-child(8) .staff-avatar {
+.staff-listRune li:nth-child(6) .staff-avatar {
     background-image: url("../images/avatar/gmoody.jpg")
 }
 
-.staff-listRune li:nth-child(9) .staff-avatar {
-    background-image: url("../images/avatar/armor.png")
-}
-
-.staff-listRune .ty li:nth-child(1) .staff-avatar {
+.staff-listRune li:nth-child(7) .staff-avatar {
     background-image: url("../images/avatar/Chri.jpg")
 }
 
-.staff-listRune .ty li:nth-child(2) .staff-avatar {
-    background-image: url("../images/avatar/fakedubita.jpg")
+/* vanzzz */
+.staff-listRune li:nth-child(8) .staff-avatar {
+    background-image: url("../images/avatar/vanzzz.png")
 }
 
-.staff-listRune .ty li:nth-child(3) .staff-avatar {
-    background-image: url("../images/avatar/wander.png")
+/* willow */
+.staff-listRune li:nth-child(9) .staff-avatar {
+    background-image: url("../images/avatar/willow.jpg")
 }
 
-.staff-listRune .ty li:nth-child(4) .staff-avatar {
-    background-image: url("../images/avatar/gabby.png")
-}
-
-.staff-listRune .ty li:nth-child(5) .staff-avatar {
-    background-image: url("../images/avatar/rake.png")
-}
-
-.staff-listRune .ty li:nth-child(6) .staff-avatar {
-    background-image: url("../images/avatar/thea.png")
-}
-
-.staff-listRune .ty li:nth-child(7) .staff-avatar{
-    background-image: url("../images/avatar/fim.jpg")
-}
-
-.staff-listRune .ty li:nth-child(8) .staff-avatar{
+.staff-listRune li:nth-child(10) .staff-avatar {
     background-image: url("../images/avatar/depa.jpg")
 }
 
+/* Lista playtester */
+
+/* andre */
+.staff-listRune .pt li:nth-child(1) .staff-avatar {
+    background-image: url("../images/avatar/A.CraftDEV.png")
+}
+
+/* KnuckleBuckle */
+.staff-listRune .pt li:nth-child(2) .staff-avatar {
+    background-image: url("../images/avatar/KnuckleBuckle.jpg")
+}
+
+/* L'Armadio */
+.staff-listRune .pt li:nth-child(3) .staff-avatar {
+    background-image: url("../images/avatar/armadio.png")
+}
+
+/* Noire */
+.staff-listRune .pt li:nth-child(4) .staff-avatar {
+    background-image: url("../images/avatar/noire.jpg")
+}
+
+/* BetweenShades */
+.staff-listRune .pt li:nth-child(5) .staff-avatar {
+    background-image: url("../images/avatar/BetweenShades.jpg")
+}
+
+/* Matteo Nori */
+.staff-listRune .pt li:nth-child(6) .staff-avatar {
+    background-image: url("../images/avatar/MatteoNori.jpeg")
+}
+
+/* Giob Caridi */
+.staff-listRune .pt li:nth-child(7) .staff-avatar {
+    background-image: url("../images/avatar/giob.jpeg")
+}
+
+/* robinchips */
+.staff-listRune .pt li:nth-child(8) .staff-avatar {
+    background-image: url("../images/avatar/rob.png")
+}
+
+/* IoSonoOtakuman */
+.staff-listRune .pt li:nth-child(9) .staff-avatar {
+    background-image: url("../images/avatar/otakuman.jpg")
+}
+
+/* Ringraziamenti */
+
+.staff-listRune .ty li:nth-child(1) .staff-avatar {
+    background-image: url("../images/avatar/auster.jpg")
+}
+
+.staff-listRune .ty li:nth-child(2) .staff-avatar {
+    background-image: url("../images/avatar/nik.png")
+}
+
+.staff-listRune .ty li:nth-child(3) .staff-avatar {
+    background-image: url("../images/avatar/armor.png")
+}
+
+.staff-listRune .ty li:nth-child(4) .staff-avatar {
+    background-image: url("../images/avatar/fakedubita.jpg")
+}
+
+.staff-listRune .ty li:nth-child(5) .staff-avatar {
+    background-image: url("../images/avatar/wander.png")
+}
+
+.staff-listRune .ty li:nth-child(6) .staff-avatar {
+    background-image: url("../images/avatar/gabby.png")
+}
+
+.staff-listRune .ty li:nth-child(7) .staff-avatar{
+    background-image: url("../images/avatar/rake.png")
+}
+
+.staff-listRune .ty li:nth-child(8) .staff-avatar{
+    background-image: url("../images/avatar/thea.png")
+}
+
 .staff-listRune .ty li:nth-child(9) .staff-avatar{
-    background-image: url("../images/avatar/giulia.jpg")
+    background-image: url("../images/avatar/fim.jpg")
 }
 
 .staff-listRune .ty li:nth-child(10) .staff-avatar{
-    background-image: url("../images/avatar/naebulis.jpeg")
+    background-image: url("../images/avatar/giulia.jpg")
 }
 
 .staff-listRune .ty li:nth-child(11) .staff-avatar{
+    background-image: url("../images/avatar/naebulis.jpeg")
+}
+
+.staff-listRune .ty li:nth-child(12) .staff-avatar{
     background-image: url("../images/avatar/leovius.png")
 }
 
