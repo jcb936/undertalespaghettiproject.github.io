@@ -16,7 +16,7 @@ function createOrUpdateMarquee() {
     // Marquee exists, nothing to do
   } else {
     // Fresh reload, create marquee
-    $("#marquee_container").append("<div class='text-center d-block yellow w-100 pt-1' style='font-size: 24px'>È FINITA!!!!!</div>");
+    $("#marquee_container").append("<div class='text-center d-block yellow w-100 pt-1' style='font-size: 24px'>ADATTAMENTO DELL'EVENTO $PAMTON $WEEPSTAKES ORIGINARIAMENTE CREATO DA FANGAMER. È FINITO!!!!!</div>");
   }
 }
 
