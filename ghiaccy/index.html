@@ -1,0 +1,104 @@
+<html lang='en'>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <meta content='#000000' name='theme-color'>
+  <meta content='noindex' name='robots'>
+  <title>Chi l'ha visto?</title>
+  <link href='https://deltarune.com/assets/css/extra.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <main>
+    <script crossorigin='anonymous' integrity='sha512-yBpuflZmP5lwMzZ03hiCLzA94N0K2vgBtJgqQ2E1meJzmIBfjbb7k4Y23k2i2c/rIeSUGc7jojyIY5waK3ZxCQ==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js'></script>
+    <script crossorigin='anonymous' integrity='sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==' referrerpolicy='no-referrer' src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js'></script>
+
+    <div id='icee'>
+<div class='container'>
+<img alt='Chi l&apos;ha visto???' id='banner' src='../assets/images/iceee.gif'>
+<h1>AVVISTAMENTI RECENTI</h1>
+<p>Questo avvistamento è firmato, come altri in passato, Noelle Holiday.</p>
+<p>“laltra note sono scesa a mangiare degli avanzi di pizza ma quando sono scesa era buio e non trovavo l interrutore della luce e poi cera ghiaccy sulla scatola emi HA FATTO LOCCHIO LINO!!!!o urlato</p>
+<p>solo mia sorella mi crede”</p>
+<p>Un aggiornamento sull'avvistamento.</p>
+<p>“NUOVE NOTIZIE!!!!!!!!!!</p>
+<p>Mia sorella ha bruciato la scatola sull'erba per ucciderla e puzzava di pizza bruchicciata</p>
+<p>ha bruciato via gli occhi di ghiaccy e sembrava CATTIVISSIMO e asry a detto che dovevamo soppellire la scatola e quindi kris ha scavato un fossso per terra nel cimi tero e poi avevo paurissima che uno zombie uscise fuori e o detto a kris che avevo paura e poi quando ha girato la testa verso di me aveva la scatola sulla faccia e o urlato così dess poi l'ha dat una botta in testa e quindi ha preso la scatola e lanciata via ma secondo me tornerà a uccidermi”</p>
+<p>Per coloro che hanno apprezzato questi avvistamenti, non scordatevi di dare un'occhiata a quelli riportati <a href="../december/index.html">dalla sorella della mittente</a>.</p>
+</div>
+</div>
+<style>
+  #icee {
+    font-family: "Arial", Arial, sans-serif;
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    width: 462px;
+    max-width: 80%;
+    padding: 1rem;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: left;
+    background: #2A2F33;
+    font-size: 13px;
+  }
+  #banner {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  #icee p a {
+    text-decoration: underline;
+    color: #5f5fff;
+  }
+</style>
+<script>
+  var chair = new Howl({
+    src: ['/assets/audio/water.ogg', '/assets/audio/water.mp3'],
+    volume: 0.5,
+    loop: true
+  });
+  
+  var chair3 = new Howl({
+    src: ['/assets/audio/face.ogg', '/assets/audio/face.mp3'],
+    volume: 0.5
+  });
+  
+  $(document).on('click', '.chair:not(.playing)', function() {
+    var r = Math.random();
+    if (Math.random() < 0.95) {
+      chair.play();
+      $('.chair').addClass('playing');
+      $('.chair2').css('opacity', 1);
+      document.title = '... get darker than dark?';
+    } else {
+      chair3.play();
+      $('.chair3').css('opacity', 1);
+      $('.chair1').css('opacity', 0);
+      $('.chair2').css('opacity', 0);
+      $('.chair').addClass('playing');
+      $('.chair').addClass('other');
+      document.title = ' ';
+      setTimeout(function() {
+        window.location.href = "/sweepstakes/";
+      }, 100);
+    }
+  });
+  
+  $(document).on('click', '.chair.playing:not(.other)', function() {
+    chair.pause();
+    $('.chair').removeClass('playing');
+    $('.chair2').css('opacity', 0);
+    document.title = 'But what if it could...';
+  });
+</script>
+
+  </main>
+  <script defer>if(!window.plausibleloaded){window.plausibleloaded=true;var onloadfunc = function() {!function(){"use strict";var t=window.location,e=window.document;function a(t,e){t&&console.warn("Ignoring Event: "+t),e&&e.callback&&e.callback()}function n(n,i){if(/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(t.hostname)||"file:"===t.protocol)return a("localhost",i);if(window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress)return a(null,i);try{if("true"===window.localStorage.plausible_ignore)return a("localStorage flag",i)}catch(r){}var l={},o=(l.n=n,l.u=t.href,l.d="deltarune.com",l.r=e.referrer||null,i&&i.meta&&(l.m=JSON.stringify(i.meta)),i&&i.props&&(l.p=i.props),new XMLHttpRequest);o.open("POST","https://plausible.fangamer.eu/api/event",!0),o.setRequestHeader("Content-Type","text/plain"),o.send(JSON.stringify(l)),o.onreadystatechange=function(){4===o.readyState&&i&&i.callback&&i.callback()}}e.currentScript;var i=window.plausible&&window.plausible.q||[];window.plausible=n;for(var r,l=0;l<i.length;l++)n.apply(this,i[l]);function o(){r!==t.pathname&&(r=t.pathname,n("pageview"))};o();}();}; onloadfunc();}</script>
+  
+</body>
+</html>
