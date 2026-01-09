@@ -33,7 +33,7 @@ function shuffleGifs() {
 }
 
 function addGifToContainer(container) {
-  var random_gif = '/assets/images/coolgifs/' + cool_gifs[getRandomInt(0, cool_gifs.length)];
+  var random_gif = '../assets/images/coolgifs/' + cool_gifs[getRandomInt(0, cool_gifs.length)];
   var random_top = getRandomInt(0, 80);
   var random_left = getRandomInt(0, 50);
   var random_rotation = getRandomInt(-20, 20);
