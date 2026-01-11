@@ -1822,15 +1822,16 @@ input:checked + label + .picture {
 
 .slideGrey {
     width: 100%;
-    min-height: 100vh;
-    background-size: auto 100vh;
+    min-height: 105vh;
+    background-size: auto 105vh;
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;
     background-repeat: no-repeat;
     transition: .8s ease;
-    overflow: hidden;
+    overflow:auto;
     background-color: #222;
+    
 }
 
 .container4rune {
