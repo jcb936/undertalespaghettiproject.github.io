@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     width: device-width;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .rune {

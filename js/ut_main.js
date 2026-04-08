@@ -1,67 +1,52 @@
-import { handlePageScroll, handleTopBar } from "./common.js";
+import { handleTopBar } from "./common.js";
+
+function addClass(selector, className) {
+  document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
+}
+
+function removeClass(selector, className) {
+  document.querySelectorAll(selector).forEach((el) => el.classList.remove(className));
+}
 
 function handleAppearingElements() {
-  var viewportHeight = $(window).height();
-  window.addEventListener("scroll", throttle(callback, 400));
+  const callback = () => {
+    const scroll = window.scrollY;
+    const viewportHeight = window.innerHeight;
 
-  function callback() {
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop();
-      var viewportHeight = $(window).height();
+    if (scroll < viewportHeight * 0.5) {
+      removeClass(".top-bar", "visible-top-bar");
+    }
 
-      if (scroll >= viewportHeight * 0.5) {
-        $(".title1").addClass("moved-title1");
-        $(".description1").addClass("moved-description1");
-        $(".top-bar").addClass("visible-top-bar");
-      }
+    if (scroll >= viewportHeight * 0.5) {
+      addClass(".title1", "moved-title1");
+      addClass(".description1", "moved-description1");
+      addClass(".top-bar", "visible-top-bar");
+    }
 
-      if (scroll < viewportHeight * 0.5) {
-        $(".top-bar").removeClass("visible-top-bar");
-      }
+    if (scroll >= viewportHeight * 1.2) {
+      addClass(".title2", "moved-title2");
+      addClass(".slider-immagini", "moved-slider-immagini");
+      addClass(".title3", "moved-title3");
+      addClass(".download-icon", "animated-download-icon");
+      addClass(".download-button", "animated-download-button");
+    }
 
-      if (scroll >= viewportHeight * 1.2) {
-        $(".title2").addClass("moved-title2");
-        $(".slider-immagini").addClass("moved-slider-immagini");
-      }
+    if (scroll >= viewportHeight * 1.7) {
+      addClass(".title4", "moved-title4");
+      addClass(".social-fb", "moved-social-fb");
+      addClass(".social-discord", "moved-social-discord");
+      addClass(".social-bluesky", "moved-social-bluesky");
+      addClass(".social-email", "moved-social-email");
+      addClass(".title5", "moved-title5");
+      addClass(".staff-list", "animated-staff-list");
+      addClass(".staff-avatar", "animated-staff-avatar");
+    }
+  };
 
-      if (scroll >= viewportHeight * 1.2) {
-        $(".title3").addClass("moved-title3");
-        $(".download-icon").addClass("animated-download-icon");
-        $(".download-button").addClass("animated-download-button");
-      }
-
-      if (scroll >= viewportHeight * 1.7) {
-        $(".title4").addClass("moved-title4");
-        $(".social-fb").addClass("moved-social-fb");
-        $(".social-discord").addClass("moved-social-discord");
-        $(".social-bluesky").addClass("moved-social-bluesky");
-        $(".social-email").addClass("moved-social-email");
-      }
-
-      if (scroll >= viewportHeight * 1.7) {
-        $(".title5").addClass("moved-title5");
-        $(".staff-list").addClass("animated-staff-list");
-        $(".staff-avatar").addClass("animated-staff-avatar");
-      }
-    });
-  }
-
-  function throttle(callback, limit) {
-    var wait = false;
-    return function () {
-      if (!wait) {
-        callback.call();
-        wait = true;
-        setTimeout(function () {
-          wait = false;
-        }, limit);
-      }
-    };
-  }
+  window.addEventListener("scroll", callback);
 }
 
 // Do the JS - Should be done after DOMContentLoaded (e.g. loaded by the Cachebuster)
 
 handleAppearingElements();
-handlePageScroll();
 handleTopBar();
