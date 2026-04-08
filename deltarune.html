@@ -1,435 +1,402 @@
 <html>
-<head>
+  <head>
     <!— Global site tag (gtag.js) - Google Analytics —>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117084489-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag("js", new Date());
 
-        gtag('config', 'UA-117084489-1');
+      gtag("config", "UA-117084489-1");
     </script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet">
-    <link href='css/stylesheet.css' rel='stylesheet' type='text/css'>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="theme-color" content="#000000">
-    <meta name="keywords"
-          content="Undertale, undertale spaghetti project, Deltarune, deltaruneita, Deltarune traduzione italiana, Deltarune in italiano, deltarune ita, deltarune sub ita, deltarune sub, deltarune da inglese a italiano, deltarune spaghetti, Undertale, undertaleita, Undertalia, traduzione, undertale in italiano, italiana, patch ita, Undertale Spaghetti, Spaghetti, Undertale patch in italiano, undertale traduzione italiana">
-    <meta http-equiv="content-language" content="it"/>
-    <meta name="description" content="Dove i sogni diventano spaghetti.">
-    <link rel="canonical" href="http://undertaleita.net"/>
-    <link rel="icon" href="/images/favicon.ico"/>
-    <meta property=og:site_name content="Deltarune - Undertale Spaghetti Project">
-    <meta property=og:description content="Dove i sogni diventano spaghetti.">
-    <meta property=og:locale content="it_IT">
-    <meta property=og:image itemprop="image" content="http://undertaleita.net/images/og-image-deltarune.png">
-    <meta property=og:image:url content="http://undertaleita.net/images/og-image-deltarune.png">
-    <meta property=og:image:type content="image/png">
-    <meta property=og:image:width content="750">
-    <meta property=og:image:height content="500">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet" />
+    <!-- Fallback in case no JS to use the cachebuster -->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <!-- CACHEBUSTING. https://petrapixel.neocities.org/coding/cachebusting -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const CSS_FILE_PATH = "./css/stylesheet.css";
+        const JS_FILE_PATH = "./js/dr_main.js";
+
+        function loadScript(src) {
+          const script = document.createElement("script");
+          script.src = src + "?nocache=" + new Date().getTime();
+          script.async = true;
+          script.type = "module";
+          document.head.appendChild(script);
+        }
+        function loadCSS(href) {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = href + "?nocache=" + new Date().getTime();
+          document.head.appendChild(link);
+        }
+        if (JS_FILE_PATH) loadScript(JS_FILE_PATH);
+        if (CSS_FILE_PATH) loadCSS(CSS_FILE_PATH);
+      });
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="keywords"
+      content="Undertale, undertale spaghetti project, Deltarune, deltaruneita, Deltarune traduzione italiana, Deltarune in italiano, deltarune ita, deltarune sub ita, deltarune sub, deltarune da inglese a italiano, deltarune spaghetti, Undertale, undertaleita, Undertalia, traduzione, undertale in italiano, italiana, patch ita, Undertale Spaghetti, Spaghetti, Undertale patch in italiano, undertale traduzione italiana" />
+    <meta http-equiv="content-language" content="it" />
+    <meta name="description" content="Dove i sogni diventano spaghetti." />
+    <link rel="canonical" href="http://undertaleita.net" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <meta property="og:site_name" content="Deltarune - Undertale Spaghetti Project" />
+    <meta property="og:description" content="Dove i sogni diventano spaghetti." />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:image" itemprop="image" content="http://undertaleita.net/images/og-image-deltarune.png" />
+    <meta property="og:image:url" content="http://undertaleita.net/images/og-image-deltarune.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="750" />
+    <meta property="og:image:height" content="500" />
     <title>Deltarune - Undertale Spaghetti Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="top-bar" id="top-bar">
-        <div class="dog" id="dog"></div>
-        <ul>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#download">Download</a></li>
-            <li><a href="#crediti">Crediti</a></li>
-            <li><a href="#contatti">Contatti</a></li>
-            <li><a href="./index.html">Undertale</a></li>
-        </ul>
+      <div class="dog" id="dog"></div>
+      <ul>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#crediti">Crediti</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="./index">Undertale</a></li>
+      </ul>
     </div>
 
     <header class="header-dr">
-        <img src="images/USPretro.png" id="logo_dr">
+      <img src="images/USPretro.png" id="logo_dr" />
     </header>
+    <div class="slideGrey" id="download">
+      <div class="container container1runeDesc">
+        <a class="title title1">Progetto traduzione italiana</a><br />
+        <span class="description description1"
+          ><p>
+            <b>Deltarune</b> è un videogioco attualmente in sviluppo creato da <b>Toby Fox</b>, già autore del fortunato
+            <i>Undertale</i>. II gioco riprende personaggi e ambientazioni del precedente titolo, stravolgendoli in
+            contesti nuovi e inaspettati ma sempre forte di quello humor che tanto fu apprezzato nel titolo
+            precedente.<br />
+            <b>Avventurati con Kris, Susie e Ralsei nel mondo dell’oscurità</b>
+            e svela i misteri di terre sconosciute. Incontrerai nuovi amici oppure ti farai nuovi nemici? Sarai tu a
+            scegliere. Riuscirai a scoprire il segreto delle <b>Fonti Oscure</b>? Il potere delle soffici palle di pelo
+            risplende in te.
+          </p>
+          <p>
+            <b>Undertale Spaghetti Project</b>, dopo aver lavorato alla traduzione di <i>Undertale</i>, ha curato la
+            traduzione dei primi tre capitoli e sta lavorando a quella del quarto. L'opera è acquistabile su
+            <a href="https://store.steampowered.com/app/1671210/DELTARUNE/">Steam</a>, i primi due capitoli sono
+            gratuiti. Comprate il gioco, installatelo e scaricate la patch con il suo installer che vi guiderà
+            all’applicazione della patch.<br />
+            Ringraziamo come al solito la community degli Undermodders e degli Underminers su Reddit, che grazie al
+            proprio lavoro hanno reso possibile questa traduzione. Infine, ringraziamo di cuore tutte le persone che ci
+            hanno seguito e supportato fin dalle origini, niente di questo sarebbe mai arrivato a questo punto senza di
+            voi.
+          </p>
+          <p>
+            Per qualunque domanda o supporto tecnico, puoi unirti al nostro
+            <a href="https://discord.gg/YrEkAJ5MrG">server discord</a>.<br />
+            Le nostre traduzioni saranno sempre e solamente fatte
+            <b>da umani.</b>
+          </p></span
+        >
+      </div>
 
-    <!-- <div class="sliderune slide2" id="info">
-        <div class="container1rune">
-            <img class="darker" src="images/darkerRelease.gif" alt="deltarune">
-            <img class="darkerUSP" src="images/USPretro.png" alt="deltarune">
-            <a href="#download">
-                <div class="link">Download</div>
-            </a>
+      <a href="https://github.com/USPAssets/Installer/releases/latest">
+        <div class="download-button animated-download-button">
+          <span class="download-text">
+            <span class="download-title">INSTALLER</span>
+            <span class="download-description">Windows / macOS / Linux</span>
+          </span>
+
+          <div class="download-icon animated-download-icon"></div>
         </div>
-    </div> -->
-<div class="slideGrey" id="download">
-    <div class="container container1runeDesc">
-        <a class="title title1">Progetto traduzione italiana</a><br>
-        <span class="description description1"><p><b>Deltarune</b> è un videogioco attualmente in sviluppo creato da <b>Toby Fox</b>, già autore del fortunato <i>Undertale</i>.
-            II gioco riprende personaggi e ambientazioni del precedente titolo, stravolgendoli in contesti nuovi e inaspettati ma sempre forte di quello humor che tanto fu apprezzato nel titolo precedente.<br>
-            <b>Avventurati con Kris, Susie e Ralsei nel mondo dell’oscurità</b> e svela i misteri di terre sconosciute. Incontrerai nuovi amici oppure ti farai nuovi nemici? Sarai tu a scegliere. Riuscirai a scoprire il segreto delle <b>Fonti Oscure</b>? Il potere delle soffici palle di pelo risplende in te.</p>
-            <p><b>Undertale Spaghetti Project</b>, dopo aver lavorato alla traduzione di <i>Undertale</i>, ha curato la traduzione dei primi tre capitoli e sta lavorando a quella del quarto. L'opera è acquistabile su <a href="https://store.steampowered.com/app/1671210/DELTARUNE/">Steam</a>, i primi due capitoli sono gratuiti.
-            Comprate il gioco, installatelo e scaricate la patch con il suo installer che vi guiderà all’applicazione della patch.<br>
-            Ringraziamo come al solito la community degli Undermodders e degli Underminers su Reddit, che grazie al proprio lavoro hanno reso possibile questa traduzione. Infine, ringraziamo di cuore tutte le persone che ci hanno seguito e supportato fin dalle origini, niente di questo sarebbe mai arrivato a questo punto senza di voi.</p>
-            <p>Per qualunque domanda o supporto tecnico, puoi unirti al nostro <a href="https://discord.gg/YrEkAJ5MrG">server discord</a>.<br>
-            Le nostre traduzioni saranno sempre e solamente fatte <b>da umani.</b></p></span>
+      </a>
+      <a class="release-notes-dr" href="https://github.com/USPAssets/Online/blob/main/CHANGELOG.md"
+        >Capitoli 1, 2 e 3 in italiano - Clicca qui per il changelog</a
+      >
+      <a href="https://github.com/USPAssets/Installer/blob/main/README.md"
+        ><p class="warning-dr"><b>NOTA</b>: Clicca qui per istruzioni per l'installazione.</p></a
+      >
     </div>
 
-
-    <a href="https://github.com/USPAssets/Installer/releases/latest">
-        <div class="download-button animated-download-button">
-            <span class="download-text">
-                 <span class="download-title">INSTALLER</span>
-                <span class="download-description">Windows / macOS / Linux</span>
-            </span>
-
-            <div class="download-icon animated-download-icon"></div>
-        </div>
-    </a>
-    <a class="release-notes-dr" href="https://github.com/USPAssets/Online/blob/main/CHANGELOG.md">Capitoli 1, 2 e 3 in italiano - Clicca qui per il changelog</a>
-    <a href="https://github.com/USPAssets/Installer/blob/main/README.md"><p class="warning-dr"><b>NOTA</b>: Clicca qui per istruzioni per l'installazione.</p></a>
-</div>
-
-<div class="slide slide5Rune" id="crediti">
-    <a class="title title5">CREDITI</a>
-    <div class="staff-listRune">
+    <div class="slide slide5Rune" id="crediti">
+      <a class="title title5">CREDITI</a>
+      <div class="staff-listRune">
         <ul>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">Renard</div>
-                    <div class="staff-role">Supervisione, Produzione, Tech & Tools</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick"><a href="https://x.com/LemonArtsies">Jack Lemon</a></div>
-                    <div class="staff-role">Grafica, Traduzione, Produzione & Doppiaggio (Jevil)</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">CRefice</div>
-                    <div class="staff-role">Grafica, Traduzione, Tech & Tools</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick"><a href="https://www.facebook.com/spaghettaroyoko/">Daizo</a></div>
-                    <div class="staff-role">Traduzione</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">BlueJunimo</div>
-                    <div class="staff-role">Traduzione</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">GMoody</div>
-                    <div class="staff-role">Traduzione, Tech & Tools</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick"><a href="https://instagram.com/krppling">Chri</a></div>
-                    <div class="staff-role">Traduzione & Arte</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">Vanzzzz</div>
-                    <div class="staff-role">Traduzione & Community Management</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">Willow</div>
-                    <div class="staff-role">Traduzione</div>
-                </div>
-            </li>
-            <li>
-                <div class="staff-avatar"></div>
-                <div class="staff-text">
-                    <div class="staff-nick">Depa</div>
-                    <div class="staff-role">Community Management, Tech & Tools</div>
-                </div>
-            </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">Renard</div>
+              <div class="staff-role">Supervisione, Produzione, Tech & Tools</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">
+                <a href="https://x.com/LemonArtsies">Jack Lemon</a>
+              </div>
+              <div class="staff-role">Grafica, Traduzione, Produzione & Doppiaggio (Jevil)</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">CRefice</div>
+              <div class="staff-role">Grafica, Traduzione, Tech & Tools</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">
+                <a href="https://www.facebook.com/spaghettaroyoko/">Daizo</a>
+              </div>
+              <div class="staff-role">Traduzione</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">BlueJunimo</div>
+              <div class="staff-role">Traduzione</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">GMoody</div>
+              <div class="staff-role">Traduzione, Tech & Tools</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">
+                <a href="https://instagram.com/krppling">Chri</a>
+              </div>
+              <div class="staff-role">Traduzione & Arte</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">Vanzzzz</div>
+              <div class="staff-role">Traduzione & Community Management</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">Willow</div>
+              <div class="staff-role">Traduzione</div>
+            </div>
+          </li>
+          <li>
+            <div class="staff-avatar"></div>
+            <div class="staff-text">
+              <div class="staff-nick">Depa</div>
+              <div class="staff-role">Community Management, Tech & Tools</div>
+            </div>
+          </li>
         </ul>
         <a class="title title5">PLAYTESTER E RINGRAZIAMENTI</a>
         <div class="staff-listRune pt">
-            <ul>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">A.CraftDEV</div>
-                        <div class="staff-role">Playtester</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">KnuckleBuckle</div>
-                        <div class="staff-role">Playtester</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">L'Armadio</div>
-                        <div class="staff-role">Playtester</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">KendeRoy</div>
-                        <div class="staff-role">Playtester</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">BetweenShades</div>
-                        <div class="staff-role">Playtester</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Matteo Nori</div>
-                        <div class="staff-role">Tester Installer</div>
-                    </div>
-                </li>                
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Giob Caridi</div>
-                        <div class="staff-role">Tester Installer</div>
-                    </div>
-                </li>                
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">robinchips</div>
-                        <div class="staff-role">Tester Installer</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">IoSonoOtakuman</div>
-                        <div class="staff-role">Doppiaggio (Tenna)</div>
-                    </div>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">A.CraftDEV</div>
+                <div class="staff-role">Playtester</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">KnuckleBuckle</div>
+                <div class="staff-role">Playtester</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">L'Armadio</div>
+                <div class="staff-role">Playtester</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">KendeRoy</div>
+                <div class="staff-role">Playtester</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">BetweenShades</div>
+                <div class="staff-role">Playtester</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Matteo Nori</div>
+                <div class="staff-role">Tester Installer</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Giob Caridi</div>
+                <div class="staff-role">Tester Installer</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">robinchips</div>
+                <div class="staff-role">Tester Installer</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">IoSonoOtakuman</div>
+                <div class="staff-role">Doppiaggio (Tenna)</div>
+              </div>
+            </li>
+          </ul>
         </div>
         <a class="title title5">RINGRAZIAMENTI CAP. PRECEDENTI</a>
         <div class="staff-listRune ty">
-            <ul>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Auster</div>
-                        <div class="staff-role">Traduzione</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Nik</div>
-                        <div class="staff-role">Tech & Tools</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Armor</div>
-                        <div class="staff-role">Traduzione, Sito web</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">FakeDubITA</div>
-                        <div class="staff-role">Doppiaggio Canzone dei Crediti</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Wander</div>
-                        <div class="staff-role">Arrangiamento canzone</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Gabby</div>
-                        <div class="staff-role">Sito web</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">RakeB4</div>
-                        <div class="staff-role">Tech</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Thea</div>
-                        <div class="staff-role">Testing</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Fim</div>
-                        <div class="staff-role">Testing</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Giulia</div>
-                        <div class="staff-role">Testing</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Naebulis</div>
-                        <div class="staff-role">Testing</div>
-                    </div>
-                </li>
-                <li>
-                    <div class="staff-avatar"></div>
-                    <div class="staff-text">
-                        <div class="staff-nick">Leovius</div>
-                        <div class="staff-role">Testing</div>
-                    </div>
-                </li>
-            </ul>
-            <div class="container container1runeDescTot">
-                <a class="title title1">Undertale Spaghetti Project</a><br>
-                <span class="description description1">Undertale Spaghetti Project è un team di traduttori, programmatori, grafici e non solo. Indipendenti e volontari, nel settore e non, da anni lavoriamo a tradurre a diffondere tutto ciò che orbita attorno al mondo creato da Toby Fox e i suoi giochi, per rendere fruibile il materiale a chi non mastica bene l’inglese. Le nostre traduzioni saranno sempre e solamente fatte da umani.</span>
-            </div>
+          <ul>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Auster</div>
+                <div class="staff-role">Traduzione</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Nik</div>
+                <div class="staff-role">Tech & Tools</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Armor</div>
+                <div class="staff-role">Traduzione, Sito web</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">FakeDubITA</div>
+                <div class="staff-role">Doppiaggio Canzone dei Crediti</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Wander</div>
+                <div class="staff-role">Arrangiamento canzone</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Gabby</div>
+                <div class="staff-role">Sito web</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">RakeB4</div>
+                <div class="staff-role">Tech</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Thea</div>
+                <div class="staff-role">Testing</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Fim</div>
+                <div class="staff-role">Testing</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Giulia</div>
+                <div class="staff-role">Testing</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Naebulis</div>
+                <div class="staff-role">Testing</div>
+              </div>
+            </li>
+            <li>
+              <div class="staff-avatar"></div>
+              <div class="staff-text">
+                <div class="staff-nick">Leovius</div>
+                <div class="staff-role">Testing</div>
+              </div>
+            </li>
+          </ul>
+          <div class="container container1runeDescTot">
+            <a class="title title1">Undertale Spaghetti Project</a><br />
+            <span class="description description1"
+              >Undertale Spaghetti Project è un team di traduttori, programmatori, grafici e non solo. Indipendenti e
+              volontari, nel settore e non, da anni lavoriamo a tradurre a diffondere tutto ciò che orbita attorno al
+              mondo creato da Toby Fox e i suoi giochi, per rendere fruibile il materiale a chi non mastica bene
+              l’inglese. Le nostre traduzioni saranno sempre e solamente fatte da umani.</span
+            >
+          </div>
         </div>
-    </div>
-    <div class="slide slide4Rune" id="contatti">
+      </div>
+      <div class="slide slide4Rune" id="contatti">
         <div class="container4">
-            <div class="title title4">Contatti</div>
-            <ul class="social-list">
-                <li class="social-fb"><a href="https://www.facebook.com/undertalespaghettiproject" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li class="social-discord"><a href="https://discord.gg/YrEkAJ5MrG" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                <li class="social-bluesky"><a href="https://bsky.app/profile/undertaleita.net" target="_blank" rel="noopener noreferrer">BlueSky</a></li>
-                <li class="social-email"><a href="mailto:undertalespaghettiproject@gmail.com" target="_blank" rel="noopener noreferrer">undertalespaghettiproject@gmail.com</a>
-                </li>
-            </ul>
+          <div class="title title4">Contatti</div>
+          <ul class="social-list">
+            <li class="social-fb">
+              <a href="https://www.facebook.com/undertalespaghettiproject" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-discord">
+              <a href="https://discord.gg/YrEkAJ5MrG" target="_blank" rel="noopener noreferrer">Discord</a>
+            </li>
+            <li class="social-bluesky">
+              <a href="https://bsky.app/profile/undertaleita.net" target="_blank" rel="noopener noreferrer">BlueSky</a>
+            </li>
+            <li class="social-email">
+              <a href="mailto:undertalespaghettiproject@gmail.com" target="_blank" rel="noopener noreferrer"
+                >undertalespaghettiproject@gmail.com</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-    <script>
-        var viewportHeight = $(window).height();
-        window.addEventListener("scroll", throttle(callback, 400));
-
-        function callback() {
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                var viewportHeight = $(window).height();
-
-                if (scroll >= viewportHeight * 0.1) {
-                    $(".title1").addClass("moved-title1");
-                    $(".description1").addClass("moved-description1");
-                    $(".top-bar").addClass("visible-top-bar");
-                }
-
-                if (scroll < viewportHeight * 0.4) {
-                    $(".top-bar").removeClass("visible-top-bar");
-                }
-
-                if (scroll >= viewportHeight * 1.7) {
-                    $(".title2").addClass("moved-title2");
-                    $(".slider-immagini").addClass("moved-slider-immagini");
-                }
-
-                if (scroll >= viewportHeight * 1.8) {
-                    $(".title3").addClass("moved-title3");
-                    $(".download-icon").addClass("animated-download-icon");
-                    $(".download-button").addClass("animated-download-button");
-                }
-
-                if (scroll >= viewportHeight * 1.5) {
-                    $(".title4").addClass("moved-title4");
-                    $(".social-fb").addClass("moved-social-fb");
-                    $(".social-discord").addClass("moved-social-discord");
-                    $(".social-bluesky").addClass("moved-social-bluesky");
-                    $(".social-email").addClass("moved-social-email");
-                }
-
-                if (scroll >= viewportHeight * 1.0) {
-                    $(".title5").addClass("moved-title5");
-                    $(".staff-list").addClass("animated-staff-list");
-                    $(".staff-avatar").addClass("animated-staff-avatar");
-                }
-                if (scroll >= viewportHeight * 1.0) {
-                    $(".title5").addClass("moved-title5");
-                    $(".staff-listRune").addClass("animated-staff-list");
-                    $(".staff-avatar").addClass("animated-staff-avatar");
-                }
-            });
-        }
-
-        function throttle(callback, limit) {
-            var wait = false;
-            return function () {
-                if (!wait) {
-                    callback.call();
-                    wait = true;
-                    setTimeout(function () {
-                        wait = false;
-                    }, limit);
-                }
-            }
-        }
-    </script>
-    <script>
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
-
-            var target = this.hash,
-                $target = $(target);
-
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, 500, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-
-        $('.top-bar').on('click', function (e) {
-            if ($('.top-bar').hasClass('activated-top-bar')) {
-                $('.top-bar').removeClass('activated-top-bar');
-            } else {
-                $('.top-bar').addClass('activated-top-bar');
-            }
-        });
-
-        if ($('.top-bar').hasClass('activated-top-bar')) {
-            $('.top-bar li').on('click', function (e) {
-                $('.top-bar').removeClass('activated-top-bar');
-            });
-        }
-    </script>
-
-</body>
+  </body>
 </html>
