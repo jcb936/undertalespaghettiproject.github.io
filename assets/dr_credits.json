@@ -1,0 +1,196 @@
+{
+  "credits": [
+    {
+      "name": "renard",
+      "link": "",
+      "role": "Supervisione, Produzione, Tech & Tools",
+      "avatar": "renard.jpg"
+    },
+    {
+      "name": "Jack Lemon",
+      "link": "https://x.com/LemonArtsies",
+      "role": "Grafica, Traduzione, Produzione & Doppiaggio (Jevil)",
+      "avatar": "jacklemon.jpg"
+    },
+    {
+      "name": "CRefice",
+      "link": "",
+      "role": "Grafica, Traduzione, Tech & Tools",
+      "avatar": "crefice.jpg"
+    },
+    {
+      "name": "Daizo",
+      "link": "https://www.facebook.com/spaghettaroyoko/",
+      "role": "Traduzione",
+      "avatar": "daizo.jpg"
+    },
+    {
+      "name": "BlueJunimo",
+      "link": "",
+      "role": "Traduzione",
+      "avatar": "shosia.gif"
+    },
+    {
+      "name": "GMoody",
+      "link": "",
+      "role": "Traduzione, Tech & Tools",
+      "avatar": "gmoody.jpg"
+    },
+    {
+      "name": "Chri",
+      "link": "https://instagram.com/krppling",
+      "role": "Traduzione & Arte",
+      "avatar": "Chri.jpg"
+    },
+    {
+      "name": "Vanzzz",
+      "link": "",
+      "role": "Traduzione & Community Management",
+      "avatar": "vanzzz.png"
+    },
+    {
+      "name": "Willow",
+      "link": "",
+      "role": "Traduzione",
+      "avatar": "willow.jpg"
+    },
+    {
+      "name": "Depa",
+      "link": "",
+      "role": "Community Management, Tech & Tools",
+      "avatar": "depa.jpg"
+    }
+  ],
+
+  "playtesters": [
+    {
+      "name": "A.CraftDEV",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "A.CraftDEV.png"
+    },
+    {
+      "name": "KnuckleBuckle",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "KnuckleBuckle.jpg"
+    },
+    {
+      "name": "L'Armadio",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "armadio.png"
+    },
+    {
+      "name": "KendeRoy",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "noire.jpg"
+    },
+    {
+      "name": "BetweenShades",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "BetweenShades.jpg"
+    },
+    {
+      "name": "Matteo Nori",
+      "link": "",
+      "role": "Tester Installer",
+      "avatar": "MatteoNori.jpeg"
+    },
+    {
+      "name": "Giob Caridi",
+      "link": "",
+      "role": "Tester Installer",
+      "avatar": "giob.jpeg"
+    },
+    {
+      "name": "robinchips",
+      "link": "",
+      "role": "Tester Installer",
+      "avatar": "rob.png"
+    },
+    {
+      "name": "IoSonoOtakuman",
+      "link": "",
+      "role": "Doppiaggio (Tenna)",
+      "avatar": "otakuman.jpg"
+    }
+  ],
+
+  "prevCredits": [
+    {
+      "name": "Auster",
+      "link": "",
+      "role": "Traduzione & Produzione",
+      "avatar": "auster.jpg"
+    },
+    {
+      "name": "Nik",
+      "link": "",
+      "role": "Tech & Tools",
+      "avatar": "nik.png"
+    },
+    {
+      "name": "Armor",
+      "link": "",
+      "role": "Traduzione, Sito web",
+      "avatar": "armor.png"
+    },
+    {
+      "name": "FakeDubITA",
+      "link": "",
+      "role": "Doppiaggio Canzone dei Crediti",
+      "avatar": "fakedubita.jpg"
+    },
+    {
+      "name": "Wander",
+      "link": "",
+      "role": "Arrangiamento canzone",
+      "avatar": "wander.png"
+    },
+    {
+      "name": "Gabby",
+      "link": "",
+      "role": "Sito web",
+      "avatar": "gabby.png"
+    },
+    {
+      "name": "RakeB4",
+      "link": "",
+      "role": "Tech",
+      "avatar": "rake.png"
+    },
+    {
+      "name": "Thea",
+      "link": "",
+      "role": "Testing",
+      "avatar": "thea.png"
+    },
+    {
+      "name": "Fim",
+      "link": "",
+      "role": "Testing",
+      "avatar": "fim.jpg"
+    },
+    {
+      "name": "Giulia",
+      "link": "",
+      "role": "Testing",
+      "avatar": "giulia.jpg"
+    },
+    {
+      "name": "Naebulis",
+      "link": "",
+      "role": "Testing",
+      "avatar": "naebulis.jpeg"
+    },
+    {
+      "name": "Leovius",
+      "link": "",
+      "role": "Testing",
+      "avatar": "leovius.png"
+    }
+  ]
+}

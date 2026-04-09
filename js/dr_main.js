@@ -1,4 +1,5 @@
-import { handleTopBar } from "./common.js";
+import { handleTopBar, loadCreditsList } from "./common.js";
+import dr_credits from "../assets/dr_credits.json" with { type: "json" };
 
 function addClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
@@ -46,7 +47,14 @@ function handleAppearingElements() {
   window.addEventListener("scroll", callback);
 }
 
+function loadCredits() {
+  loadCreditsList(".staff-listRune", dr_credits.credits);
+  loadCreditsList(".staff-listRune.pt", dr_credits.playtesters);
+  loadCreditsList(".staff-listRune.ty", dr_credits.prevCredits);
+}
+
 // Do the JS - Should be done after DOMContentLoaded (e.g. loaded by the Cachebuster)
 
 handleAppearingElements();
 handleTopBar();
+loadCredits();

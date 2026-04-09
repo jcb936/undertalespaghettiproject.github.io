@@ -1,4 +1,5 @@
-import { handleTopBar } from "./common.js";
+import { handleTopBar, loadCreditsList } from "./common.js";
+import ut_credits from "../assets/ut_credits.json" with { type: "json" };
 
 function addClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
@@ -50,3 +51,4 @@ function handleAppearingElements() {
 
 handleAppearingElements();
 handleTopBar();
+loadCreditsList(".staff-list", ut_credits.credits);
