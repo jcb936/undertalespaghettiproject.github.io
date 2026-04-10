@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "PixelOperator8";
+  src: url(../fonts/PixelOperator.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PixelOperator8";
+  src: url(../fonts/PixelOperator-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "determination-sans";
+  src: url(../fonts/determinationsansweb-webfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

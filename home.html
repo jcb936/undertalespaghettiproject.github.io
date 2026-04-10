@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <!— Global site tag (gtag.js) - Google Analytics —>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117084489-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-117084489-1");
+    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet" />
+    <!-- Fallback in case no JS to use the cachebuster -->
+    <!--<link href="css/stylesheet.css" rel="stylesheet" type="text/css" /> -->
+    <!-- CACHEBUSTING. https://petrapixel.neocities.org/coding/cachebusting -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const CSS_FILE_PATH = "./css/style.css";
+        const JS_FILE_PATH = "./js/home_main.js";
+
+        function loadScript(src) {
+          const script = document.createElement("script");
+          script.src = src + "?nocache=" + new Date().getTime();
+          script.async = true;
+          script.type = "module";
+          document.head.appendChild(script);
+        }
+        function loadCSS(href) {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = href + "?nocache=" + new Date().getTime();
+          document.head.appendChild(link);
+        }
+        if (JS_FILE_PATH) loadScript(JS_FILE_PATH);
+        if (CSS_FILE_PATH) loadCSS(CSS_FILE_PATH);
+      });
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="keywords"
+      content="Undertale, undertaleita, Undertalia, traduzione, undertale in italiano, italiana, patch ita, Undertale Spaghetti, Spaghetti, Undertale patch in italiano, undertale traduzione italiana" />
+    <meta http-equiv="content-language" content="it" />
+    <meta name="description" content="Dove i sogni diventano spaghetti." />
+    <link rel="canonical" href="http://undertaleita.net" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <meta property="og:site_name" content="Undertale Spaghetti Project" />
+    <meta property="og:description" content="Dove i sogni diventano spaghetti." />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:image" itemprop="image" content="http://undertaleita.net/images/og-image.png" />
+    <meta property="og:image:url" content="http://undertaleita.net/images/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="750" />
+    <meta property="og:image:height" content="500" />
+    <title>Undertale Spaghetti Project</title>
+  </head>
+
+  <body>
+    <div class="top-bar" id="top-bar">
+      <div class="dog" id="dog"></div>
+      <ul>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#galleria">Galleria</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#crediti">Crediti</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="./deltarune">Deltarune</a></li>
+      </ul>
+    </div>
+    <main class="big-flex">
+      <header>
+        <img src="images/USPLogo.svg" id="logo" />
+      </header>
+      <div class="slide slide1" id="info">
+        <div class="container container1 element">
+          <a class="title title1">Progetto traduzione italiana</a><br />
+          <span class="description description1"
+            ><b>Undertale</b> è un videogioco rilasciato a settembre 2015 e sviluppato indipendentemente dall'autore
+            <b>Toby Fox</b>.<br />
+            Sebbene la formula di base sia quella di un RPG, questa viene variata dalla possibilità di proseguire
+            nell'avventura
+            <b>senza la necessità di uccidere nessun nemico,</b> sottolineando così l'impianto narrativo dell'opera,
+            dove ogni scelta del giocatore ha un suo peso. Il tutto condito dalla presenza di
+            <b>diramazioni e finali multipli</b>.<br />
+            Nel corso degli anni, Undertale è diventato un vero e proprio fenomeno di massa sulla rete: in parte grazie
+            al suo spiccato apparato comico di stampo <i>"internettiano"</i> e in parte grazie alla sua mole di
+            riferimenti, citazioni e rimandi a grandi videogiochi del passato, <i>Earthbound</i> primo tra tutti.
+            <br /><br />
+            <b>Undertale Spaghetti Project</b> ha realizzato una patch completa del gioco in italiano, in modo da
+            permettere a più gente possibile di godersi questa piccola perla. Per informazioni sullo sviluppo e sui
+            dettagli tecnici della patch, un tempo avevamo un <a href="http://blog.undertaleita.net/">devblog</a>, ora
+            abbiamo creato un <a href="https://discord.gg/YrEkAJ5MrG">server discord</a>. <br /><br />
+            Puoi acquistare Undertale da
+            <a href="http://store.steampowered.com/app/391540/Undertale/">Steam</a>
+            o dal <a href="http://undertale.com/">sito ufficiale</a>.
+            <br />
+            Puoi scaricare la patch in italiano <a href="#download">qui</a>. <br /><br />
+            Ringraziamo le community degli
+            <a href="http://reddit.com/r/underminers">Underminers</a> e degli
+            <a href="http://reddit.com/r/undermodders">Undermodders</a> su Reddit e in particolare AlexWaveDiver, per il
+            suo lavoro sul principale tool da noi utilizzato per la traduzione del gioco.
+            <br />
+            Per qualunque domanda o supporto tecnico, puoi unirti al nostro
+            <a href="https://discord.gg/YrEkAJ5MrG">server discord</a>. <br /><br />
+            <b>Abbiamo anche tradotto Deltarune</b>, la storia parallela ad Undertale! La trovi
+            <a href="./deltarune.html">qui</a>.
+            <br />
+            Le nostre traduzioni saranno sempre e solamente fatte
+            <b>da umani.</b></span
+          >
+        </div>
+        <div class="link-container">
+          <a href="./DISPOSITIVO_COMUNICAZIONE/superriffe/index.html" target="_blank" class="element" id="spamton"> </a>
+          <a href="https://ut10.undertaleita.net" target="_blank" class="element" id="ut10"></a>
+        </div>
+        <!-- <div class="grid-column-right"></div> -->
+      </div>
+      <div class="slide slide2" id="galleria">
+        <div class="container container2">
+          <a class="title title2">GALLERIA</a>
+        </div>
+
+        <div class="slider-immagini">
+          <ul class="pictures">
+            <input type="radio" name="radio-btn" id="img-1" value="img-1" checked />
+            <label for="img-1"></label>
+            <li class="picture"><img src="images/screenshot1.png" /></li>
+            <input type="radio" name="radio-btn" id="img-2" value="img-2" />
+            <label for="img-2"></label>
+            <li class="picture">
+              <img src="images/screenshot2.png" value="img-3" />
+            </li>
+            <input type="radio" name="radio-btn" id="img-3" value="img-4" />
+            <label for="img-3"></label>
+            <li class="picture"><img src="images/screenshot3.png" /></li>
+            <input type="radio" name="radio-btn" id="img-4" value="img-4" />
+            <label for="img-4"></label>
+            <li class="picture"><img src="images/screenshot4.png" /></li>
+            <input type="radio" name="radio-btn" id="img-5" value="img-5" />
+            <label for="img-5"></label>
+            <li class="picture"><img src="images/screenshot5.png" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="slide slide3" id="download">
+        <a class="title title3">Scarica la traduzione!</a>
+        <a href="https://github.com/USPAssets/Installer/releases/latest">
+          <div class="new-download-button"></div>
+          <!--
+        <div class="download-button animated-download-button">
+          <div class="download-icon animated-download-icon"></div>
+          <span class="download-text">
+            <span class="download-title">INSTALLER</span>
+            <span class="download-description">Windows / macOS / Linux</span>
+          </span>
+        </div>
+      -->
+        </a>
+        <span class="download-caption">Windows / macOS / Linux</span>
+        <a class="release-notes" href="https://github.com/USPAssets/Online/blob/main/CHANGELOG.md"
+          >Clicca qui per il changelog</a
+        >
+        <a href="https://github.com/USPAssets/Installer/blob/main/README.md"
+          ><p class="warning"><b>NOTA</b>: Clicca qui per istruzioni per l'installazione.</p></a
+        >
+        <!-- <div class="previous-versions"> Versioni precedenti:
+        <ul>
+            <li>
+                Installer V1.11
+                <a href="download/USPInstallerV111.zip"><div class="previous-version-download">SCARICA
+                </div></a>
+            </li>
+            <li>
+                Installer patch V1.1 (UT V1.01)
+                <a href="download/old_installer.zip"><div class="previous-version-download">SCARICA
+                </div></a>
+            </li>
+            <li>
+                Patch V1.1 (UT V1.01)
+                <a href="releases/v1.1.zip"><div class="previous-version-download">SCARICA
+                </div></a>
+            </li>
+            <li>
+                Patch V1.0 (UT V1.00)
+                <a href="releases/v1.0.zip"><div class="previous-version-download">SCARICA
+                </div></a>
+            </li>
+        </ul>
+    </div> -->
+      </div>
+      <div class="slide slide5" id="crediti">
+        <a class="title title5">CREDITI</a>
+        <button id="ut-credits-button">Crediti Undertale</button>
+        <button id="dr-credits-button">Crediti Deltarune</button>
+        <div class="staff-list"></div>
+      </div>
+      <div class="slide slide4" id="contatti">
+        <div class="container4">
+          <div class="title title4">Contatti</div>
+          <ul class="social-list">
+            <li class="social-fb">
+              <a href="https://www.facebook.com/undertalespaghettiproject" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-discord">
+              <a href="https://discord.gg/YrEkAJ5MrG" target="_blank" rel="noopener noreferrer">Discord</a>
+            </li>
+            <li class="social-bluesky">
+              <a href="https://bsky.app/profile/undertaleita.net" target="_blank" rel="noopener noreferrer">BlueSky</a>
+            </li>
+            <li class="social-email">
+              <a href="mailto:undertalespaghettiproject@gmail.com">undertalespaghettiproject@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

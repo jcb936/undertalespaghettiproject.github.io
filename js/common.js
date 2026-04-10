@@ -20,6 +20,12 @@ export function handleTopBar() {
 
 export function loadCreditsList(selector, list) {
   let staff = document.querySelector(selector);
+  const ulSelector = `${selector} ul`;
+  const existingUl = document.querySelector(ulSelector);
+  if (existingUl) {
+    staff.removeChild(existingUl);
+  }
+
   let ul = document.createElement("ul");
   for (const person of list) {
     let li = document.createElement("li");
