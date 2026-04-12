@@ -3,6 +3,7 @@ import ut_credits from "../assets/ut_credits.json" with { type: "json" };
 import dr_credits from "../assets/dr_credits.json" with { type: "json" };
 
 const STAFF_LIST_CLASS_NAME = ".staff-list";
+let currentCreditsIndex = 0;
 
 function addClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
@@ -56,16 +57,53 @@ function handleRandomBackground() {
   header.style.backgroundImage = `url(images/headers/header${random}.png)`;
 }
 
-function hookCreditsButtonEvents() {
-  let utCreditsButton = document.querySelector("#ut-credits-button");
-  let drCreditsButton = document.querySelector("#dr-credits-button");
+function setCreditsTitleForCurrentIndex() {
+  let title = document.querySelector("#staff-list-title");
+  if (!title) return;
 
-  utCreditsButton.addEventListener("click", () => {
-    loadCreditsList(STAFF_LIST_CLASS_NAME, ut_credits.credits);
+  switch (currentCreditsIndex) {
+    case 0:
+      title.textContent = "Crediti DELTARUNE";
+      return;
+    case 1:
+      title.textContent = "Ringraziamenti DELTARUNE";
+      return;
+    case 2:
+      title.textContent = "Crediti Capitoli Precedenti DELTARUNE";
+      return;
+    case 3:
+      title.textContent = "Crediti UNDERTALE";
+      return;
+  }
+}
+
+function getCreditsForCurrentIndex() {
+  switch (currentCreditsIndex) {
+    case 0:
+      return dr_credits.credits;
+    case 1:
+      return dr_credits.playtesters;
+    case 2:
+      return dr_credits.prevCredits;
+    case 3:
+      return ut_credits.credits;
+  }
+}
+
+function hookCreditsButtonEvents() {
+  let leftCreditsButton = document.querySelector("#toggle-credits-left");
+  let rightCreditsButton = document.querySelector("#toggle-credits-right");
+
+  leftCreditsButton.addEventListener("click", () => {
+    if (--currentCreditsIndex < 0) currentCreditsIndex = 3;
+    loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+    setCreditsTitleForCurrentIndex();
   });
 
-  drCreditsButton.addEventListener("click", () => {
-    loadCreditsList(STAFF_LIST_CLASS_NAME, dr_credits.credits);
+  rightCreditsButton.addEventListener("click", () => {
+    currentCreditsIndex = ++currentCreditsIndex % 4;
+    loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+    setCreditsTitleForCurrentIndex();
   });
 }
 
@@ -85,7 +123,8 @@ function handleGalleryScrolling() {
 
 handleAppearingElements();
 handleTopBar();
-loadCreditsList(STAFF_LIST_CLASS_NAME, ut_credits.credits);
+loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+setCreditsTitleForCurrentIndex();
 handleRandomBackground();
 hookCreditsButtonEvents();
 handleGalleryScrolling();
