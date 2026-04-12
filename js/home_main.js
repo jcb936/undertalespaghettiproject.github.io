@@ -56,14 +56,6 @@ function handleRandomBackground() {
   header.style.backgroundImage = `url(images/headers/header${random}.png)`;
 }
 
-function loadUTCredits() {
-  loadCreditsList(STAFF_LIST_CLASS_NAME, ut_credits.credits);
-}
-
-function loadDRCredits() {
-  loadCreditsList(STAFF_LIST_CLASS_NAME, dr_credits.credits);
-}
-
 function hookCreditsButtonEvents() {
   let utCreditsButton = document.querySelector("#ut-credits-button");
   let drCreditsButton = document.querySelector("#dr-credits-button");
@@ -77,6 +69,18 @@ function hookCreditsButtonEvents() {
   });
 }
 
+function handleGalleryScrolling() {
+  document.querySelectorAll(".go-to-slide").forEach((elem) => {
+    elem.addEventListener("click", (ev) => {
+      const slide = document.querySelector(ev.target.getAttribute("href"));
+      if (!slide) return;
+
+      ev.preventDefault();
+      slide.scrollIntoView({ block: "nearest", container: "nearest" });
+    });
+  });
+}
+
 // Do the JS - Should be done after DOMContentLoaded (e.g. loaded by the Cachebuster)
 
 handleAppearingElements();
@@ -84,3 +88,4 @@ handleTopBar();
 loadCreditsList(STAFF_LIST_CLASS_NAME, ut_credits.credits);
 handleRandomBackground();
 hookCreditsButtonEvents();
+handleGalleryScrolling();

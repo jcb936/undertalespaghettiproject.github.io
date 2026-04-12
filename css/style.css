@@ -124,7 +124,7 @@ header {
 
 @media screen and (min-width: 2000px) {
   .container {
-    max-width: 80%;
+    max-width: 1800px;
   }
 }
 
@@ -175,6 +175,114 @@ header {
   background-position: center center;
 }
 
+.galleries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+
+.new-image-gallery {
+  width: 33vw;
+  height: 26vw;
+  min-width: 300px;
+  min-height: 260px;
+  /* margin: 20px; */
+  position: relative;
+  /* margin: 20px; */
+}
+
+.gallery-viewport {
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* scroll-snap-align: center; */
+  scrollbar-width: none;
+}
+
+.gallery-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-viewport li {
+  list-style-type: none;
+  background-color: black;
+  /* border: 1px solid #dddddd; */
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  position: relative;
+  scroll-margin-top: 0;
+  padding: 20px;
+}
+
+.gallery-viewport li img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.new-image-gallery::after,
+.new-image-gallery::before,
+.go-to-slide,
+.go-to-slide {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+  /* background-color: white; */
+}
+
+.new-image-gallery::before,
+.go-to-prev-slide {
+  left: -0.5rem;
+}
+
+.new-image-gallery::after,
+.go-to-next-slide {
+  right: -0.5rem;
+}
+
+.new-image-gallery::before,
+.new-image-gallery::after {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.new-image-gallery::before:hover {
+  transform: scale(2);
+}
+
+.new-image-gallery::before {
+  content: "◄";
+}
+
+.new-image-gallery::after {
+  content: "►";
+}
+
 /* .slide1 .grid-column-right {
   background-image: url("../images/sfondo-slide1.png");
   background-size: cover;
@@ -193,6 +301,9 @@ header {
 
 .slide2 {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slide3 {
