@@ -182,7 +182,7 @@ header {
   width: 100%;
   flex-wrap: wrap;
   gap: 50px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .new-image-gallery {
@@ -193,6 +193,17 @@ header {
   /* margin: 20px; */
   position: relative;
   /* margin: 20px; */
+}
+
+.gallery-caption {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: "PixelOperator8";
+  position: absolute;
+  right: 0;
+  bottom: -2%;
+  left: 0;
 }
 
 .gallery-viewport {
