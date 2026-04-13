@@ -77,9 +77,12 @@ header {
   margin-right: auto;
   position: relative;
   top: 25%;
-  transform: translateY(+120%);
+  transform: translateY(+350%);
   /* -webkit-transform: translateY(-30%); */
   max-width: 40vw;
+  max-width: 700px;
+  min-width: 250px;
+  width: 80vw;
 }
 
 .slide {
@@ -349,9 +352,7 @@ header {
   background-size:
     auto 50%,
     auto 50%; */
-  background-position:
-    bottom -35px left,
-    bottom right 30px;
+  background-position: bottom;
   transition: 1.5s;
   transform: scale3d(1);
   display: flex;
@@ -513,7 +514,22 @@ header {
   background-position: center;
 }
 
+@media screen and (max-width: 500px) {
+.contacts-container .element a {
+    display: none;
+  }
+
+  /* .contacts-container {
+    flex-direction: column;
+    align-items: start;
+  } */
+}
+
 .contacts-container .element a:visited {
+  color: white;
+}
+
+.contacts-container .element a:link {
   color: white;
 }
 
@@ -704,9 +720,9 @@ footer {
 
 .top-bar ul {
   list-style: none;
-  font-family: Raleway;
-  font-size: 20px;
-  font-weight: bold;
+  font-family: determination-sans;
+  font-size: 30px;
+  /* font-weight: bold; */
   line-height: 45px;
   color: white;
   padding: 0;
@@ -732,7 +748,7 @@ footer {
 
 .top-bar a:hover {
   color: rgb(222, 60, 60);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .dog {
@@ -926,6 +942,10 @@ input:checked + label + .picture {
   text-align: center;
   margin: 10px auto;
   display: block;
+}
+
+.download-caption a:link {
+  color: white;
 }
 
 .download-caption a:visited {
@@ -1329,6 +1349,7 @@ input:checked + label + .picture {
   color: white;
   font-family: determination-sans;
   font-size: 2.5em;
+  text-align: center;
 }
 
 .staff-list {
@@ -1390,8 +1411,8 @@ input:checked + label + .picture {
 
 .staff-list li {
   /* display: inline-block; */
-  width: 500px;
-  max-width: 550px;
+  width: 360px;
+  max-width: 360px;
   max-height: 70px;
   flex-grow: 1;
   /* margin: 20px 2.3vw; */
@@ -1434,7 +1455,7 @@ input:checked + label + .picture {
   font-size: 1.2em;
   position: absolute;
   margin-left: 92px;
-  max-width: calc(26vw - 90px);
+  max-width: 270px;
 }
 
 /* Report button */
@@ -1485,7 +1506,7 @@ input:checked + label + .picture {
 
 /* Mobile fixes */
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
   .social-list li:last-of-type {
     font-size: 0.7em;
   }
@@ -1572,16 +1593,16 @@ input:checked + label + .picture {
     width: 55%;
   } */
 
-  .container1:after {
+  /* .container1:after {
     left: calc(55% + 20px);
   }
 
   .report-button:before {
     margin-left: 8vw;
   }
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   #logo {
     max-width: 70vw;
   }
@@ -1619,9 +1640,9 @@ input:checked + label + .picture {
   .report-button:before {
     font-size: 85px;
   }
-}
+} */
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .top-bar a {
     font-size: 2.3vw;
   }
@@ -1633,9 +1654,9 @@ input:checked + label + .picture {
   .top-bar li:last-of-type {
     margin-right: 30px;
   }
-}
+} */
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+/* @media screen and (max-width: 700px) and (orientation: portrait) { */
   /* .slide1 {
     height: 150vh;
     background-position: center bottom -260px;
@@ -1681,7 +1702,7 @@ input:checked + label + .picture {
     font-size: 7vw;
   } */
 
-  .staff-role {
+  /* .staff-role {
     font-size: 2.7vw;
   }
 
@@ -1692,13 +1713,13 @@ input:checked + label + .picture {
     background-position:
       bottom -30px left -50px,
       bottom -20px right -10px;
-  }
+  } */
 
   /* .title3 {
     font-size: 8vw;
   } */
 
-  .download-button {
+  /* .download-button {
     width: 70vw;
     height: 22.5vw;
   }
@@ -1758,9 +1779,9 @@ input:checked + label + .picture {
   .social-list li:last-of-type {
     font-size: 0.9em;
   }
-}
+} */
 
-@media screen and (max-width: 640px) and (orientation: portrait) {
+/* @media screen and (max-width: 640px) and (orientation: portrait) {
   .title2,
   .title35 {
     font-size: 14vw;
@@ -1802,9 +1823,9 @@ input:checked + label + .picture {
   .report-button {
     font-size: 5vw;
   }
-}
+} */
 
-@media screen and (max-width: 600px) and (orientation: portrait) {
+/* @media screen and (max-width: 600px) and (orientation: portrait) {
   .description1 {
     font-size: 2.7vw;
   }
@@ -1814,9 +1835,9 @@ input:checked + label + .picture {
   .top-bar li {
     font-size: 15px;
   }
-}
+} */
 
-@media screen and (max-width: 550px) and (orientation: portrait) {
+/* @media screen and (max-width: 550px) and (orientation: portrait) {
   .description1 {
     font-size: 3vw;
   }
@@ -1855,10 +1876,10 @@ input:checked + label + .picture {
   /* .warning-dr {
         font-size: 12px;
         color:#F5F5F5;
-    } */
-}
+    } 
+} */
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+/* @media screen and (max-width: 500px) and (orientation: portrait) {
   .slide3 {
     background-size:
       75% auto,
@@ -1902,9 +1923,9 @@ input:checked + label + .picture {
     width: 65vw;
     font-size: 12px;
   }
-}
+} */
 
-@media screen and (max-width: 430px) and (orientation: portrait) {
+/* @media screen and (max-width: 430px) and (orientation: portrait) {
   .slide3 {
     background-size:
       90% auto,
@@ -1963,9 +1984,9 @@ input:checked + label + .picture {
   .dog {
     margin-left: 10px;
   }
-}
+} */
 
-@media screen and (max-width: 400px) and (orientation: portrait) {
+/* @media screen and (max-width: 400px) and (orientation: portrait) {
   .description1 {
     font-size: 3.6vw;
   }
@@ -2030,9 +2051,66 @@ input:checked + label + .picture {
     margin-right: 5px;
     margin-bottom: 20px;
   }
+} */
+
+@media screen and (max-width: 550px)
+{
+
+  .dog {
+    background-image: url(../images/menu.svg);
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s ease;
+    margin-top: 2px;
+  }
+
+  .top-bar {
+    height: 40px;
+    overflow: visible;
+    cursor: pointer;
+  }
+
+  .top-bar ul {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    transition: max-height 0.7s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .visible-top-bar.activated-top-bar .dog {
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  .visible-top-bar.activated-top-bar ul {
+    max-height: 50vh;
+  }
+
+  .top-bar li {
+    display: block;
+    font-size: 1em;
+  }
+
+  .top-bar li:first-of-type {
+    margin-top: 20px;
+  }
+
+  .top-bar li:last-of-type {
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+
 }
 
-@media screen and (max-width: 371px) and (orientation: portrait) {
+/* @media screen and (max-width: 371px) and (orientation: portrait) {
   .social-list li:nth-child(3),
   .social-list li:nth-child(4) {
     margin-top: -5px;
@@ -2049,9 +2127,9 @@ input:checked + label + .picture {
   .staff-list li:nth-child(19) .staff-nick {
     font-size: 3vw;
   }
-}
+} */
 
-@media screen and (max-width: 350px) and (orientation: portrait) {
+/* @media screen and (max-width: 350px) and (orientation: portrait) {
   .staff-avatar {
     width: 40px;
     height: 40px;
@@ -2069,9 +2147,9 @@ input:checked + label + .picture {
       bottom -15px left -90px,
       bottom right -25px;
   }
-}
+} */
 
-@media screen and (max-width: 331px) and (orientation: portrait) {
+/* @media screen and (max-width: 331px) and (orientation: portrait) {
   .social-list li:nth-child(4) {
     font-size: 0.65em;
   }
@@ -2082,9 +2160,9 @@ input:checked + label + .picture {
     background-size: 20px 20px;
     margin-right: 7px;
   }
-}
+} */
 
-@media screen and (max-width: 300px) and (orientation: portrait) {
+/* @media screen and (max-width: 300px) and (orientation: portrait) {
   .description1 {
     font-size: 3.75vw;
   }
@@ -2113,9 +2191,9 @@ input:checked + label + .picture {
   .previous-versions-download {
     font-size: 8px;
   }
-}
+} */
 
-@media screen and (max-width: 735px) and (orientation: landscape) {
+/* @media screen and (max-width: 735px) and (orientation: landscape) {
   .title3 {
     font-size: 13vh;
   }
@@ -2123,7 +2201,7 @@ input:checked + label + .picture {
   .previous-versions {
     font-size: 9px;
   }
-}
+} */
 
 .container1rune {
   height: 100%;
