@@ -23,7 +23,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/header.png");
+  background-image: url("../images/headers/header0.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -155,10 +155,12 @@ header {
 }
 
 .new-image-gallery {
-  width: 33vw;
-  height: 26vw;
+  width: 80vw;
+  height: calc(80vw * 3 / 4 + 20px);
   min-width: 300px;
   min-height: 260px;
+  max-width: 650px;
+  max-height: calc(650px * 3 / 4 + 20px);
   position: relative;
 }
 
@@ -376,7 +378,7 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-.contacts-container .element a {
+  .contacts-container .element a {
     display: none;
   }
 }
@@ -734,8 +736,7 @@ footer {
 
 /* Mobile fixes */
 
-@media screen and (max-width: 550px)
-{
+@media screen and (max-width: 550px) {
   .dog {
     background-image: url(../images/menu.svg);
     background-size: cover;
@@ -787,7 +788,6 @@ footer {
     margin-right: 5px;
     margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 850px) {
