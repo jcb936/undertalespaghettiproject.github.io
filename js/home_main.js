@@ -13,8 +13,7 @@ function removeClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.remove(className));
 }
 
-function handleAppearingElements() {
-  const callback = () => {
+function updateAppearingElements() {
     const scroll = window.scrollY;
     const viewportHeight = window.innerHeight;
 
@@ -46,9 +45,10 @@ function handleAppearingElements() {
       addClass(".staff-list", "animated-staff-list");
       addClass(".staff-avatar", "animated-staff-avatar");
     }
-  };
+}
 
-  window.addEventListener("scroll", callback);
+function handleAppearingElements() {
+  window.addEventListener("scroll", updateAppearingElements);
 }
 
 function handleRandomBackground() {
@@ -98,12 +98,14 @@ function hookCreditsButtonEvents() {
     if (--currentCreditsIndex < 0) currentCreditsIndex = 3;
     loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
     setCreditsTitleForCurrentIndex();
+    updateAppearingElements();
   });
 
   rightCreditsButton.addEventListener("click", () => {
     currentCreditsIndex = ++currentCreditsIndex % 4;
     loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
     setCreditsTitleForCurrentIndex();
+    updateAppearingElements();
   });
 }
 
