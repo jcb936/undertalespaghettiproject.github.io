@@ -1,0 +1,105 @@
+.new-image-gallery {
+  width: 80vw;
+  height: calc(80vw * 3 / 4 + 20px);
+  min-width: 300px;
+  min-height: 260px;
+  max-width: 650px;
+  max-height: calc(650px * 3 / 4 + 20px);
+  position: relative;
+}
+
+.gallery-caption {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: "PixelOperator8";
+  position: absolute;
+  right: 0;
+  top: -2%;
+  left: 0;
+}
+
+.gallery-viewport {
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  scrollbar-width: none;
+}
+
+.gallery-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-viewport li {
+  list-style-type: none;
+  background-color: black;
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+  position: relative;
+  scroll-margin-top: 0;
+  padding: 20px;
+}
+
+.gallery-viewport li img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.new-image-gallery::after,
+.new-image-gallery::before,
+.go-to-slide,
+.go-to-slide {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.new-image-gallery::before,
+.go-to-prev-slide {
+  left: -0.5rem;
+}
+
+.new-image-gallery::after,
+.go-to-next-slide {
+  right: -0.5rem;
+}
+
+.new-image-gallery::before,
+.new-image-gallery::after {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.new-image-gallery::before:hover {
+  transform: scale(2);
+}
+
+.new-image-gallery::before {
+  content: "◄";
+}
+
+.new-image-gallery::after {
+  content: "►";
+}
