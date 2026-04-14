@@ -92,10 +92,6 @@
   pointer-events: none;
 }
 
-.new-image-gallery::before:hover {
-  transform: scale(2);
-}
-
 .new-image-gallery::before {
   content: "◄";
 }

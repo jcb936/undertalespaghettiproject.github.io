@@ -110,9 +110,11 @@ header {
   font-size: 3em;
 }
 
-.link-container .element-swap-credits:hover,
-.link-container .element:hover {
-  transform: scale(1.1);
+@media (hover: hover) {
+  .link-container .element-swap-credits:hover,
+  .link-container .element:hover {
+    transform: scale(1.1);
+  }
 }
 
 #discord-link {
@@ -389,9 +391,11 @@ footer {
   color: white;
 }
 
-.description1 a:hover,
-.description1 a:visited:hover {
-  text-decoration: none;
+@media (hover: hover) {
+  .description1 a:hover,
+  .description1 a:visited:hover {
+    text-decoration: none;
+  }
 }
 
 .description2 {
@@ -447,8 +451,10 @@ footer {
   transition: 0.5s ease;
 }
 
-.top-bar a:hover {
-  color: rgb(222, 60, 60);
+@media (hover: hover) {
+  .top-bar a:hover {
+    color: rgb(222, 60, 60);
+  }
 }
 
 .dog {
@@ -498,9 +504,11 @@ footer {
   transition: 0.3s ease;
 }
 
-.new-download-button img:hover {
-  content: url(../images/download_1.png);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .new-download-button img:hover {
+    content: url(../images/download_1.png);
+    transform: scale(1.1);
+  }
 }
 
 .download-caption {
