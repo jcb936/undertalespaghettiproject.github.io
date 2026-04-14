@@ -4,6 +4,7 @@ body {
   width: device-width;
   margin: 0;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 .big-flex {
@@ -11,7 +12,6 @@ body {
   flex-direction: column;
   width: 100%;
   overflow-x: hidden;
-  /* justify-content: center; */
 }
 
 header {
