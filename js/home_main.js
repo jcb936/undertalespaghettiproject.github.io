@@ -14,37 +14,37 @@ function removeClass(selector, className) {
 }
 
 function updateAppearingElements() {
-    const scroll = window.scrollY;
-    const viewportHeight = window.innerHeight;
+  const scroll = window.scrollY;
+  const viewportHeight = window.innerHeight;
 
-    if (scroll < viewportHeight * 0.5) {
-      removeClass(".top-bar", "visible-top-bar");
-    }
+  if (scroll < viewportHeight * 0.5) {
+    removeClass(".top-bar", "visible-top-bar");
+  }
 
-    if (scroll >= viewportHeight * 0.5) {
-      addClass(".title1", "moved-title1");
-      addClass(".description1", "moved-description1");
-      addClass(".top-bar", "visible-top-bar");
-    }
+  if (scroll >= viewportHeight * 0.5) {
+    addClass(".title1", "moved-title1");
+    addClass(".description1", "moved-description1");
+    addClass(".top-bar", "visible-top-bar");
+  }
 
-    if (scroll >= viewportHeight * 1.2) {
-      addClass(".title2", "moved-title2");
-      addClass(".slider-immagini", "moved-slider-immagini");
-      addClass(".title3", "moved-title3");
-      addClass(".download-icon", "animated-download-icon");
-      addClass(".download-button", "animated-download-button");
-    }
+  if (scroll >= viewportHeight * 1.2) {
+    addClass(".title2", "moved-title2");
+    addClass(".slider-immagini", "moved-slider-immagini");
+    addClass(".title3", "moved-title3");
+    addClass(".download-icon", "animated-download-icon");
+    addClass(".download-button", "animated-download-button");
+  }
 
-    if (scroll >= viewportHeight * 1.7) {
-      addClass(".title4", "moved-title4");
-      addClass(".social-fb", "moved-social-fb");
-      addClass(".social-discord", "moved-social-discord");
-      addClass(".social-bluesky", "moved-social-bluesky");
-      addClass(".social-email", "moved-social-email");
-      addClass(".title5", "moved-title5");
-      addClass(".staff-list", "animated-staff-list");
-      addClass(".staff-avatar", "animated-staff-avatar");
-    }
+  if (scroll >= viewportHeight * 1.7) {
+    addClass(".title4", "moved-title4");
+    addClass(".social-fb", "moved-social-fb");
+    addClass(".social-discord", "moved-social-discord");
+    addClass(".social-bluesky", "moved-social-bluesky");
+    addClass(".social-email", "moved-social-email");
+    addClass(".title5", "moved-title5");
+    addClass(".staff-list", "animated-staff-list");
+    addClass(".staff-avatar", "animated-staff-avatar");
+  }
 }
 
 function handleAppearingElements() {
@@ -54,7 +54,7 @@ function handleAppearingElements() {
 function handleRandomBackground() {
   const random = Math.floor(Math.random() * 2);
   let header = document.querySelector("header");
-  header.style.backgroundImage = `url(images/headers/header${random}.png)`;
+  header.style.backgroundImage = `url(images/headers/header${random}.jpg)`;
 }
 
 function setCreditsTitleForCurrentIndex() {
