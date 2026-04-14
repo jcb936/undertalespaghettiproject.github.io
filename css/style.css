@@ -378,16 +378,16 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-  .contacts-container .element a {
+  .contacts-container .element span {
     display: none;
   }
 }
 
-.contacts-container .element a:visited {
+.contacts-container .element:visited {
   color: white;
 }
 
-.contacts-container .element a:link {
+.contacts-container .element:link {
   color: white;
 }
 
