@@ -1,6 +1,7 @@
 import { handleTopBar, loadCreditsList } from "./common.js";
 import ut_credits from "../assets/ut_credits.json" with { type: "json" };
 import dr_credits from "../assets/dr_credits.json" with { type: "json" };
+import headers from "../assets/header_info.json" with { type: "json" };
 
 const STAFF_LIST_CLASS_NAME = ".staff-list";
 let currentCreditsIndex = 0;
@@ -52,9 +53,12 @@ function handleAppearingElements() {
 }
 
 function handleRandomBackground() {
-  const random = Math.floor(Math.random() * 2);
+  const random = Math.floor(Math.random() * headers.length);
   let header = document.querySelector("header");
-  header.style.backgroundImage = `url(images/headers/header${random}.jpg)`;
+  header.style.backgroundImage = `url(${headers[random].path})`;
+  let artistLabel = document.querySelector(".art-credit");
+  artistLabel.textContent = `art by ${headers[random].artist}`;
+  if (headers[random].link) artistLabel.href = headers[random].link;
 }
 
 function setCreditsTitleForCurrentIndex() {

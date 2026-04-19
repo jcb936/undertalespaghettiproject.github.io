@@ -21,6 +21,19 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.art-credit {
+  position: absolute;
+  bottom: 0;
+  inset-inline-end: 0px;
+  font-family: "PixelOperator8";
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.6em;
+  max-width: 150px;
+  padding: 0px 10px;
 }
 
 #logo {
