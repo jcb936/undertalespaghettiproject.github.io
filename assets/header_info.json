@@ -8,5 +8,10 @@
     "path": "images/headers/header1.jpg",
     "artist": "chri",
     "link": "https://instagram.com/krppling"
+  },
+  {
+    "path": "images/headers/header2.webp",
+    "artist": "jack lemon",
+    "link": "https://x.com/LemonArtsies"
   }
 ]
