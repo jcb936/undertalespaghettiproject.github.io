@@ -1,10 +1,8 @@
 import { handleTopBar, loadCreditsList } from "./common.js";
-import ut_credits from "../assets/ut_credits.json" with { type: "json" };
-import dr_credits from "../assets/dr_credits.json" with { type: "json" };
 import headers from "../assets/header_info.json" with { type: "json" };
 
-const STAFF_LIST_CLASS_NAME = ".staff-list";
 let currentCreditsIndex = 0;
+let credits = [];
 
 function addClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
@@ -67,13 +65,13 @@ function setCreditsTitleForCurrentIndex() {
 
   switch (currentCreditsIndex) {
     case 0:
-      title.textContent = "Crediti DELTARUNE";
+      title.textContent = "Crediti DELTARUNE Capitolo 3";
       return;
     case 1:
-      title.textContent = "Ringraziamenti DELTARUNE";
+      title.textContent = "Crediti DELTARUNE Capitolo 2";
       return;
     case 2:
-      title.textContent = "Crediti Capitoli Precedenti DELTARUNE";
+      title.textContent = "Crediti DELTARUNE Capitolo 1";
       return;
     case 3:
       title.textContent = "Crediti UNDERTALE";
@@ -81,17 +79,28 @@ function setCreditsTitleForCurrentIndex() {
   }
 }
 
-function getCreditsForCurrentIndex() {
-  switch (currentCreditsIndex) {
-    case 0:
-      return dr_credits.credits;
-    case 1:
-      return dr_credits.playtesters;
-    case 2:
-      return dr_credits.prevCredits;
-    case 3:
-      return ut_credits.credits;
+function loadCreditsForCurrentIndex() {
+  const staffListID = "#staff";
+  const thanksListID = "#thanks";
+  const staffListDivider = ".staff-list-divider";
+  const currentCredits = credits[currentCreditsIndex];
+
+  loadCreditsList(staffListID, currentCredits.credits);
+
+  let divider = document.querySelector(staffListDivider);
+  if (!divider) return;
+
+  if (!("thanks" in currentCredits) || !currentCredits.thanks) {
+    divider.style.display = "none";
+    loadCreditsList(thanksListID, []);
+    return;
   }
+
+  if (divider.style.display === "none") {
+    divider.style.display = "";
+  };
+
+  loadCreditsList(thanksListID, currentCredits.thanks);
 }
 
 function hookCreditsButtonEvents() {
@@ -100,14 +109,14 @@ function hookCreditsButtonEvents() {
 
   leftCreditsButton.addEventListener("click", () => {
     if (--currentCreditsIndex < 0) currentCreditsIndex = 3;
-    loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+    loadCreditsForCurrentIndex();
     setCreditsTitleForCurrentIndex();
     updateAppearingElements();
   });
 
   rightCreditsButton.addEventListener("click", () => {
     currentCreditsIndex = ++currentCreditsIndex % 4;
-    loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+    loadCreditsForCurrentIndex();
     setCreditsTitleForCurrentIndex();
     updateAppearingElements();
   });
@@ -125,11 +134,36 @@ function handleGalleryScrolling() {
   });
 }
 
+async function readCredits() {
+  const drCh1 = await import("../assets/dr_credits_ch1.json", {
+    with: { type: "json" },
+  });
+
+  const drCh2 = await import("../assets/dr_credits_ch2.json", {
+    with: { type: "json" },
+  });
+
+  const drCh3 = await import("../assets/dr_credits_ch3.json", {
+    with: { type: "json" },
+  });
+
+  const ut = await import("../assets/ut_credits.json", {
+    with: { type: "json" },
+  });
+
+  // Order is how they also will be showed
+  credits.push(drCh3.default);
+  credits.push(drCh2.default);
+  credits.push(drCh1.default);
+  credits.push(ut.default);
+}
+
 // Do the JS - Should be done after DOMContentLoaded (e.g. loaded by the Cachebuster)
 
+await readCredits();
 handleAppearingElements();
 handleTopBar();
-loadCreditsList(STAFF_LIST_CLASS_NAME, getCreditsForCurrentIndex());
+loadCreditsForCurrentIndex();
 setCreditsTitleForCurrentIndex();
 handleRandomBackground();
 hookCreditsButtonEvents();

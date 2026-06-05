@@ -1,0 +1,103 @@
+{
+  "credits": [
+    {
+      "name": "renard",
+      "link": "",
+      "role": "Supervisione, Produzione",
+      "avatar": "renard.jpg"
+    },
+    {
+      "name": "Jack Lemon",
+      "link": "https://x.com/LemonArtsies",
+      "role": "Grafica, Traduzione, Produzione",
+      "avatar": "jacklemon.jpg"
+    },
+    {
+      "name": "CRefice",
+      "link": "",
+      "role": "Grafica, Traduzione, Tech & Tools",
+      "avatar": "crefice.jpg"
+    },
+    {
+      "name": "Auster",
+      "link": "",
+      "role": "Traduzione, Produzione",
+      "avatar": "auster.jpg"
+    },
+    {
+      "name": "BlueJunimo",
+      "link": "",
+      "role": "Traduzione, Produzione",
+      "avatar": "shosia.gif"
+    },
+    {
+      "name": "Nik",
+      "link": "",
+      "role": "Tech & Tools",
+      "avatar": "nik.png"
+    },
+    {
+      "name": "Armor",
+      "link": "",
+      "role": "Traduzione, Sito web",
+      "avatar": "armor.png"
+    },
+    {
+      "name": "Daizo",
+      "link": "https://www.facebook.com/spaghettaroyoko/",
+      "role": "Traduzione",
+      "avatar": "daizo.jpg"
+    },
+    {
+      "name": "GMoody",
+      "link": "",
+      "role": "Traduzione, Tech & Tools",
+      "avatar": "gmoody.jpg"
+    },
+    {
+      "name": "Chri",
+      "link": "https://instagram.com/krppling",
+      "role": "Traduzione, Art",
+      "avatar": "Chri.jpg"
+    }
+  ],
+
+  "thanks": [
+    {
+      "name": "Thea",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "thea.png"
+    },
+    {
+      "name": "Fim",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "fim.jpg"
+    },
+    {
+      "name": "Giulia",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "giulia.jpg"
+    },
+    {
+      "name": "Naebulis",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "naebulis.jpeg"
+    },
+    {
+      "name": "Leovius",
+      "link": "",
+      "role": "Playtester",
+      "avatar": "leovius.png"
+    },
+    {
+      "name": "Depa",
+      "link": "",
+      "role": "Tech & Tools Help",
+      "avatar": "depa.jpg"
+    }
+  ]
+}

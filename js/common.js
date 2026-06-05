@@ -26,6 +26,13 @@ export function loadCreditsList(selector, list) {
     staff.removeChild(existingUl);
   }
 
+  if (list.length == 0) {
+    staff.style.display = "none";
+    return;
+  } else if (staff.style.display === "none") {
+    staff.style.display = "";
+  }
+
   let ul = document.createElement("ul");
   for (const person of list) {
     let li = document.createElement("li");

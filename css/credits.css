@@ -80,3 +80,13 @@
   margin-left: 92px;
   max-width: 270px;
 }
+
+.staff-list-divider {
+  width: 30%;
+  border-top: 3px dotted white;
+  color: transparent;
+}
+
+#thanks {
+  padding-top: 0px;
+}

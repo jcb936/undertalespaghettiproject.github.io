@@ -1,4 +1,4 @@
-import { handleTopBar, loadCreditsList } from "./common.js";
+import { handleTopBar, loadCreditsList } from "../../js/common.js";
 import dr_credits from "../assets/dr_credits.json" with { type: "json" };
 
 function addClass(selector, className) {

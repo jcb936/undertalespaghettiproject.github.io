@@ -1,5 +1,5 @@
-import { handleTopBar, loadCreditsList } from "./common.js";
-import ut_credits from "../assets/ut_credits.json" with { type: "json" };
+import { handleTopBar, loadCreditsList } from "../../js/common.js";
+import ut_credits from "../../assets/ut_credits.json" with { type: "json" };
 
 function addClass(selector, className) {
   document.querySelectorAll(selector).forEach((el) => el.classList.add(className));
