@@ -109,14 +109,14 @@ function hookCreditsButtonEvents() {
   let rightCreditsButton = document.querySelector("#toggle-credits-right");
 
   leftCreditsButton.addEventListener("click", () => {
-    if (--currentCreditsIndex < 0) currentCreditsIndex = 3;
+    if (--currentCreditsIndex < 0) currentCreditsIndex = (credits.length - 1);
     loadCreditsForCurrentIndex();
     setCreditsTitleForCurrentIndex();
     updateAppearingElements();
   });
 
   rightCreditsButton.addEventListener("click", () => {
-    currentCreditsIndex = ++currentCreditsIndex % 4;
+    currentCreditsIndex = ++currentCreditsIndex % credits.length;
     loadCreditsForCurrentIndex();
     setCreditsTitleForCurrentIndex();
     updateAppearingElements();
