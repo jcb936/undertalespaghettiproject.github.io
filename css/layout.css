@@ -110,7 +110,7 @@ header {
 }
 
 .link-container .element-swap-credits {
-  width: calc(calc((-1 / 10) * 100vw) + 150px);
+  width: calc(calc(-0.1 * 100vw) + 150px);
   aspect-ratio: 1 / 1;
   min-width: 50px;
   min-height: 50px;
