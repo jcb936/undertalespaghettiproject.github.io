@@ -93,3 +93,7 @@
 .animated-staff-avatar {
   transform: scale(1);
 }
+
+#credits-buttons {
+  align-self: stretch;
+}
