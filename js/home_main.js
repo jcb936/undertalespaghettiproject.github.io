@@ -42,6 +42,7 @@ function updateAppearingElements() {
     addClass(".social-email", "moved-social-email");
     addClass(".title5", "moved-title5");
     addClass(".staff-list", "animated-staff-list");
+    addClass(".staff-list-divider", "animated-staff-list");
     addClass(".staff-avatar", "animated-staff-avatar");
   }
 }
