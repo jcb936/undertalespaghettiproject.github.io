@@ -9,15 +9,15 @@ controller.localeValue = "it";
 // Redirect audio links to point upstream
 controller.slam = new Howl({
     src: [
-        'https://deltarune.com/assets/audio/slam.ogg',
-        'https://deltarune.com/assets/audio/slam.mp3'
+        '../assets/audio/slam.ogg',
+        '../assets/audio/slam.mp3'
     ],
     volume: 0.5
 });
 controller.ma = new Howl({
     src: [
-        'https://deltarune.com/assets/audio/ma.ogg',
-        'https://deltarune.com/assets/audio/ma.mp3'
+        '../assets/audio/ma.ogg',
+        '../assets/audio/ma.mp3'
     ],
     volume: 0.5
 });
