@@ -60,21 +60,32 @@ function handleRandomBackground() {
   if (headers[random].link) artistLabel.href = headers[random].link;
 }
 
+function handleStaticBackground() {
+  let header = document.querySelector("header");
+  header.style.backgroundImage = `url(images/headers/header2.webp)`;
+  let artistLabel = document.querySelector(".art-credit");
+  artistLabel.textContent = `art by jack lemon`;
+  artistLabel.href = "https://x.com/LemonArtsies";
+}
+
 function setCreditsTitleForCurrentIndex() {
   let title = document.querySelector("#staff-list-title");
   if (!title) return;
 
   switch (currentCreditsIndex) {
     case 0:
-      title.textContent = "Crediti DELTARUNE Capitolo 3";
+      title.textContent = "Crediti DELTARUNE Capitolo 4";
       return;
     case 1:
-      title.textContent = "Crediti DELTARUNE Capitolo 2";
+      title.textContent = "Crediti DELTARUNE Capitolo 3";
       return;
     case 2:
-      title.textContent = "Crediti DELTARUNE Capitolo 1";
+      title.textContent = "Crediti DELTARUNE Capitolo 2";
       return;
     case 3:
+      title.textContent = "Crediti DELTARUNE Capitolo 1";
+      return;
+    case 4:
       title.textContent = "Crediti UNDERTALE";
       return;
   }
@@ -99,7 +110,7 @@ function loadCreditsForCurrentIndex() {
 
   if (divider.style.display === "none") {
     divider.style.display = "";
-  };
+  }
 
   loadCreditsList(thanksListID, currentCredits.thanks);
 }
@@ -109,7 +120,7 @@ function hookCreditsButtonEvents() {
   let rightCreditsButton = document.querySelector("#toggle-credits-right");
 
   leftCreditsButton.addEventListener("click", () => {
-    if (--currentCreditsIndex < 0) currentCreditsIndex = (credits.length - 1);
+    if (--currentCreditsIndex < 0) currentCreditsIndex = credits.length - 1;
     loadCreditsForCurrentIndex();
     setCreditsTitleForCurrentIndex();
     updateAppearingElements();
@@ -148,11 +159,16 @@ async function readCredits() {
     with: { type: "json" },
   });
 
+  const drCh4 = await import("../assets/dr_credits_ch4.json", {
+    with: { type: "json" },
+  });
+
   const ut = await import("../assets/ut_credits.json", {
     with: { type: "json" },
   });
 
   // Order is how they also will be showed
+  credits.push(drCh4.default);
   credits.push(drCh3.default);
   credits.push(drCh2.default);
   credits.push(drCh1.default);
@@ -166,6 +182,11 @@ handleAppearingElements();
 handleTopBar();
 loadCreditsForCurrentIndex();
 setCreditsTitleForCurrentIndex();
-handleRandomBackground();
+
+// For the release of a new chapter, we might want
+// a static background for a while instead of cycling them
+//handleRandomBackground();
+handleStaticBackground();
+
 hookCreditsButtonEvents();
 handleGalleryScrolling();
