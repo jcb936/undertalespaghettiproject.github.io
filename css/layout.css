@@ -24,6 +24,13 @@ header {
   position: relative;
 }
 
+/* To be removed when random cycling backgrounds start again */
+@media (max-aspect-ratio: 1/1) {
+  header {
+    background-position: bottom;
+  }
+}
+
 .art-credit {
   position: absolute;
   bottom: 0;
@@ -35,6 +42,8 @@ header {
   max-width: 180px;
   padding: 0px 10px;
 }
+
+
 
 #logo {
   display: block;

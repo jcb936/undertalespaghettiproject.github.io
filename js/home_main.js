@@ -62,7 +62,8 @@ function handleRandomBackground() {
 
 function handleStaticBackground() {
   let header = document.querySelector("header");
-  header.style.backgroundImage = `url(images/headers/header3.png)`;
+  // We will eventually cut this better
+  header.style.backgroundImage = `url(images/headers/header3_alt.png)`;
   let artistLabel = document.querySelector(".art-credit");
   artistLabel.textContent = `art by chrippa`;
   artistLabel.href = "https://instagram.com/krppling";
