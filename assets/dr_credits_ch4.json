@@ -3,7 +3,7 @@
     {
       "name": "renard",
       "link": "https://studiolena.neocities.org",
-      "role": "Supervisione, Produzione, Tech & Tools",
+      "role": "Supervisione, Produzione, Tech & Tools, Sito Web",
       "avatar": "renard.png"
     },
     {
@@ -15,7 +15,7 @@
     {
       "name": "CRefice",
       "link": "",
-      "role": "Grafica, Traduzione, Tech & Tools",
+      "role": "Traduzione, Produzione, Tech & Tools, SFXs & Voce Jackenstein",
       "avatar": "crefice.jpg"
     },
     {
@@ -31,34 +31,40 @@
       "avatar": "shosia.gif"
     },
     {
-      "name": "GMoody",
-      "link": "",
-      "role": "Traduzione, Tech & Tools",
-      "avatar": "gmoody.jpg"
-    },
-    {
-      "name": "Chrippa",
+      "name": "Chri",
       "link": "https://instagram.com/krppling",
-      "role": "Traduzione, Art",
+      "role": "Traduzione, Art Social",
       "avatar": "Chri.jpg"
     },
     {
-      "name": "Vanzzz",
-      "link": "",
-      "role": "Traduzione, Community Management",
-      "avatar": "vanzzz.png"
+      "name": "L'Armadio",
+      "link": "https://youtube.com/@larmadio",
+      "role": "Traduzione, SFXs, Grafica, Art Social",
+      "avatar": "armadio.png"
     },
     {
-      "name": "Willow",
+      "name": "KnuckleBuckle",
       "link": "",
       "role": "Traduzione",
-      "avatar": "willow.jpg"
+      "avatar": "KnuckleBuckle.jpg"
     },
     {
       "name": "Depa",
       "link": "https://youtube.com/@depa31",
       "role": "Tech & Tools, Community Management",
       "avatar": "depa.jpg"
+    },
+    {
+      "name": "Vanzzz",
+      "link": "",
+      "role": "Community Management",
+      "avatar": "vanzzz.png"
+    },
+    {
+      "name": "GMoody",
+      "link": "",
+      "role": "Art Social",
+      "avatar": "gmoody.jpg"
     }
   ],
 
@@ -68,18 +74,6 @@
       "link": "",
       "role": "Playtester",
       "avatar": "A.CraftDEV.png"
-    },
-    {
-      "name": "KnuckleBuckle",
-      "link": "",
-      "role": "Playtester",
-      "avatar": "KnuckleBuckle.jpg"
-    },
-    {
-      "name": "L'Armadio",
-      "link": "https://youtube.com/@larmadio",
-      "role": "Playtester",
-      "avatar": "armadio.png"
     },
     {
       "name": "KendeRoy",
@@ -94,28 +88,28 @@
       "avatar": "BetweenShades.jpg"
     },
     {
-      "name": "Matteo Nori",
+      "name": "DrSamp",
       "link": "",
-      "role": "Tester Installer",
-      "avatar": "MatteoNori.jpeg"
+      "role": "Playtester",
+      "avatar": "DrSamp.jpg"
     },
     {
-      "name": "Giob Caridi",
+      "name": "IlGardenz",
       "link": "",
-      "role": "Tester Installer",
-      "avatar": "giob.jpeg"
+      "role": "Playtester",
+      "avatar": "IlGardenz.png"
     },
     {
-      "name": "robinchips",
+      "name": "Gnafu86",
       "link": "",
-      "role": "Tester Installer",
-      "avatar": "rob.png"
+      "role": "Aiuto audio",
+      "avatar": "Gnafu86.png"
     },
     {
-      "name": "IoSonoOtakuman",
+      "name": "Frazzers",
       "link": "",
-      "role": "Doppiaggio YouTube (Tenna)",
-      "avatar": "otakuman.jpg"
+      "role": "Possessore di libro Calvin & Hobbes",
+      "avatar": "frazzers.jpg"
     }
   ]
 }
