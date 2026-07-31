@@ -62,10 +62,10 @@ function handleRandomBackground() {
 
 function handleStaticBackground() {
   let header = document.querySelector("header");
-  header.style.backgroundImage = `url(images/headers/header2.webp)`;
+  header.style.backgroundImage = `url(images/headers/header3.png)`;
   let artistLabel = document.querySelector(".art-credit");
-  artistLabel.textContent = `art by jack lemon`;
-  artistLabel.href = "https://x.com/LemonArtsies";
+  artistLabel.textContent = `art by chrippa`;
+  artistLabel.href = "https://instagram.com/krppling";
 }
 
 function setCreditsTitleForCurrentIndex() {
