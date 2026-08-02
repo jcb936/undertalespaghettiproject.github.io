@@ -39,7 +39,7 @@
     {
       "name": "Chrippa",
       "link": "https://instagram.com/krppling",
-      "role": "Traduzione, Art",
+      "role": "Traduzione, Art Social",
       "avatar": "Chri.jpg"
     },
     {
@@ -65,7 +65,7 @@
   "thanks": [
     {
       "name": "A.CraftDEV",
-      "link": "",
+      "link": "https://youtube.com/@a.craftdev",
       "role": "Playtester",
       "avatar": "A.CraftDEV.png"
     },
@@ -83,7 +83,7 @@
     },
     {
       "name": "KendeRoy",
-      "link": "",
+      "link": "https://twitch.tv/kenderoyy",
       "role": "Playtester",
       "avatar": "noire.png"
     },
@@ -113,7 +113,7 @@
     },
     {
       "name": "IoSonoOtakuman",
-      "link": "",
+      "link": "https://www.youtube.com/IosonoOtakuman",
       "role": "Doppiaggio YouTube (Tenna)",
       "avatar": "otakuman.jpg"
     }
