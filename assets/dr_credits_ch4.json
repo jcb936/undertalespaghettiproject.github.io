@@ -9,7 +9,7 @@
     {
       "name": "Jack Lemon",
       "link": "https://x.com/LemonArtsies",
-      "role": "Grafica, Traduzione, Produzione",
+      "role": "Grafica, Traduzione, Produzione, Art",
       "avatar": "jacklemon.jpg"
     },
     {
@@ -33,13 +33,13 @@
     {
       "name": "Chrippa",
       "link": "https://instagram.com/krppling",
-      "role": "Art Social",
+      "role": "Traduzione, Art",
       "avatar": "Chri.jpg"
     },
     {
       "name": "L'Armadio",
       "link": "https://youtube.com/@larmadio",
-      "role": "Traduzione, SFXs, Grafica, Art Social",
+      "role": "Traduzione, SFXs, Grafica, Art",
       "avatar": "armadio.png"
     },
     {
@@ -63,7 +63,7 @@
     {
       "name": "GMoody",
       "link": "",
-      "role": "Art Social",
+      "role": "Art",
       "avatar": "gmoody.jpg"
     }
   ],
