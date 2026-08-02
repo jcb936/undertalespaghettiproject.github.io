@@ -9,7 +9,7 @@
     {
       "name": "Jack Lemon",
       "link": "https://x.com/LemonArtsies",
-      "role": "Grafica, Traduzione, Produzione",
+      "role": "Grafica, Traduzione, Produzione, Art",
       "avatar": "jacklemon.jpg"
     },
     {
@@ -31,15 +31,15 @@
       "avatar": "shosia.gif"
     },
     {
-      "name": "Chri",
+      "name": "Chrippa",
       "link": "https://instagram.com/krppling",
-      "role": "Traduzione, Art Social",
+      "role": "Traduzione, Art",
       "avatar": "Chri.jpg"
     },
     {
       "name": "L'Armadio",
       "link": "https://youtube.com/@larmadio",
-      "role": "Traduzione, SFXs, Grafica, Art Social",
+      "role": "Traduzione, SFXs, Grafica, Art",
       "avatar": "armadio.png"
     },
     {
@@ -63,7 +63,7 @@
     {
       "name": "GMoody",
       "link": "",
-      "role": "Art Social",
+      "role": "Art",
       "avatar": "gmoody.jpg"
     }
   ],
@@ -71,15 +71,15 @@
   "thanks": [
     {
       "name": "A.CraftDEV",
-      "link": "",
+      "link": "https://youtube.com/@a.craftdev",
       "role": "Playtester",
       "avatar": "A.CraftDEV.png"
     },
     {
       "name": "KendeRoy",
-      "link": "",
+      "link": "https://twitch.tv/kenderoyy",
       "role": "Playtester",
-      "avatar": "noire.jpg"
+      "avatar": "noire.png"
     },
     {
       "name": "BetweenShades",
@@ -95,7 +95,7 @@
     },
     {
       "name": "IlGardenz",
-      "link": "",
+      "link": "https://youtube.com/@ilgardenz",
       "role": "Playtester",
       "avatar": "IlGardenz.png"
     },
