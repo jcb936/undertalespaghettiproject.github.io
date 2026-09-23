@@ -184,10 +184,11 @@ handleTopBar();
 loadCreditsForCurrentIndex();
 setCreditsTitleForCurrentIndex();
 
+handleRandomBackground();
+
 // For the release of a new chapter, we might want
 // a static background for a while instead of cycling them
-//handleRandomBackground();
-handleStaticBackground();
+// handleStaticBackground();
 
 hookCreditsButtonEvents();
 handleGalleryScrolling();
