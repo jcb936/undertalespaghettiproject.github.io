@@ -17,6 +17,7 @@
   {
     "path": "images/headers/header3.png",
     "artist": "chri",
-    "link": "hhttps://instagram.com/krppling"
+    "link": "hhttps://instagram.com/krppling",
+    "adaptScreen": true
   }
 ]

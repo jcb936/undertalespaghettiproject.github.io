@@ -58,6 +58,8 @@ function handleRandomBackground() {
   let artistLabel = document.querySelector(".art-credit");
   artistLabel.textContent = `art by ${headers[random].artist}`;
   if (headers[random].link) artistLabel.href = headers[random].link;
+  if (headers[random].adaptScreen) 
+    header.classList.add("header-adapt-screen");
 }
 
 function handleStaticBackground() {
